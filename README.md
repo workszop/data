@@ -1,5 +1,5 @@
 # data
-various data for programming workshops
+data for programming workshops
 
 ### movies
 - movies.csv dataset    
