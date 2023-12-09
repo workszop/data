@@ -12,3 +12,9 @@ data for programming workshops
 - list of names of students
 - first name, surname, group
 - names are written with mixed case letters
+
+### sales data
+- xlsx
+
+### world population 
+- xlsx
