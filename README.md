@@ -1,6 +1,9 @@
 # data
 data for programming workshops
 
+### google annual report
+- google_annual_report_for_2024.pdf
+
 ### movies
 - movies.csv dataset    
   6820 movies (220 movies per year, 1986-2016) 
