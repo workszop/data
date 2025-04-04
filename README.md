@@ -1,8 +1,11 @@
 # data
 data for programming workshops
 
-### google annual report
+### annual reports
 - google_annual_report_for_2024.pdf
+
+### contracts
+- logistics_contract.pdf
 
 ### movies
 - movies.csv dataset    
