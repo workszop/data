@@ -1,6 +1,9 @@
 # data
 data for programming workshops
 
+### pic.zip
+a few images of cats
+
 ### annual reports
 - google_annual_report_for_2024.pdf
 
