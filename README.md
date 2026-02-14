@@ -5,7 +5,8 @@ data for programming workshops
 a few images of cats
 
 ### prompts
-infographics_nano_banana.pdf - prompts for creating infographics with nano banana pro
+prompts_funny_personal_images_chatgpt.pdf
+prompts_infographics_nano_banana.pdf
 
 ### annual reports
 - google_annual_report_for_2024.pdf
