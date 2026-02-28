@@ -1,0 +1,39 @@
+POGADAJMY
+Jak święta wpływają na zakupy klientów?
+
+PRAWIE DOBRZE
+Jestem menagerem sklepu internetowego z elektroniką w Polsce. 
+Chcę zrozumieć, jak święta Bożego Narodzenia wpływają na zachowania zakupowe moich klientów.
+Wyjaśnij mi:
+- Kiedy klienci najczęściej robią zakupy świąteczne
+- Jakie kategorie produktów są najpopularniejsze
+- Jak planować zapasy i promocje
+Odpowiedz w sposób praktyczny, z konkretnymi wskazówkami.
+
+WRESZCIE DZIAŁA
+# KONTEKST
+Jestem menagerem e-commerce w polskim sklepie internetowym ze średnią sprzedażą elektroniki użytkowej (smartfony, laptopy, akcesoria). Mam 5-osobowy zespół i budżet marketingowy 50 000 PLN na Q4.
+
+# ZADANIE
+Przeanalizuj wpływ sezonu świątecznego (Boże Narodzenie) na zachowania 
+zakupowe klientów i przygotuj dla mnie praktyczny plan działania.
+
+# PERSPEKTYWA
+Przyjmij rolę doświadczonego konsultanta e-commerce, który już 
+przeprowadzał setki kampanii świątecznych w Polsce.
+
+# ZAKRES ANALIZY
+Timeline zakupowy (kiedy klienci zaczynają szukać, kiedy kupują)
+Produkty hot (konkretne kategorie dla polskiego rynku)
+Strategie cenowe (Black Friday, Cyber Monday, grudzień)
+Zarządzanie zapasami (kiedy zamówić towar)
+Marketing (kanały, budżet, timing)
+
+# FORMAT ODPOWIEDZI
+- Każdy punkt jako konkretna rekomendacja z uzasadnieniem
+- Dodaj timeline w formie listy "Co robić w którym miesiącu"
+- Wskaż 3 najczęstsze błędy do uniknięcia
+- Maximum 800 słów, styl: zwięzły, merytoryczny
+
+# DANE
+Uwzględnij specyfikę polskiego rynku (Black Week, 13. pensja, tendencje do zakupów w ostatniej chwili).
