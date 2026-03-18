@@ -34,3 +34,14 @@ prompts_infographics_nano_banana.pdf
 
 ### markdown
 - pdf markdown book
+
+# create download link for a given file
+
+Mnually change the URL in your browser's address bar to get the direct link:
+
+1. Start with the standard GitHub file URL:
+`https://github.com/username/repo/blob/main/file.txt`
+2. Change `github.com` to `raw.githubusercontent.com`.
+3. Delete the `/blob/` part of the URL.
+4. The resulting URL is your direct link:
+`https://raw.githubusercontent.com/username/repo/main/file.txt`
