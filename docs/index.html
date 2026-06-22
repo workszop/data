@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>edulab · dane warsztatowe</title>
+<link rel="stylesheet" href="tokens.css">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body.edu { background: var(--paper); color: var(--ink); font-family: var(--font-sans); }
+
+  /* ---------- top brand bar ---------- */
+  .edu-header {
+    position: sticky; top: 0; z-index: 50; width: 100%;
+    background: rgba(251, 247, 240, 0.85);
+    backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+  .edu-header-inner {
+    max-width: 1100px; margin: 0 auto;
+    padding: 15px 30px; display: flex; align-items: center; gap: 12px;
+  }
+  .edu-logo { width: 32px; height: 32px; display: block; }
+  .edu-wordmark { font-family: var(--font-display); font-weight: 700; font-size: 22px; letter-spacing: -.02em; color: var(--ink); }
+  .edu-tag {
+    font-family: var(--font-mono); font-weight: 500; font-size: 11px;
+    letter-spacing: .14em; text-transform: uppercase; color: var(--teal-ink);
+    background: var(--teal-soft); padding: 4px 9px; border-radius: var(--r-pill);
+  }
+  .edu-header-spacer { flex: 1; }
+  .edu-header-link {
+    font-family: var(--font-mono); font-size: 12px; letter-spacing: .06em;
+    text-transform: uppercase; color: var(--ink-3); text-decoration: none;
+    border: 1px solid var(--line); padding: 7px 13px; border-radius: var(--r-pill);
+    transition: color .15s, border-color .15s;
+  }
+  .edu-header-link:hover { color: var(--teal-ink); border-color: var(--teal); }
+
+  /* ---------- layout shell ---------- */
+  main { max-width: 1100px; margin: 0 auto; padding: 56px 30px 80px; }
+
+  /* ---------- page header ---------- */
+  .page-head { text-align: center; margin-bottom: 14px; }
+  .edu-overline {
+    font-family: var(--font-mono); font-weight: 500; font-size: 12px;
+    letter-spacing: .14em; text-transform: uppercase; color: var(--marigold-ink);
+    margin: 0 0 14px;
+  }
+  .app-title {
+    font-family: var(--font-display); font-weight: 800;
+    font-size: clamp(2rem, 4.5vw, 2.85rem); letter-spacing: -.025em;
+    line-height: 1.05; color: var(--ink); margin: 0 0 16px;
+  }
+  .edu-lead { font-size: 1.0625rem; line-height: 1.6; color: var(--ink-2); max-width: 38rem; margin: 0 auto; font-family: var(--font-sans); }
+
+  /* ---------- toolbar (count + filters) ---------- */
+  .toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px; margin: 38px 0 30px; }
+  .filter-chip {
+    font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase;
+    letter-spacing: .07em; padding: 7px 14px; border-radius: var(--r-pill);
+    background: var(--surface); color: var(--ink-2); border: 1px solid var(--line);
+    cursor: pointer; transition: all .15s;
+  }
+  .filter-chip:hover { border-color: var(--line-2); }
+  .filter-chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+  /* ---------- category sections ---------- */
+  .cat-section { margin-top: 46px; }
+  .cat-head { display: flex; align-items: baseline; gap: 12px; margin: 0 0 18px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .cat-title { font-family: var(--font-display); font-weight: 600; font-size: var(--h3); color: var(--ink); margin: 0; }
+  .cat-count { font-family: var(--font-mono); font-size: 12px; color: var(--ink-3); }
+
+  /* ---------- grid of file cards ---------- */
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  @media (max-width: 860px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .grid { grid-template-columns: 1fr; } }
+
+  .card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg);
+    overflow: hidden; display: flex; flex-direction: column; cursor: pointer;
+    transition: transform .2s cubic-bezier(.32,.72,.32,1), box-shadow .2s cubic-bezier(.32,.72,.32,1), border-color .2s;
+  }
+  .card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: transparent; }
+
+  .card-head {
+    height: 96px; position: relative; overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .card-glyph { font-family: var(--font-display); font-weight: 700; font-size: 30px; color: #fff; z-index: 1; letter-spacing: .02em; }
+  .card-glyph-ghost {
+    position: absolute; right: -14px; bottom: -34px; font-family: var(--font-display);
+    font-weight: 800; font-size: 120px; color: rgba(255,255,255,.16); line-height: 1; user-select: none;
+  }
+  .card-chip {
+    position: absolute; top: 10px; left: 10px; z-index: 2;
+    font-family: var(--font-mono); font-size: 10px; text-transform: uppercase;
+    letter-spacing: .08em; padding: 3px 8px; border-radius: var(--r-pill);
+    background: rgba(255,255,255,.9); color: var(--ink);
+  }
+
+  .card-body { padding: 15px 17px 17px; display: flex; flex-direction: column; gap: 7px; flex: 1; }
+  .card-name { font-family: var(--font-mono); font-size: 12.5px; color: var(--ink); word-break: break-all; }
+  .card-blurb { font-family: var(--font-sans); font-size: 13.5px; line-height: 1.45; color: var(--ink-2); margin: 0; }
+  .card-meta { margin-top: auto; padding-top: 8px; display: flex; gap: 10px; font-family: var(--font-mono); font-size: 11px; color: var(--ink-3); }
+
+  /* ---------- modal ---------- */
+  .overlay {
+    position: fixed; inset: 0; z-index: 100; display: none;
+    background: rgba(33,30,26,.46); backdrop-filter: blur(3px);
+    align-items: flex-start; justify-content: center; padding: 5vh 20px;
+  }
+  .overlay.open { display: flex; }
+  .modal {
+    background: var(--paper); border-radius: var(--r-xl); box-shadow: var(--shadow-lg);
+    width: min(860px, 100%); max-height: 90vh; display: flex; flex-direction: column; overflow: hidden;
+  }
+  .modal-head { padding: 22px 26px 18px; border-bottom: 1px solid var(--line); display: flex; align-items: flex-start; gap: 16px; }
+  .modal-head-text { flex: 1; min-width: 0; }
+  .modal-eyebrow { font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: .1em; color: var(--marigold-ink); margin: 0 0 6px; }
+  .modal-title { font-family: var(--font-mono); font-size: 16px; color: var(--ink); margin: 0; word-break: break-all; }
+  .modal-blurb { font-family: var(--font-sans); font-size: 14px; color: var(--ink-2); margin: 8px 0 0; line-height: 1.5; }
+  .modal-close {
+    flex-shrink: 0; width: 36px; height: 36px; border-radius: var(--r-pill); border: 1px solid var(--line);
+    background: var(--surface); color: var(--ink-2); font-size: 18px; cursor: pointer; line-height: 1;
+    display: flex; align-items: center; justify-content: center; transition: all .15s;
+  }
+  .modal-close:hover { background: var(--coral-soft); color: var(--coral-ink); border-color: var(--coral); }
+
+  .modal-actions { padding: 14px 26px; display: flex; gap: 12px; align-items: center; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+  .edu-btn {
+    font-family: var(--font-display); font-weight: 600; font-size: 14px;
+    background: var(--marigold); color: #fff; border: none; text-decoration: none;
+    border-radius: var(--r-pill); padding: 11px 20px; box-shadow: var(--shadow-marigold);
+    cursor: pointer; transition: background .15s, transform .12s; display: inline-flex; align-items: center; gap: 8px;
+  }
+  .edu-btn:hover { background: var(--marigold-600); }
+  .edu-btn:active { transform: scale(.96); }
+  .edu-btn-ghost {
+    font-family: var(--font-mono); font-size: 12.5px; letter-spacing: .04em; color: var(--ink-2);
+    background: var(--surface); border: 1px solid var(--line); box-shadow: none; text-transform: uppercase;
+  }
+  .edu-btn-ghost:hover { background: var(--paper-2); color: var(--ink); }
+
+  .modal-body { padding: 0; overflow: auto; flex: 1; }
+  .modal-body-pad { padding: 22px 26px 26px; }
+
+  .preview-note { font-family: var(--font-mono); font-size: 11px; color: var(--ink-3); padding: 12px 26px 0; }
+
+  /* CSV / XLSX table preview */
+  .tbl-wrap { overflow: auto; border: 1px solid var(--line); border-radius: var(--r-md); margin: 0 26px 26px; }
+  table.preview { border-collapse: collapse; width: 100%; font-family: var(--font-sans); font-size: 13px; }
+  table.preview th { position: sticky; top: 0; background: var(--paper-3); color: var(--ink); font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: .05em; text-align: left; padding: 9px 12px; white-space: nowrap; border-bottom: 1px solid var(--line-2); }
+  table.preview td { padding: 8px 12px; border-bottom: 1px solid var(--line); color: var(--ink-2); white-space: nowrap; }
+  table.preview tr:last-child td { border-bottom: none; }
+  table.preview tr:nth-child(even) td { background: rgba(244,237,223,.45); }
+
+  /* text preview */
+  pre.txt-preview {
+    margin: 0 26px 26px; padding: 18px 20px; background: var(--surface); border: 1px solid var(--line);
+    border-radius: var(--r-md); font-family: var(--font-mono); font-size: 12.5px; line-height: 1.6;
+    color: var(--ink); white-space: pre-wrap; word-break: break-word; max-height: 52vh; overflow: auto;
+  }
+
+  /* pdf preview */
+  .pdf-frame { width: 100%; height: 60vh; border: 1px solid var(--line); border-radius: var(--r-md); display: block; }
+  .pdf-wrap { padding: 0 26px 26px; }
+
+  /* image (zip) preview placeholder */
+  .info-panel { margin: 0 26px 26px; padding: 22px 24px; background: var(--teal-soft); border-radius: var(--r-xl); color: var(--teal-ink); }
+  .info-panel h4 { font-family: var(--font-display); font-weight: 700; font-size: 17px; margin: 0 0 8px; color: var(--teal-ink); }
+  .info-panel p { font-family: var(--font-sans); font-size: 14px; line-height: 1.55; margin: 0; color: var(--teal-ink); }
+
+  .loader { font-family: var(--font-mono); font-size: 12px; color: var(--ink-3); padding: 40px 26px; text-align: center; }
+
+  footer.edu-foot { max-width: 1100px; margin: 0 auto; padding: 30px; border-top: 1px solid var(--line); font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-3); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+  footer.edu-foot a { color: var(--teal-ink); text-decoration: none; }
+</style>
+</head>
+<body class="edu">
+
+<header class="edu-header"><div class="edu-header-inner">
+  <img class="edu-logo" alt="edulab" src="edulab-mark-teal.png">
+  <span class="edu-wordmark">edulab</span>
+  <span class="edu-tag">demo lab</span>
+  <span class="edu-header-spacer"></span>
+  <a class="edu-header-link" href="https://github.com/workszop/data" target="_blank" rel="noopener">repo ↗</a>
+</div></header>
+
+<main>
+  <div class="page-head">
+    <p class="edu-overline">Materiały warsztatowe · 21 plików</p>
+    <h1 class="app-title">Dane do warsztatów</h1>
+    <p class="edu-lead">Przeglądaj, podglądaj i pobieraj zestawy danych używane na warsztatach programistycznych — tabele, teksty, dokumenty PDF, prompty AI i obrazy. Kliknij kartę, aby zobaczyć podgląd.</p>
+  </div>
+
+  <div class="toolbar" id="filters"></div>
+  <div id="sections"></div>
+</main>
+
+<footer class="edu-foot">
+  <span>edulab · demo lab — dane warsztatowe</span>
+  <span>źródło: <a href="https://github.com/workszop/data" target="_blank" rel="noopener">github.com/workszop/data</a></span>
+</footer>
+
+<div class="overlay" id="overlay">
+  <div class="modal" role="dialog" aria-modal="true">
+    <div class="modal-head">
+      <div class="modal-head-text">
+        <p class="modal-eyebrow" id="m-cat"></p>
+        <h2 class="modal-title" id="m-name"></h2>
+        <p class="modal-blurb" id="m-blurb"></p>
+      </div>
+      <button class="modal-close" id="m-close" aria-label="Zamknij">×</button>
+    </div>
+    <div class="modal-actions">
+      <a class="edu-btn" id="m-download" href="#" download>↓ Pobierz plik</a>
+      <a class="edu-btn edu-btn-ghost" id="m-raw" href="#" target="_blank" rel="noopener">Otwórz raw</a>
+      <span style="flex:1"></span>
+      <span class="card-meta" id="m-meta" style="padding:0;"></span>
+    </div>
+    <div class="modal-body" id="m-body"></div>
+  </div>
+</div>
+
+<script>
+const RAW = "https://raw.githubusercontent.com/workszop/data/main/";
+const BLOB = "https://github.com/workszop/data/blob/main/";
+
+// subject colours per category (edulab play / brand palette)
+const CAT = {
+  tabular: { label: "Dane tabelaryczne", color: "var(--teal)" },
+  text:    { label: "Teksty",            color: "var(--sky)" },
+  docs:    { label: "Dokumenty PDF",     color: "var(--marigold)" },
+  prompts: { label: "Prompty AI",        color: "var(--play-grape)" },
+  images:  { label: "Obrazy",            color: "var(--coral)" },
+};
+
+const FILES = [
+  // ---- tabular ----
+  { f:"movies.csv", cat:"tabular", kind:"csv", glyph:"CSV",
+    blurb:"7668 filmów z lat 1986–2016, 15 kolumn.", meta:["7 668 wierszy","1,3 MB"] },
+  { f:"sales.csv", cat:"tabular", kind:"csv", glyph:"CSV",
+    blurb:"44 zamówienia sprzedaży — region, handlowiec, kwota.", meta:["44 wiersze","3 KB"] },
+  { f:"sales_data.xlsx", cat:"tabular", kind:"xlsx", glyph:"XLS",
+    blurb:"Dane finansowo-sprzedażowe: segmenty, kraje, produkty.", meta:["arkusz","81 KB"] },
+  { f:"world_population_2021.xlsx", cat:"tabular", kind:"xlsx", glyph:"XLS",
+    blurb:"Populacja krajów świata: gęstość, powierzchnia, migracje.", meta:["arkusz","45 KB"] },
+
+  // ---- text ----
+  { f:"jane_austen.txt", cat:"text", kind:"txt", glyph:"TXT",
+    blurb:"Pełny tekst „Pride and Prejudice” — do ćwiczeń NLP.", meta:["~700 KB","tekst"] },
+  { f:"studenci.txt", cat:"text", kind:"txt", glyph:"TXT",
+    blurb:"10 studentów (imię, nazwisko, grupa) — różna wielkość liter.", meta:["10 wierszy","czyszczenie"] },
+
+  // ---- docs ----
+  { f:"google_annual_report_for_2024.pdf", cat:"docs", kind:"pdf", glyph:"PDF",
+    blurb:"Raport roczny Google / Alphabet za 2024 r.", meta:["PDF","1,6 MB"] },
+  { f:"logistics_contract.pdf", cat:"docs", kind:"pdf", glyph:"PDF",
+    blurb:"Umowa o usługi logistyczne i zaopatrzeniowe (IFRC).", meta:["PDF","109 KB"] },
+  { f:"organization_approval_matrix.pdf", cat:"docs", kind:"pdf", glyph:"PDF",
+    blurb:"Matryca akceptacji — fikcyjna firma „Nexus Global Solutions”.", meta:["PDF","14 KB"] },
+  { f:"organization_procurement_policy.pdf", cat:"docs", kind:"pdf", glyph:"PDF",
+    blurb:"Polityka zakupowa „Nexus Global Solutions”.", meta:["PDF","15 KB"] },
+  { f:"organization_travel_and_expenses_policy.pdf", cat:"docs", kind:"pdf", glyph:"PDF",
+    blurb:"Polityka podróży i wydatków „Nexus Global Solutions”.", meta:["PDF","16 KB"] },
+  { f:"umowa_o_prace_Monika_Nowak.pdf", cat:"docs", kind:"pdf", glyph:"PDF",
+    blurb:"Przykładowa umowa o pracę (dane fikcyjne).", meta:["PDF","38 KB"] },
+  { f:"faktura_vat_marzec_2026.pdf", cat:"docs", kind:"pdf", glyph:"PDF",
+    blurb:"Przykładowa faktura VAT (dane fikcyjne).", meta:["PDF","46 KB"] },
+  { f:"markdown.pdf", cat:"docs", kind:"pdf", glyph:"PDF",
+    blurb:"„The Markdown Guide” — Matt Cone (materiał referencyjny).", meta:["PDF","3,5 MB"] },
+
+  // ---- prompts ----
+  { f:"prompting_levels.txt", cat:"prompts", kind:"txt", glyph:"TXT",
+    blurb:"Trzy poziomy jakości promptu na tym samym przykładzie (PL).", meta:["tekst","2 KB"] },
+  { f:"prompts_funny_personal_images_chatgpt.txt", cat:"prompts", kind:"txt", glyph:"TXT",
+    blurb:"Prompty do zabawnych obrazów osobistych.", meta:["tekst","1 KB"] },
+  { f:"prompts_personal_photo.txt", cat:"prompts", kind:"txt", glyph:"TXT",
+    blurb:"Prompty do profesjonalnych zdjęć portretowych.", meta:["tekst","1 KB"] },
+  { f:"prompts_infographics_nano_banana.pdf", cat:"prompts", kind:"pdf", glyph:"PDF",
+    blurb:"Biblioteka promptów do infografik.", meta:["PDF","137 KB"] },
+
+  // ---- images ----
+  { f:"pic.zip", cat:"images", kind:"zip", glyph:"ZIP",
+    blurb:"16 zdjęć kotów (pic/*.jpg) w archiwum ZIP.", meta:["16 obrazów","90 KB"] },
+];
+
+// ---------- render sections ----------
+const sectionsEl = document.getElementById("sections");
+const filtersEl = document.getElementById("filters");
+let activeCat = "all";
+
+function buildFilters() {
+  const cats = ["all", ...Object.keys(CAT)];
+  filtersEl.innerHTML = "";
+  cats.forEach(c => {
+    const b = document.createElement("button");
+    b.className = "filter-chip";
+    b.textContent = c === "all" ? "Wszystkie" : CAT[c].label;
+    b.setAttribute("aria-pressed", c === activeCat);
+    b.onclick = () => { activeCat = c; buildFilters(); renderSections(); };
+    filtersEl.appendChild(b);
+  });
+}
+
+function renderSections() {
+  sectionsEl.innerHTML = "";
+  Object.keys(CAT).forEach(catKey => {
+    if (activeCat !== "all" && activeCat !== catKey) return;
+    const items = FILES.filter(x => x.cat === catKey);
+    if (!items.length) return;
+    const sec = document.createElement("section");
+    sec.className = "cat-section";
+    sec.innerHTML = `<div class="cat-head">
+        <h2 class="cat-title">${CAT[catKey].label}</h2>
+        <span class="cat-count">${items.length} ${items.length === 1 ? "plik" : "plików"}</span>
+      </div><div class="grid"></div>`;
+    const grid = sec.querySelector(".grid");
+    items.forEach(it => grid.appendChild(makeCard(it)));
+    sectionsEl.appendChild(sec);
+  });
+}
+
+function makeCard(it) {
+  const card = document.createElement("div");
+  card.className = "card";
+  card.onclick = () => openModal(it);
+  card.innerHTML = `
+    <div class="card-head" style="background:${CAT[it.cat].color}">
+      <span class="card-chip">${it.kind.toUpperCase()}</span>
+      <span class="card-glyph">${it.glyph}</span>
+      <span class="card-glyph-ghost">${it.glyph}</span>
+    </div>
+    <div class="card-body">
+      <div class="card-name">${it.f}</div>
+      <p class="card-blurb">${it.blurb}</p>
+      <div class="card-meta">${it.meta.map(m => `<span>${m}</span>`).join("")}</div>
+    </div>`;
+  return card;
+}
+
+// ---------- modal + previews ----------
+const overlay = document.getElementById("overlay");
+const mBody = document.getElementById("m-body");
+
+function openModal(it) {
+  document.getElementById("m-cat").textContent = CAT[it.cat].label;
+  document.getElementById("m-name").textContent = it.f;
+  document.getElementById("m-blurb").textContent = it.blurb;
+  document.getElementById("m-meta").innerHTML = it.meta.map(m => `<span>${m}</span>`).join("");
+  document.getElementById("m-download").href = RAW + encodeURIComponent(it.f);
+  document.getElementById("m-raw").href = BLOB + encodeURIComponent(it.f);
+  mBody.innerHTML = `<div class="loader">Wczytywanie podglądu…</div>`;
+  overlay.classList.add("open");
+  document.body.style.overflow = "hidden";
+  renderPreview(it);
+}
+
+function closeModal() {
+  overlay.classList.remove("open");
+  document.body.style.overflow = "";
+  mBody.innerHTML = "";
+  revokePdf();
+}
+document.getElementById("m-close").onclick = closeModal;
+overlay.onclick = e => { if (e.target === overlay) closeModal(); };
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal(); });
+
+async function renderPreview(it) {
+  try {
+    if (it.kind === "csv")  return previewCSV(it);
+    if (it.kind === "txt")  return previewTXT(it);
+    if (it.kind === "xlsx") return previewXLSX(it);
+    if (it.kind === "pdf")  return previewPDF(it);
+    if (it.kind === "zip")  return previewZIP(it);
+  } catch (err) {
+    mBody.innerHTML = `<div class="loader">Nie udało się wczytać podglądu.<br>Użyj przycisku „Pobierz plik”. (${err})</div>`;
+  }
+}
+
+function parseCSV(text, maxRows) {
+  // minimal CSV parser handling quoted fields with commas
+  const rows = []; let row = [], field = "", q = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (q) {
+      if (c === '"' && text[i+1] === '"') { field += '"'; i++; }
+      else if (c === '"') q = false;
+      else field += c;
+    } else {
+      if (c === '"') q = true;
+      else if (c === ",") { row.push(field); field = ""; }
+      else if (c === "\n") { row.push(field); rows.push(row); row = []; field = ""; if (maxRows && rows.length >= maxRows) break; }
+      else if (c === "\r") {}
+      else field += c;
+    }
+  }
+  if (field.length || row.length) { row.push(field); rows.push(row); }
+  return rows;
+}
+
+async function previewCSV(it) {
+  const res = await fetch(RAW + encodeURIComponent(it.f));
+  const text = await res.text();
+  const totalLines = text.split("\n").filter(l => l.trim()).length;
+  const rows = parseCSV(text, 26);
+  renderTable(rows, `Podgląd: ${Math.min(rows.length-1,25)} z ${totalLines-1} wierszy danych`);
+}
+
+let xlsxLoading = null;
+function ensureXLSX() {
+  if (window.XLSX) return Promise.resolve();
+  if (xlsxLoading) return xlsxLoading;
+  xlsxLoading = new Promise((resolve, reject) => {
+    const s = document.createElement("script");
+    s.src = "https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js";
+    s.onload = resolve;
+    s.onerror = () => reject(new Error("nie udało się wczytać biblioteki XLSX"));
+    document.head.appendChild(s);
+  });
+  return xlsxLoading;
+}
+
+async function previewXLSX(it) {
+  await ensureXLSX();
+  const res = await fetch(RAW + encodeURIComponent(it.f));
+  const buf = await res.arrayBuffer();
+  const wb = XLSX.read(buf, { type: "array" });
+  const ws = wb.Sheets[wb.SheetNames[0]];
+  const rows = XLSX.utils.sheet_to_json(ws, { header: 1, blankrows: false });
+  const total = rows.length;
+  renderTable(rows.slice(0, 26).map(r => r.map(c => c == null ? "" : String(c))),
+    `Arkusz „${wb.SheetNames[0]}” · podgląd ${Math.min(total-1,25)} z ${total-1} wierszy`);
+}
+
+function renderTable(rows, note) {
+  if (!rows.length) { mBody.innerHTML = `<div class="loader">Brak danych do wyświetlenia.</div>`; return; }
+  const head = rows[0], body = rows.slice(1);
+  const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+  let html = `<div class="preview-note">${note}</div><div class="tbl-wrap"><table class="preview"><thead><tr>`;
+  head.forEach(h => html += `<th>${esc(h)}</th>`);
+  html += `</tr></thead><tbody>`;
+  body.forEach(r => {
+    html += "<tr>";
+    head.forEach((_, i) => html += `<td>${esc(r[i] ?? "")}</td>`);
+    html += "</tr>";
+  });
+  html += `</tbody></table></div>`;
+  mBody.innerHTML = html;
+}
+
+async function previewTXT(it) {
+  const res = await fetch(RAW + encodeURIComponent(it.f));
+  const text = await res.text();
+  const LIMIT = 6000;
+  const shown = text.slice(0, LIMIT);
+  const esc = s => s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+  const note = text.length > LIMIT ? `Podgląd pierwszych ${LIMIT.toLocaleString("pl")} znaków z ${text.length.toLocaleString("pl")}` : `Pełna zawartość (${text.length.toLocaleString("pl")} znaków)`;
+  mBody.innerHTML = `<div class="preview-note">${note}</div><pre class="txt-preview">${esc(shown)}${text.length>LIMIT?"\n\n… (pobierz plik, aby zobaczyć całość)":""}</pre>`;
+}
+
+let pdfObjectUrl = null;
+function revokePdf() { if (pdfObjectUrl) { URL.revokeObjectURL(pdfObjectUrl); pdfObjectUrl = null; } }
+
+async function previewPDF(it) {
+  const res = await fetch(RAW + encodeURIComponent(it.f));
+  if (!res.ok) throw new Error(res.status);
+  const blob = await res.blob();
+  revokePdf();
+  pdfObjectUrl = URL.createObjectURL(blob.slice(0, blob.size, "application/pdf"));
+  mBody.innerHTML = `<div class="preview-note">Podgląd PDF · ${it.f}</div>
+    <div class="pdf-wrap"><iframe class="pdf-frame" src="${pdfObjectUrl}#toolbar=1" title="${it.f}"></iframe></div>`;
+}
+
+function previewZIP(it) {
+  mBody.innerHTML = `<div class="info-panel">
+    <h4>Archiwum ZIP</h4>
+    <p>Plik <strong>${it.f}</strong> zawiera 16 zdjęć kotów (<code>pic/*.jpg</code>). Pobierz archiwum, aby rozpakować obrazy lokalnie — podgląd zawartości ZIP nie jest dostępny w przeglądarce.</p>
+  </div>`;
+}
+
+buildFilters();
+renderSections();
+</script>
+</body>
+</html>
