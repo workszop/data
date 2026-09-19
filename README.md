@@ -40,6 +40,30 @@ Do ćwiczeń z ekstrakcji danych, parsowania i RAG.
 
 - [`pic.zip`](https://raw.githubusercontent.com/workszop/data/main/pic.zip) — 16 zdjęć kotów (`pic/*.jpg`)
 
+## Materiały marketingowe
+
+Fikcyjna marka „Sowa S.A.” do ćwiczeń z materiałami graficznymi (folder `marketing/sowa-sa/`).
+
+- [`sowa-logo-transparent.png`](https://raw.githubusercontent.com/workszop/data/main/marketing/sowa-sa/sowa-logo-transparent.png) - logo na przezroczystym tle
+- [`sowa-school-supplies-flyer.png`](https://raw.githubusercontent.com/workszop/data/main/marketing/sowa-sa/sowa-school-supplies-flyer.png) - ulotka z artykułami szkolnymi
+
+## Robimy: ćwiczenia z agentami AI
+
+Dziewięć niezależnych zadań z danymi startowymi (folder `robimy/`). Osoby, firmy, kwoty i zasady są fikcyjne. Każdy folder zadania zawiera polecenie `ZADANIE.txt` oraz materiały w `dane_startowe/`. Zacznij od [`00_ZACZNIJ_TUTAJ.txt`](https://raw.githubusercontent.com/workszop/data/main/robimy/00_ZACZNIJ_TUTAJ.txt); pełny spis plików: [`SPIS_PLIKOW.md`](https://raw.githubusercontent.com/workszop/data/main/robimy/SPIS_PLIKOW.md).
+
+- [`robimy.zip`](https://raw.githubusercontent.com/workszop/data/main/robimy.zip) - **cały pakiet w jednym archiwum** (136 plików)
+- [`01_start_projektu/`](https://github.com/workszop/data/tree/main/robimy/01_start_projektu) - start projektu dla klienta
+- [`02_wydatki_podrozy/`](https://github.com/workszop/data/tree/main/robimy/02_wydatki_podrozy) - rozliczenie wydatków z podróży
+- [`03_raport_sprzedazy/`](https://github.com/workszop/data/tree/main/robimy/03_raport_sprzedazy) - raport sprzedaży
+- [`04_zgloszenia_klientow/`](https://github.com/workszop/data/tree/main/robimy/04_zgloszenia_klientow) - obsługa zgłoszeń klientów
+- [`05_jakosc_danych/`](https://github.com/workszop/data/tree/main/robimy/05_jakosc_danych) - kontrola jakości danych
+- [`06_wdrozenie_pracownika/`](https://github.com/workszop/data/tree/main/robimy/06_wdrozenie_pracownika) - plan wdrożenia nowej pracownicy
+- [`07_ustalenia_spotkan/`](https://github.com/workszop/data/tree/main/robimy/07_ustalenia_spotkan) - rejestr ustaleń po spotkaniach
+- [`08_oferta_klienta/`](https://github.com/workszop/data/tree/main/robimy/08_oferta_klienta) - projekt oferty dla klienta
+- [`09_porzadek_w_plikach/`](https://github.com/workszop/data/tree/main/robimy/09_porzadek_w_plikach) - bezpieczny porządek w plikach
+
+Po zmianie zawartości `robimy/` odśwież archiwum: `zip -qr robimy.zip robimy`.
+
 ## Tworzenie linku do pobrania pliku
 
 Aby uzyskać bezpośredni link do pliku, zmień ręcznie URL w pasku adresu przeglądarki:

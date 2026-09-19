@@ -4,75 +4,89 @@
    Foundations" for substitution notes.
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap');
 
 :root {
   /* ---- Brand fonts ---- */
-  --font-display: 'Bricolage Grotesque', 'Hanken Grotesk', system-ui, sans-serif;
-  --font-sans:    'Hanken Grotesk', system-ui, -apple-system, sans-serif;
-  --font-mono:    'DM Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  --font-display: 'Outfit', 'IBM Plex Sans', system-ui, sans-serif;
+  --font-sans:    'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+  --font-mono:    'Roboto Mono', ui-monospace, 'SF Mono', Menlo, monospace;
 
   /* ============================================================
      RAW COLOR TOKENS
      ============================================================ */
 
-  /* Paper — warm cream backgrounds (the brand never sits on pure white) */
-  --paper:    #FBF7F0;   /* page background            */
-  --paper-2:  #F4EDDF;   /* alternating section        */
-  --paper-3:  #ECE1CF;   /* deepest cream / wells      */
+  /* Paper — page background is white; the sand steps are wells/alternating sections */
+  --paper:    #FFFFFF;   /* page background (white)    */
+  --paper-2:  #FBF7E6;   /* alternating section        */
+  --paper-3:  #F5EDCB;   /* deepest sand / wells       */
   --surface:  #FFFFFF;   /* cards & sheets             */
 
   /* Ink — warm near-black text & lines */
-  --ink:      #211E1A;   /* primary text               */
-  --ink-2:    #5B554D;   /* secondary text             */
-  --ink-3:    #938A7C;   /* muted / placeholder        */
-  --line:     #E7DCCB;   /* hairline borders           */
-  --line-2:   #D6C8B2;   /* stronger borders           */
+  --ink:      #1C1917;   /* primary text               */
+  --ink-2:    #57534E;   /* secondary text             */
+  --ink-3:    #948C82;   /* muted / placeholder        */
+  --line:     #EDE7D2;   /* hairline borders           */
+  --line-2:   #DDD4B6;   /* stronger borders           */
 
-  /* Marigold — primary brand */
-  --marigold:      #E8920C;
-  --marigold-600:  #CE800A;  /* hover / press          */
-  --marigold-soft: #FBE7C2;  /* tint background        */
-  --marigold-ink:  #8A4F00;  /* text on soft tint      */
+  /* ---- Brand: Yellow main · Blue + Green secondary · Red danger ----
+     Plain saturated colours. A "-soft" tint IS the saturated colour
+     (panels and chips are solid), "-ink" is the text colour ON it:
+     white on blue/green/red, dark ink on yellow. Never colour-on-colour
+     (no green text on green); the saturated colour itself goes only on
+     white or black. */
 
-  /* Teal — secondary brand */
-  --teal:      #0E8C7F;
-  --teal-600:  #0B7468;
-  --teal-soft: #D2EBE6;
-  --teal-ink:  #0A5A52;
+  /* Yellow — primary (buttons, progress, values on dark panels) */
+  --yellow:      #FFD500;
+  --yellow-600:  #F0C800;  /* hover / press          */
+  --yellow-soft: #FFD500;  /* chip / panel fill      */
+  --yellow-ink:  #1C1917;  /* text on yellow         */
 
-  /* Coral — accent (use sparingly, for emphasis/CTAs) */
-  --coral:      #EF5B3F;
-  --coral-600:  #D44A30;
-  --coral-soft: #FBDDD4;
-  --coral-ink:  #9A2E1B;
+  /* Blue — secondary (panels, chips, correct / selected state) */
+  --blue:      #1E8FC2;
+  --blue-600:  #177AA8;
+  --blue-soft: #1E8FC2;
+  --blue-ink:  #FFFFFF;
 
-  /* Sky — supportive, used in the learning app categories */
-  --sky:      #2E78C9;
-  --sky-soft: #D9E7F6;
-  --sky-ink:  #1B4E88;
+  /* Green — secondary support (chips, success) */
+  --green:      #00A651;
+  --green-600:  #009444;
+  --green-soft: #00A651;
+  --green-ink:  #FFFFFF;
+
+  /* Red — danger / important / wrong (use sparingly) */
+  --red:      #E5322D;
+  --red-600:  #C92823;
+  --red-soft: #E5322D;
+  --red-ink:  #FFFFFF;
+
+  /* Legacy role aliases — older edulab apps use these names */
+  --marigold: var(--yellow); --marigold-600: var(--yellow-600); --marigold-soft: var(--yellow-soft); --marigold-ink: var(--yellow-ink);
+  --teal:     var(--blue);   --teal-600:     var(--blue-600);   --teal-soft:     var(--blue-soft);   --teal-ink:     var(--blue-ink);
+  --sky:      var(--green);                                     --sky-soft:      var(--green-soft);  --sky-ink:      var(--green-ink);
+  --coral:    var(--red);    --coral-600:    var(--red-600);    --coral-soft:    var(--red-soft);    --coral-ink:    var(--red-ink);
 
   /* Play palette — subject/category colours in the kids app */
-  --play-sun:    #F2A516;
-  --play-grass:  #4FA45C;
+  --play-sun:    #FFD500;
+  --play-grass:  #00A651;
   --play-berry:  #C6478B;
   --play-grape:  #7A5AC2;
-  --play-sky:    #2E78C9;
-  --play-coral:  #EF5B3F;
+  --play-sky:    #1E8FC2;
+  --play-coral:  #E5322D;
 
   /* ---- Semantic ---- */
-  --success:      #2F8F5B;  --success-soft: #D7EEDD;  --success-ink: #1C6A3E;
-  --warning:      #C9810A;  --warning-soft: #FBEAC6;  --warning-ink: #855207;
-  --danger:       #D8412A;  --danger-soft:  #FAD9D2;  --danger-ink:  #97271A;
-  --info:         #2E78C9;  --info-soft:    #D9E7F6;  --info-ink:    #1B4E88;
+  --success:      #00A651;  --success-soft: #00A651;  --success-ink: #FFFFFF;
+  --warning:      #FFD500;  --warning-soft: #FFD500;  --warning-ink: #1C1917;
+  --danger:       #E5322D;  --danger-soft:  #E5322D;  --danger-ink:  #FFFFFF;
+  --info:         #1E8FC2;  --info-soft:    #1E8FC2;  --info-ink:    #FFFFFF;
 
   /* ---- Functional aliases ---- */
   --bg:        var(--paper);
   --fg:        var(--ink);
   --fg-muted:  var(--ink-2);
-  --primary:   var(--marigold);
-  --on-primary:#FFFFFF;
-  --focus-ring: 0 0 0 3px rgba(232,146,12,.38);
+  --primary:   var(--yellow);
+  --on-primary:#1C1917;      /* dark text on yellow */
+  --focus-ring: 0 0 0 3px color-mix(in srgb, var(--yellow) 45%, transparent);
 
   /* ============================================================
      SPACING  (4pt base)
@@ -88,7 +102,8 @@
   --shadow-sm: 0 1px 2px rgba(33,30,26,.06), 0 1px 1px rgba(33,30,26,.04);
   --shadow-md: 0 4px 16px rgba(33,30,26,.08), 0 1px 3px rgba(33,30,26,.05);
   --shadow-lg: 0 16px 40px rgba(33,30,26,.12), 0 3px 8px rgba(33,30,26,.06);
-  --shadow-marigold: 0 8px 22px rgba(232,146,12,.28);
+  --shadow-primary:  0 8px 22px color-mix(in srgb, var(--yellow) 30%, transparent);
+  --shadow-marigold: var(--shadow-primary);   /* legacy alias */
 
   /* ============================================================
      TYPE SCALE (semantic sizes)
@@ -141,17 +156,23 @@
 .edu-small  { font-family: var(--font-sans); font-size: var(--body-sm); line-height: 1.5; color: var(--ink-2); }
 .edu-caption{ font-family: var(--font-sans); font-size: var(--caption); line-height: 1.45; color: var(--ink-3); }
 
-/* Overline / eyebrow — mono, tracked, the "lab" voice */
+/* Overline — mono, tracked; functional labels only (never above page/section titles) */
 .edu-overline {
   font-family: var(--font-mono);
   font-weight: 500; font-size: var(--overline);
   letter-spacing: 0.14em; text-transform: uppercase;
-  color: var(--marigold-ink);
+  color: var(--ink);
 }
 .edu code, .edu-mono {
   font-family: var(--font-mono);
   font-size: 0.92em; color: var(--ink);
   background: var(--paper-3); padding: 0.12em 0.4em; border-radius: var(--r-xs);
 }
+
+/* Solid colour blocks (callouts, stat cards, chips): set background: var(--X-soft) and
+   color: var(--X-ink) on the block, add .edu-block, and every heading/paragraph inside
+   inherits that text colour instead of the default ink. */
+.edu-block, .edu-block h1, .edu-block h2, .edu-block h3, .edu-block h4, .edu-block p,
+.edu-block li, .edu-block small { color: inherit; }
 
 body.edu { background: var(--paper); color: var(--ink); font-family: var(--font-sans); }

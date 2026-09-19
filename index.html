@@ -10,101 +10,105 @@
   html, body { margin: 0; padding: 0; }
   body.edu { background: var(--paper); color: var(--ink); font-family: var(--font-sans); }
 
-  /* ---------- top brand bar ---------- */
+  /* ─── Top brand bar ─── */
   .edu-header {
     position: sticky; top: 0; z-index: 50; width: 100%;
-    background: rgba(251, 247, 240, 0.85);
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--line);
   }
   .edu-header-inner {
     max-width: 1100px; margin: 0 auto;
-    padding: 15px 30px; display: flex; align-items: center; gap: 12px;
+    padding: 8px 30px; display: flex; align-items: center; gap: 12px;
   }
-  .edu-logo { width: 32px; height: 32px; display: block; }
+  .edu-logo { width: 64px; height: 64px; display: block; margin-right: -6px; }
   .edu-wordmark { font-family: var(--font-display); font-weight: 700; font-size: 22px; letter-spacing: -.02em; color: var(--ink); }
-  .edu-tag {
-    font-family: var(--font-mono); font-weight: 500; font-size: 11px;
-    letter-spacing: .14em; text-transform: uppercase; color: var(--teal-ink);
-    background: var(--teal-soft); padding: 4px 9px; border-radius: var(--r-pill);
-  }
   .edu-header-spacer { flex: 1; }
   .edu-header-link {
-    font-family: var(--font-mono); font-size: 12px; letter-spacing: .06em;
-    text-transform: uppercase; color: var(--ink-3); text-decoration: none;
-    border: 1px solid var(--line); padding: 7px 13px; border-radius: var(--r-pill);
-    transition: color .15s, border-color .15s;
+    font-family: var(--font-sans); font-weight: 600; font-size: 14px;
+    color: var(--ink-2); text-decoration: none;
+    padding: 8px 14px; border-radius: var(--r-pill);
+    transition: background-color .15s, color .15s;
   }
-  .edu-header-link:hover { color: var(--teal-ink); border-color: var(--teal); }
+  .edu-header-link:hover { background: var(--paper-2); color: var(--ink); }
 
-  /* ---------- layout shell ---------- */
+  /* ─── Layout shell ─── */
   main { max-width: 1100px; margin: 0 auto; padding: 56px 30px 80px; }
 
-  /* ---------- page header ---------- */
+  /* ─── Page header ─── */
   .page-head { text-align: center; margin-bottom: 14px; }
-  .edu-overline {
-    font-family: var(--font-mono); font-weight: 500; font-size: 12px;
-    letter-spacing: .14em; text-transform: uppercase; color: var(--marigold-ink);
-    margin: 0 0 14px;
-  }
   .app-title {
     font-family: var(--font-display); font-weight: 800;
     font-size: clamp(2rem, 4.5vw, 2.85rem); letter-spacing: -.025em;
     line-height: 1.05; color: var(--ink); margin: 0 0 16px;
   }
-  .edu-lead { font-size: 1.0625rem; line-height: 1.6; color: var(--ink-2); max-width: 38rem; margin: 0 auto; font-family: var(--font-sans); }
+  .edu-lead { font-size: 1.0625rem; line-height: 1.6; color: var(--ink-2); margin: 0; font-family: var(--font-sans); }
 
-  /* ---------- toolbar (count + filters) ---------- */
-  .toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px; margin: 38px 0 30px; }
-  .filter-chip {
-    font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase;
-    letter-spacing: .07em; padding: 7px 14px; border-radius: var(--r-pill);
-    background: var(--surface); color: var(--ink-2); border: 1px solid var(--line);
-    cursor: pointer; transition: all .15s;
+  /* ─── Filters (segmented toggle) ─── */
+  .toolbar { display: flex; justify-content: center; margin: 38px 0 20px; }
+  .edu-seg { display: inline-flex; flex-wrap: wrap; justify-content: center; gap: 2px; padding: 3px; background: var(--paper-2); border-radius: var(--r-pill); }
+  .edu-seg button {
+    border: none; background: transparent; padding: 8px 14px; border-radius: var(--r-pill);
+    font-family: var(--font-sans); font-weight: 600; font-size: 14px; color: var(--ink-2); cursor: pointer;
+    transition: background-color .15s, color .15s;
   }
-  .filter-chip:hover { border-color: var(--line-2); }
-  .filter-chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .edu-seg button:hover { color: var(--ink); }
+  .edu-seg button[aria-pressed="true"] { background: var(--yellow); color: var(--yellow-ink); }
+  .edu-seg button:focus-visible { outline: none; box-shadow: var(--focus-ring); }
 
-  /* ---------- category sections ---------- */
+  /* ─── Category sections ─── */
   .cat-section { margin-top: 46px; }
-  .cat-head { display: flex; align-items: baseline; gap: 12px; margin: 0 0 18px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .cat-head { display: flex; align-items: baseline; gap: 12px; margin: 0 0 6px; }
   .cat-title { font-family: var(--font-display); font-weight: 600; font-size: var(--h3); color: var(--ink); margin: 0; }
   .cat-count { font-family: var(--font-mono); font-size: 12px; color: var(--ink-3); }
+  .cat-action { margin-left: auto; align-self: center; }
+  .cat-desc { font-family: var(--font-sans); font-size: 14.5px; line-height: 1.5; color: var(--ink-2); margin: 0 0 18px; }
 
-  /* ---------- grid of file cards ---------- */
+  /* ─── Grid of file cards ─── */
   .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
   @media (max-width: 860px) { .grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 560px) { .grid { grid-template-columns: 1fr; } }
 
   .card {
     background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg);
-    overflow: hidden; display: flex; flex-direction: column; cursor: pointer;
-    transition: transform .2s cubic-bezier(.32,.72,.32,1), box-shadow .2s cubic-bezier(.32,.72,.32,1), border-color .2s;
+    overflow: hidden; display: flex; flex-direction: column; cursor: pointer; text-align: left;
+    padding: 0; font: inherit; color: inherit;
+    transition: box-shadow .2s cubic-bezier(.32,.72,.32,1), border-color .2s;
   }
-  .card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: transparent; }
+  .card:hover { box-shadow: var(--shadow-md); border-color: var(--line-2); }
+  .card:focus-visible { outline: none; box-shadow: var(--focus-ring); }
 
   .card-head {
     height: 96px; position: relative; overflow: hidden;
     display: flex; align-items: center; justify-content: center;
   }
-  .card-glyph { font-family: var(--font-display); font-weight: 700; font-size: 30px; color: #fff; z-index: 1; letter-spacing: .02em; }
+  .head-blue   { background: var(--blue);       color: var(--blue-ink); }
+  .head-green  { background: var(--green);      color: var(--green-ink); }
+  .head-yellow { background: var(--yellow);     color: var(--yellow-ink); }
+  .head-grape  { background: var(--play-grape); color: var(--surface); }
+  .head-red    { background: var(--red);        color: var(--red-ink); }
+  .head-berry  { background: var(--play-berry); color: var(--surface); }
+  .head-ink    { background: var(--ink);        color: var(--yellow); }
+
+  .card-glyph { font-family: var(--font-display); font-weight: 700; font-size: 30px; z-index: 1; letter-spacing: .02em; }
   .card-glyph-ghost {
     position: absolute; right: -14px; bottom: -34px; font-family: var(--font-display);
-    font-weight: 800; font-size: 120px; color: rgba(255,255,255,.16); line-height: 1; user-select: none;
+    font-weight: 800; font-size: 120px; opacity: .16; line-height: 1; user-select: none;
   }
   .card-chip {
     position: absolute; top: 10px; left: 10px; z-index: 2;
     font-family: var(--font-mono); font-size: 10px; text-transform: uppercase;
     letter-spacing: .08em; padding: 3px 8px; border-radius: var(--r-pill);
-    background: rgba(255,255,255,.9); color: var(--ink);
+    background: var(--surface); color: var(--ink);
   }
 
   .card-body { padding: 15px 17px 17px; display: flex; flex-direction: column; gap: 7px; flex: 1; }
   .card-name { font-family: var(--font-mono); font-size: 12.5px; color: var(--ink); word-break: break-all; }
+  .card-title { font-family: var(--font-display); font-weight: 600; font-size: 17px; color: var(--ink); line-height: 1.25; }
   .card-blurb { font-family: var(--font-sans); font-size: 13.5px; line-height: 1.45; color: var(--ink-2); margin: 0; }
-  .card-meta { margin-top: auto; padding-top: 8px; display: flex; gap: 10px; font-family: var(--font-mono); font-size: 11px; color: var(--ink-3); }
+  .card-meta { margin-top: auto; padding-top: 8px; display: flex; flex-wrap: wrap; gap: 10px; font-family: var(--font-mono); font-size: 11px; color: var(--ink-3); }
 
-  /* ---------- modal ---------- */
+  /* ─── Modal ─── */
   .overlay {
     position: fixed; inset: 0; z-index: 100; display: none;
     background: rgba(33,30,26,.46); backdrop-filter: blur(3px);
@@ -117,33 +121,34 @@
   }
   .modal-head { padding: 22px 26px 18px; border-bottom: 1px solid var(--line); display: flex; align-items: flex-start; gap: 16px; }
   .modal-head-text { flex: 1; min-width: 0; }
-  .modal-eyebrow { font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: .1em; color: var(--marigold-ink); margin: 0 0 6px; }
+  .modal-cat { font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: .1em; color: var(--ink-3); margin: 0 0 6px; }
   .modal-title { font-family: var(--font-mono); font-size: 16px; color: var(--ink); margin: 0; word-break: break-all; }
+  .modal-title.is-display { font-family: var(--font-display); font-weight: 700; font-size: 22px; word-break: normal; }
   .modal-blurb { font-family: var(--font-sans); font-size: 14px; color: var(--ink-2); margin: 8px 0 0; line-height: 1.5; }
   .modal-close {
     flex-shrink: 0; width: 36px; height: 36px; border-radius: var(--r-pill); border: 1px solid var(--line);
     background: var(--surface); color: var(--ink-2); font-size: 18px; cursor: pointer; line-height: 1;
-    display: flex; align-items: center; justify-content: center; transition: all .15s;
+    display: flex; align-items: center; justify-content: center; transition: background-color .15s, color .15s, border-color .15s;
   }
-  .modal-close:hover { background: var(--coral-soft); color: var(--coral-ink); border-color: var(--coral); }
+  .modal-close:hover { background: var(--red-soft); color: var(--red-ink); border-color: var(--red); }
 
   .modal-actions { padding: 14px 26px; display: flex; gap: 12px; align-items: center; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
   .edu-btn {
     font-family: var(--font-display); font-weight: 600; font-size: 14px;
-    background: var(--marigold); color: #fff; border: none; text-decoration: none;
-    border-radius: var(--r-pill); padding: 11px 20px; box-shadow: var(--shadow-marigold);
-    cursor: pointer; transition: background .15s, transform .12s; display: inline-flex; align-items: center; gap: 8px;
+    background: var(--yellow); color: var(--on-primary); border: none; text-decoration: none;
+    border-radius: var(--r-pill); padding: 11px 20px; box-shadow: var(--shadow-primary);
+    cursor: pointer; transition: background-color .15s, transform .12s; display: inline-flex; align-items: center; gap: 8px;
   }
-  .edu-btn:hover { background: var(--marigold-600); }
+  .edu-btn:hover { background: var(--yellow-600); }
   .edu-btn:active { transform: scale(.96); }
   .edu-btn-ghost {
-    font-family: var(--font-mono); font-size: 12.5px; letter-spacing: .04em; color: var(--ink-2);
-    background: var(--surface); border: 1px solid var(--line); box-shadow: none; text-transform: uppercase;
+    font-family: var(--font-sans); font-weight: 600; font-size: 14px; color: var(--ink-2);
+    background: var(--surface); border: 1px solid var(--line); box-shadow: none;
   }
   .edu-btn-ghost:hover { background: var(--paper-2); color: var(--ink); }
+  .edu-btn[hidden] { display: none; }
 
   .modal-body { padding: 0; overflow: auto; flex: 1; }
-  .modal-body-pad { padding: 22px 26px 26px; }
 
   .preview-note { font-family: var(--font-mono); font-size: 11px; color: var(--ink-3); padding: 12px 26px 0; }
 
@@ -153,7 +158,7 @@
   table.preview th { position: sticky; top: 0; background: var(--paper-3); color: var(--ink); font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: .05em; text-align: left; padding: 9px 12px; white-space: nowrap; border-bottom: 1px solid var(--line-2); }
   table.preview td { padding: 8px 12px; border-bottom: 1px solid var(--line); color: var(--ink-2); white-space: nowrap; }
   table.preview tr:last-child td { border-bottom: none; }
-  table.preview tr:nth-child(even) td { background: rgba(244,237,223,.45); }
+  table.preview tr:nth-child(even) td { background: var(--paper-2); }
 
   /* text preview */
   pre.txt-preview {
@@ -166,48 +171,75 @@
   .pdf-frame { width: 100%; height: 60vh; border: 1px solid var(--line); border-radius: var(--r-md); display: block; }
   .pdf-wrap { padding: 0 26px 26px; }
 
-  /* image (zip) preview placeholder */
-  .info-panel { margin: 0 26px 26px; padding: 22px 24px; background: var(--teal-soft); border-radius: var(--r-xl); color: var(--teal-ink); }
-  .info-panel h4 { font-family: var(--font-display); font-weight: 700; font-size: 17px; margin: 0 0 8px; color: var(--teal-ink); }
-  .info-panel p { font-family: var(--font-sans); font-size: 14px; line-height: 1.55; margin: 0; color: var(--teal-ink); }
+  /* image preview */
+  .img-wrap { padding: 0 26px 26px; }
+  .img-preview { display: block; max-width: 100%; max-height: 60vh; margin: 0 auto; border: 1px solid var(--line); border-radius: var(--r-md); background: var(--paper-2); }
+
+  /* info block (solid colour) */
+  .info-panel { margin: 0 26px 26px; padding: 22px 24px; background: var(--blue-soft); border-radius: var(--r-xl); color: var(--blue-ink); }
+  .info-panel h4 { font-family: var(--font-display); font-weight: 700; font-size: 17px; margin: 0 0 8px; color: inherit; }
+  .info-panel p { font-family: var(--font-sans); font-size: 14px; line-height: 1.55; margin: 0; color: inherit; }
+
+  /* task file list (robimy) */
+  .file-list { margin: 0 26px 26px; border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden; }
+  .file-list-head { font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: .05em; color: var(--ink); background: var(--paper-3); padding: 9px 14px; border-bottom: 1px solid var(--line-2); }
+  .file-row { display: flex; align-items: center; gap: 12px; padding: 8px 14px; border-bottom: 1px solid var(--line); font-size: 13px; }
+  .file-row:last-child { border-bottom: none; }
+  .file-row:nth-child(even) { background: var(--paper-2); }
+  .file-path { flex: 1; min-width: 0; font-family: var(--font-mono); font-size: 12px; color: var(--ink); word-break: break-all; }
+  .file-size { font-family: var(--font-mono); font-size: 11px; color: var(--ink-3); white-space: nowrap; }
+  .file-dl { font-family: var(--font-sans); font-weight: 600; font-size: 12px; color: var(--ink); text-decoration: none; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-pill); padding: 4px 10px; white-space: nowrap; transition: background-color .15s; }
+  .file-dl:hover { background: var(--yellow); color: var(--yellow-ink); border-color: var(--yellow); }
 
   .loader { font-family: var(--font-mono); font-size: 12px; color: var(--ink-3); padding: 40px 26px; text-align: center; }
 
   footer.edu-foot { max-width: 1100px; margin: 0 auto; padding: 30px; border-top: 1px solid var(--line); font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-3); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
-  footer.edu-foot a { color: var(--teal-ink); text-decoration: none; }
+  footer.edu-foot a { color: var(--ink-2); text-decoration: underline; }
+
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+  @media (max-width: 768px) {
+    .cat-head { flex-wrap: wrap; }
+    .cat-action { margin-left: 0; }
+    .edu-header-inner { padding: 6px 16px; }
+    main { padding: 36px 16px 60px; }
+    .modal-head, .modal-actions { padding-left: 18px; padding-right: 18px; }
+    .tbl-wrap, pre.txt-preview, .info-panel, .file-list { margin-left: 18px; margin-right: 18px; }
+    .pdf-wrap, .img-wrap { padding-left: 18px; padding-right: 18px; }
+    .preview-note { padding-left: 18px; }
+  }
 </style>
 </head>
 <body class="edu">
 
 <header class="edu-header"><div class="edu-header-inner">
-  <img class="edu-logo" alt="edulab" src="edulab-mark-teal.png">
+  <img class="edu-logo" alt="edulab" src="edulab-mark-ink.png">
   <span class="edu-wordmark">edulab</span>
-  <span class="edu-tag">demo lab</span>
   <span class="edu-header-spacer"></span>
-  <a class="edu-header-link" href="https://github.com/workszop/data" target="_blank" rel="noopener">repo ↗</a>
+  <a class="edu-header-link" href="https://github.com/workszop/data" target="_blank" rel="noopener">Repozytorium ↗</a>
 </div></header>
 
 <main>
   <div class="page-head">
-    <p class="edu-overline">Materiały warsztatowe · 21 plików</p>
     <h1 class="app-title">Dane do warsztatów</h1>
-    <p class="edu-lead">Przeglądaj, podglądaj i pobieraj zestawy danych używane na warsztatach programistycznych — tabele, teksty, dokumenty PDF, prompty AI i obrazy. Kliknij kartę, aby zobaczyć podgląd.</p>
+    <p class="edu-lead">Przeglądaj, podglądaj i pobieraj materiały używane na warsztatach: tabele, teksty, dokumenty PDF, prompty AI, obrazy, materiały marketingowe oraz zestaw ćwiczeń z agentami AI. Kliknij kartę, aby zobaczyć podgląd i linki do pobrania.</p>
   </div>
 
-  <div class="toolbar" id="filters"></div>
+  <div class="toolbar"><div class="edu-seg" id="filters" role="group" aria-label="Filtr kategorii"></div></div>
   <div id="sections"></div>
+  <p class="sr-only" id="live" aria-live="polite"></p>
 </main>
 
 <footer class="edu-foot">
-  <span>edulab · demo lab — dane warsztatowe</span>
+  <span>edulab · dane warsztatowe</span>
   <span>źródło: <a href="https://github.com/workszop/data" target="_blank" rel="noopener">github.com/workszop/data</a></span>
 </footer>
 
 <div class="overlay" id="overlay">
-  <div class="modal" role="dialog" aria-modal="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="m-name">
     <div class="modal-head">
       <div class="modal-head-text">
-        <p class="modal-eyebrow" id="m-cat"></p>
+        <p class="modal-cat" id="m-cat"></p>
         <h2 class="modal-title" id="m-name"></h2>
         <p class="modal-blurb" id="m-blurb"></p>
       </div>
@@ -215,7 +247,7 @@
     </div>
     <div class="modal-actions">
       <a class="edu-btn" id="m-download" href="#" download>↓ Pobierz plik</a>
-      <a class="edu-btn edu-btn-ghost" id="m-raw" href="#" target="_blank" rel="noopener">Otwórz raw</a>
+      <a class="edu-btn edu-btn-ghost" id="m-raw" href="#" target="_blank" rel="noopener">Otwórz na GitHubie</a>
       <span style="flex:1"></span>
       <span class="card-meta" id="m-meta" style="padding:0;"></span>
     </div>
@@ -224,42 +256,55 @@
 </div>
 
 <script>
-const RAW = "https://raw.githubusercontent.com/workszop/data/main/";
+// ─── Constants ───
+const RAW  = "https://raw.githubusercontent.com/workszop/data/main/";
 const BLOB = "https://github.com/workszop/data/blob/main/";
+const TREE = "https://github.com/workszop/data/tree/main/";
+const XLSX_CDN = "https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js";
+const TXT_LIMIT = 6000;
+const TABLE_ROWS = 26;
 
-// subject colours per category (edulab play / brand palette)
+// category -> label, head colour class, optional description
 const CAT = {
-  tabular: { label: "Dane tabelaryczne", color: "var(--teal)" },
-  text:    { label: "Teksty",            color: "var(--sky)" },
-  docs:    { label: "Dokumenty PDF",     color: "var(--marigold)" },
-  prompts: { label: "Prompty AI",        color: "var(--play-grape)" },
-  images:  { label: "Obrazy",            color: "var(--coral)" },
+  tabular:   { label: "Dane tabelaryczne",     head: "head-blue" },
+  text:      { label: "Teksty",                head: "head-green" },
+  docs:      { label: "Dokumenty PDF",         head: "head-yellow" },
+  prompts:   { label: "Prompty AI",            head: "head-grape" },
+  images:    { label: "Obrazy",                head: "head-red" },
+  marketing: { label: "Materiały marketingowe", head: "head-berry",
+               desc: "Fikcyjna marka „Sowa S.A.” – logo i ulotka do ćwiczeń z materiałami graficznymi." },
+  robimy:    { label: "Robimy: ćwiczenia z agentami AI", short: "Robimy", head: "head-ink",
+               desc: "Dziewięć niezależnych zadań z danymi startowymi. Osoby, firmy, kwoty i zasady są fikcyjne. Każde zadanie otwiera treść polecenia oraz listę wszystkich plików do pobrania. Cały pakiet można też pobrać jako jedno archiwum ZIP.",
+               zip: "robimy.zip" },
 };
 
+// every file in robimy/, grouped by task folder (generated from git ls-files)
+const ROBIMY = {"_root":[{"p":"00_ZACZNIJ_TUTAJ.txt","s":2898},{"p":"SPIS_PLIKOW.md","s":26728}],"01_start_projektu":[{"p":"01_start_projektu/ZADANIE.txt","s":2120},{"p":"01_start_projektu/dane_startowe/kalendarz_zespolu.csv","s":724},{"p":"01_start_projektu/dane_startowe/katalog_uslug.csv","s":663},{"p":"01_start_projektu/dane_startowe/korespondencja_01.txt","s":653},{"p":"01_start_projektu/dane_startowe/korespondencja_02.txt","s":526},{"p":"01_start_projektu/dane_startowe/korespondencja_03.txt","s":521},{"p":"01_start_projektu/dane_startowe/korespondencja_04.txt","s":446},{"p":"01_start_projektu/dane_startowe/korespondencja_05.txt","s":452},{"p":"01_start_projektu/dane_startowe/notatka_spotkanie.txt","s":808},{"p":"01_start_projektu/dane_startowe/portfolio_zatwierdzone.md","s":710},{"p":"01_start_projektu/dane_startowe/zasady_danych.txt","s":415}],"02_wydatki_podrozy":[{"p":"02_wydatki_podrozy/ZADANIE.txt","s":2193},{"p":"02_wydatki_podrozy/dane_startowe/brief_podrozy.md","s":766},{"p":"02_wydatki_podrozy/dane_startowe/dokument_001.txt","s":564},{"p":"02_wydatki_podrozy/dane_startowe/dokument_002.txt","s":521},{"p":"02_wydatki_podrozy/dane_startowe/dokument_003.txt","s":501},{"p":"02_wydatki_podrozy/dane_startowe/dokument_004.txt","s":513},{"p":"02_wydatki_podrozy/dane_startowe/dokument_005.txt","s":513},{"p":"02_wydatki_podrozy/dane_startowe/dokument_006.txt","s":501},{"p":"02_wydatki_podrozy/dane_startowe/dokument_007.txt","s":553},{"p":"02_wydatki_podrozy/dane_startowe/dokument_008.txt","s":511},{"p":"02_wydatki_podrozy/dane_startowe/dokument_009.txt","s":570},{"p":"02_wydatki_podrozy/dane_startowe/dokument_010.txt","s":566},{"p":"02_wydatki_podrozy/dane_startowe/dokument_011.txt","s":502},{"p":"02_wydatki_podrozy/dane_startowe/dokument_012.txt","s":559},{"p":"02_wydatki_podrozy/dane_startowe/dokument_013.txt","s":525},{"p":"02_wydatki_podrozy/dane_startowe/dokument_014.txt","s":532},{"p":"02_wydatki_podrozy/dane_startowe/dokument_015.txt","s":516},{"p":"02_wydatki_podrozy/dane_startowe/dokument_016.txt","s":548},{"p":"02_wydatki_podrozy/dane_startowe/dokument_017.txt","s":551},{"p":"02_wydatki_podrozy/dane_startowe/dokument_018.txt","s":551},{"p":"02_wydatki_podrozy/dane_startowe/spis_zrodel.csv","s":1350}],"03_raport_sprzedazy":[{"p":"03_raport_sprzedazy/ZADANIE.txt","s":2174},{"p":"03_raport_sprzedazy/dane_startowe/cele.csv","s":168},{"p":"03_raport_sprzedazy/dane_startowe/okresy.csv","s":397},{"p":"03_raport_sprzedazy/dane_startowe/sprzedaz.csv","s":15689},{"p":"03_raport_sprzedazy/dane_startowe/wynik_poprzedni.csv","s":115}],"04_zgloszenia_klientow":[{"p":"04_zgloszenia_klientow/ZADANIE.txt","s":2433},{"p":"04_zgloszenia_klientow/dane_startowe/eksport_01.csv","s":8547},{"p":"04_zgloszenia_klientow/dane_startowe/eksport_02.csv","s":8547},{"p":"04_zgloszenia_klientow/dane_startowe/historia_zamowien.csv","s":841},{"p":"04_zgloszenia_klientow/dane_startowe/wiadomosc_001.txt","s":546},{"p":"04_zgloszenia_klientow/dane_startowe/wiadomosc_002.txt","s":511},{"p":"04_zgloszenia_klientow/dane_startowe/wiadomosc_003.txt","s":542},{"p":"04_zgloszenia_klientow/dane_startowe/wiadomosc_004.txt","s":525},{"p":"04_zgloszenia_klientow/dane_startowe/wiadomosc_005.txt","s":464},{"p":"04_zgloszenia_klientow/dane_startowe/wiadomosc_006.txt","s":563},{"p":"04_zgloszenia_klientow/dane_startowe/wiadomosc_007.txt","s":560},{"p":"04_zgloszenia_klientow/dane_startowe/wiadomosc_008.txt","s":595},{"p":"04_zgloszenia_klientow/dane_startowe/wiadomosc_009.txt","s":565},{"p":"04_zgloszenia_klientow/dane_startowe/wiadomosc_010.txt","s":505},{"p":"04_zgloszenia_klientow/dane_startowe/wiadomosc_011.txt","s":553},{"p":"04_zgloszenia_klientow/dane_startowe/wiadomosc_012.txt","s":516},{"p":"04_zgloszenia_klientow/dane_startowe/wiadomosc_013.txt","s":483},{"p":"04_zgloszenia_klientow/dane_startowe/wiadomosc_014.txt","s":459},{"p":"04_zgloszenia_klientow/dane_startowe/wiadomosc_015.txt","s":517},{"p":"04_zgloszenia_klientow/dane_startowe/wiadomosc_016.txt","s":502},{"p":"04_zgloszenia_klientow/dane_startowe/wiadomosc_017.txt","s":535},{"p":"04_zgloszenia_klientow/dane_startowe/wiadomosc_018.txt","s":443},{"p":"04_zgloszenia_klientow/dane_startowe/wiadomosc_019.txt","s":492},{"p":"04_zgloszenia_klientow/dane_startowe/wiadomosc_020.txt","s":479},{"p":"04_zgloszenia_klientow/dane_startowe/wiadomosc_021.txt","s":500},{"p":"04_zgloszenia_klientow/dane_startowe/wiadomosc_022.txt","s":459},{"p":"04_zgloszenia_klientow/dane_startowe/wiadomosc_023.txt","s":487},{"p":"04_zgloszenia_klientow/dane_startowe/wiadomosc_024.txt","s":493}],"05_jakosc_danych":[{"p":"05_jakosc_danych/ZADANIE.txt","s":2426},{"p":"05_jakosc_danych/dane_startowe/finanse.csv","s":2975},{"p":"05_jakosc_danych/dane_startowe/operacje.csv","s":3684},{"p":"05_jakosc_danych/dane_startowe/sprzedaz.csv","s":3084},{"p":"05_jakosc_danych/dane_startowe/wsparcie.csv","s":3272}],"06_wdrozenie_pracownika":[{"p":"06_wdrozenie_pracownika/ZADANIE.txt","s":2147},{"p":"06_wdrozenie_pracownika/dane_startowe/kalendarz_wdrozenia.csv","s":612},{"p":"06_wdrozenie_pracownika/dane_startowe/macierz_dostepow.csv","s":842},{"p":"06_wdrozenie_pracownika/dane_startowe/opiekunowie.csv","s":535},{"p":"06_wdrozenie_pracownika/dane_startowe/procedura_01.md","s":764},{"p":"06_wdrozenie_pracownika/dane_startowe/procedura_02.md","s":673},{"p":"06_wdrozenie_pracownika/dane_startowe/procedura_03.md","s":561},{"p":"06_wdrozenie_pracownika/dane_startowe/profil_01.md","s":1148},{"p":"06_wdrozenie_pracownika/dane_startowe/profil_02.md","s":809},{"p":"06_wdrozenie_pracownika/dane_startowe/profil_03.md","s":810},{"p":"06_wdrozenie_pracownika/dane_startowe/profil_04.md","s":760}],"07_ustalenia_spotkan":[{"p":"07_ustalenia_spotkan/ZADANIE.txt","s":2121},{"p":"07_ustalenia_spotkan/dane_startowe/spotkanie_01.md","s":1058},{"p":"07_ustalenia_spotkan/dane_startowe/spotkanie_02.md","s":868},{"p":"07_ustalenia_spotkan/dane_startowe/spotkanie_03.md","s":882},{"p":"07_ustalenia_spotkan/dane_startowe/spotkanie_04.md","s":907},{"p":"07_ustalenia_spotkan/dane_startowe/zadania_startowe.csv","s":1507}],"08_oferta_klienta":[{"p":"08_oferta_klienta/ZADANIE.txt","s":2153},{"p":"08_oferta_klienta/dane_startowe/cennik.csv","s":476},{"p":"08_oferta_klienta/dane_startowe/dostepnosc_realizacji.csv","s":427},{"p":"08_oferta_klienta/dane_startowe/katalog_uslug.csv","s":551},{"p":"08_oferta_klienta/dane_startowe/notatka_wewnetrzna.txt","s":302},{"p":"08_oferta_klienta/dane_startowe/portfolio_zatwierdzone.md","s":486},{"p":"08_oferta_klienta/dane_startowe/reguly_rabatow.md","s":490},{"p":"08_oferta_klienta/dane_startowe/uzupelnienie_01.txt","s":374},{"p":"08_oferta_klienta/dane_startowe/wzor_oferty.md","s":481},{"p":"08_oferta_klienta/dane_startowe/zapytanie_klienta.txt","s":537}],"09_porzadek_w_plikach":[{"p":"09_porzadek_w_plikach/ZADANIE.txt","s":2468},{"p":"09_porzadek_w_plikach/dane_startowe/archiwum/2025/Plan spotkania.md","s":804},{"p":"09_porzadek_w_plikach/dane_startowe/archiwum/Lista zadań.csv","s":271},{"p":"09_porzadek_w_plikach/dane_startowe/archiwum/Notatka z rozmowy.txt","s":811},{"p":"09_porzadek_w_plikach/dane_startowe/archiwum/Notatki zespołu.txt","s":813},{"p":"09_porzadek_w_plikach/dane_startowe/archiwum/Plan spotkania.md","s":801},{"p":"09_porzadek_w_plikach/dane_startowe/archiwum/brief etap 1.md","s":796},{"p":"09_porzadek_w_plikach/dane_startowe/czytelnia/założenia – komentarze.txt","s":795},{"p":"09_porzadek_w_plikach/dane_startowe/czytelnia/założenia.txt","s":782},{"p":"09_porzadek_w_plikach/dane_startowe/dane/Lista zadań.csv","s":351},{"p":"09_porzadek_w_plikach/dane_startowe/dane/ankieta uczestników kopia.csv","s":374},{"p":"09_porzadek_w_plikach/dane_startowe/dane/ankieta uczestników.csv","s":374},{"p":"09_porzadek_w_plikach/dane_startowe/dane/lista zadań poprawiona.csv","s":302},{"p":"09_porzadek_w_plikach/dane_startowe/do wysłania/Podsumowanie dla partnera.txt","s":809},{"p":"09_porzadek_w_plikach/dane_startowe/inbox/Notatka z rozmowy.txt","s":788},{"p":"09_porzadek_w_plikach/dane_startowe/inbox/Nowy dokument 1 (2).md","s":783},{"p":"09_porzadek_w_plikach/dane_startowe/inbox/Nowy dokument 1.md","s":783},{"p":"09_porzadek_w_plikach/dane_startowe/notatki/Decyzje projektowe – szkic.md","s":781},{"p":"09_porzadek_w_plikach/dane_startowe/notatki/Decyzje projektowe.md","s":803},{"p":"09_porzadek_w_plikach/dane_startowe/raporty/Raport tygodniowy final 2.md","s":791},{"p":"09_porzadek_w_plikach/dane_startowe/raporty/Raport tygodniowy final.md","s":792},{"p":"09_porzadek_w_plikach/dane_startowe/raporty/Raport tygodniowy.md","s":795},{"p":"09_porzadek_w_plikach/dane_startowe/robocze/Plan spotkania.md","s":812},{"p":"09_porzadek_w_plikach/dane_startowe/robocze/plan spotkania 2.md","s":794},{"p":"09_porzadek_w_plikach/dane_startowe/robocze/plan_spotkania_2026-02-12.md","s":782},{"p":"09_porzadek_w_plikach/dane_startowe/stare kopie/wersja finalna/Opis usługi.md","s":790},{"p":"09_porzadek_w_plikach/dane_startowe/stare kopie/wersja finalna/Podsumowanie dla partnera.txt","s":809},{"p":"09_porzadek_w_plikach/dane_startowe/współpraca/Kalendarz prac.csv","s":286},{"p":"09_porzadek_w_plikach/dane_startowe/współpraca/Notatki zespołu (koperta).txt","s":790},{"p":"09_porzadek_w_plikach/dane_startowe/współpraca/Notatki zespołu.txt","s":790},{"p":"09_porzadek_w_plikach/dane_startowe/współpraca/brief – etap 1.md","s":791},{"p":"09_porzadek_w_plikach/dane_startowe/współpraca/kalendarz prac kopia.csv","s":286},{"p":"09_porzadek_w_plikach/dane_startowe/źródła/Glosariusz.md","s":781},{"p":"09_porzadek_w_plikach/dane_startowe/źródła/Glosariusz_roboczy.md","s":794},{"p":"09_porzadek_w_plikach/dane_startowe/źródła/Metryka zakresu.json","s":447},{"p":"09_porzadek_w_plikach/dane_startowe/źródła/Opis usługi.md","s":790},{"p":"09_porzadek_w_plikach/dane_startowe/źródła/opis_usługi_v2.md","s":809}]};
+
 const FILES = [
-  // ---- tabular ----
+  // ─── tabular ───
   { f:"movies.csv", cat:"tabular", kind:"csv", glyph:"CSV",
     blurb:"7668 filmów z lat 1986–2016, 15 kolumn.", meta:["7 668 wierszy","1,3 MB"] },
   { f:"sales.csv", cat:"tabular", kind:"csv", glyph:"CSV",
-    blurb:"44 zamówienia sprzedaży — region, handlowiec, kwota.", meta:["44 wiersze","3 KB"] },
+    blurb:"44 zamówienia sprzedaży: region, handlowiec, kwota.", meta:["44 wiersze","3 KB"] },
   { f:"sales_data.xlsx", cat:"tabular", kind:"xlsx", glyph:"XLS",
     blurb:"Dane finansowo-sprzedażowe: segmenty, kraje, produkty.", meta:["arkusz","81 KB"] },
   { f:"world_population_2021.xlsx", cat:"tabular", kind:"xlsx", glyph:"XLS",
     blurb:"Populacja krajów świata: gęstość, powierzchnia, migracje.", meta:["arkusz","45 KB"] },
 
-  // ---- text ----
+  // ─── text ───
   { f:"jane_austen.txt", cat:"text", kind:"txt", glyph:"TXT",
-    blurb:"Pełny tekst „Pride and Prejudice” — do ćwiczeń NLP.", meta:["~700 KB","tekst"] },
+    blurb:"Pełny tekst „Pride and Prejudice” do ćwiczeń NLP.", meta:["~700 KB","tekst"] },
   { f:"studenci.txt", cat:"text", kind:"txt", glyph:"TXT",
-    blurb:"10 studentów (imię, nazwisko, grupa) — różna wielkość liter.", meta:["10 wierszy","czyszczenie"] },
+    blurb:"10 studentów (imię, nazwisko, grupa), różna wielkość liter.", meta:["10 wierszy","czyszczenie"] },
 
-  // ---- docs ----
+  // ─── docs ───
   { f:"google_annual_report_for_2024.pdf", cat:"docs", kind:"pdf", glyph:"PDF",
     blurb:"Raport roczny Google / Alphabet za 2024 r.", meta:["PDF","1,6 MB"] },
   { f:"logistics_contract.pdf", cat:"docs", kind:"pdf", glyph:"PDF",
     blurb:"Umowa o usługi logistyczne i zaopatrzeniowe (IFRC).", meta:["PDF","109 KB"] },
   { f:"organization_approval_matrix.pdf", cat:"docs", kind:"pdf", glyph:"PDF",
-    blurb:"Matryca akceptacji — fikcyjna firma „Nexus Global Solutions”.", meta:["PDF","14 KB"] },
+    blurb:"Matryca akceptacji, fikcyjna firma „Nexus Global Solutions”.", meta:["PDF","14 KB"] },
   { f:"organization_procurement_policy.pdf", cat:"docs", kind:"pdf", glyph:"PDF",
     blurb:"Polityka zakupowa „Nexus Global Solutions”.", meta:["PDF","15 KB"] },
   { f:"organization_travel_and_expenses_policy.pdf", cat:"docs", kind:"pdf", glyph:"PDF",
@@ -269,9 +314,9 @@ const FILES = [
   { f:"faktura_vat_marzec_2026.pdf", cat:"docs", kind:"pdf", glyph:"PDF",
     blurb:"Przykładowa faktura VAT (dane fikcyjne).", meta:["PDF","46 KB"] },
   { f:"markdown.pdf", cat:"docs", kind:"pdf", glyph:"PDF",
-    blurb:"„The Markdown Guide” — Matt Cone (materiał referencyjny).", meta:["PDF","3,5 MB"] },
+    blurb:"„The Markdown Guide”, Matt Cone (materiał referencyjny).", meta:["PDF","3,5 MB"] },
 
-  // ---- prompts ----
+  // ─── prompts ───
   { f:"prompting_levels.txt", cat:"prompts", kind:"txt", glyph:"TXT",
     blurb:"Trzy poziomy jakości promptu na tym samym przykładzie (PL).", meta:["tekst","2 KB"] },
   { f:"prompts_funny_personal_images_chatgpt.txt", cat:"prompts", kind:"txt", glyph:"TXT",
@@ -281,25 +326,88 @@ const FILES = [
   { f:"prompts_infographics_nano_banana.pdf", cat:"prompts", kind:"pdf", glyph:"PDF",
     blurb:"Biblioteka promptów do infografik.", meta:["PDF","137 KB"] },
 
-  // ---- images ----
+  // ─── images ───
   { f:"pic.zip", cat:"images", kind:"zip", glyph:"ZIP",
     blurb:"16 zdjęć kotów (pic/*.jpg) w archiwum ZIP.", meta:["16 obrazów","90 KB"] },
+
+  // ─── marketing ───
+  { f:"marketing/sowa-sa/sowa-logo-transparent.png", cat:"marketing", kind:"png", glyph:"PNG",
+    blurb:"Logo fikcyjnej marki „Sowa S.A.” na przezroczystym tle.", meta:["PNG","318 KB"] },
+  { f:"marketing/sowa-sa/sowa-school-supplies-flyer.png", cat:"marketing", kind:"png", glyph:"PNG",
+    blurb:"Ulotka „Sowa S.A.” z artykułami szkolnymi.", meta:["PNG","1,9 MB"] },
+
+  // ─── robimy ───
+  { f:"robimy/00_ZACZNIJ_TUTAJ.txt", cat:"robimy", kind:"txt", glyph:"START", title:"Zacznij tutaj",
+    blurb:"Instrukcja uczestnika: jak wybrać zadanie, jak pracować z agentem, jak sprawdzać wyniki.", meta:["tekst","instrukcja"] },
+  { f:"robimy/01_start_projektu", cat:"robimy", kind:"task", glyph:"01", title:"Start projektu dla klienta", task:"01_start_projektu",
+    blurb:"Zbierz ustalenia z korespondencji i przygotuj dokumenty potrzebne do rozpoczęcia projektu." },
+  { f:"robimy/02_wydatki_podrozy", cat:"robimy", kind:"task", glyph:"02", title:"Rozliczenie wydatków z podróży", task:"02_wydatki_podrozy",
+    blurb:"Przygotuj rejestr wydatków do sprawdzenia przez człowieka; oddziel kompletne dokumenty od niejasnych." },
+  { f:"robimy/03_raport_sprzedazy", cat:"robimy", kind:"task", glyph:"03", title:"Raport sprzedaży", task:"03_raport_sprzedazy",
+    blurb:"Raport sprzedaży Kawy Północnej z obliczeniami, które da się sprawdzić." },
+  { f:"robimy/04_zgloszenia_klientow", cat:"robimy", kind:"task", glyph:"04", title:"Obsługa zgłoszeń klientów", task:"04_zgloszenia_klientow",
+    blurb:"Uporządkuj zgłoszenia HelpSprout i przygotuj szkice odpowiedzi do zatwierdzenia." },
+  { f:"robimy/05_jakosc_danych", cat:"robimy", kind:"task", glyph:"05", title:"Kontrola jakości danych", task:"05_jakosc_danych",
+    blurb:"Sprawdź zestawienia czterech działów; poprawne dane osobno, wątpliwe do kwarantanny." },
+  { f:"robimy/06_wdrozenie_pracownika", cat:"robimy", kind:"task", glyph:"06", title:"Plan wdrożenia nowej pracownicy", task:"06_wdrozenie_pracownika",
+    blurb:"Ułóż plan pierwszych pięciu dni pracy Anny Rybak na podstawie profili i procedur." },
+  { f:"robimy/07_ustalenia_spotkan", cat:"robimy", kind:"task", glyph:"07", title:"Rejestr ustaleń po spotkaniach", task:"07_ustalenia_spotkan",
+    blurb:"Ustal, co zmieniło się w zadaniach po każdym z czterech spotkań; decyzje osobno od propozycji." },
+  { f:"robimy/08_oferta_klienta", cat:"robimy", kind:"task", glyph:"08", title:"Projekt oferty dla klienta", task:"08_oferta_klienta",
+    blurb:"Projekt oferty i kosztorys brutto na podstawie zapytania, cennika i referencji." },
+  { f:"robimy/09_porzadek_w_plikach", cat:"robimy", kind:"task", glyph:"09", title:"Bezpieczny porządek w plikach", task:"09_porzadek_w_plikach",
+    blurb:"Uporządkuj kopię folderu projektu Latarnia: najpierw plan zmian, potem kopiowanie." },
+  { f:"robimy/SPIS_PLIKOW.md", cat:"robimy", kind:"txt", glyph:"MD", title:"Spis plików pakietu",
+    blurb:"Pełna lista wszystkich plików pakietu robimy.", meta:["markdown","spis"] },
+  { f:"robimy.zip", cat:"robimy", kind:"zip", glyph:"ZIP", title:"Cały pakiet robimy (ZIP)", zipOf:"robimy",
+    blurb:"Wszystkie zadania i dane startowe w jednym archiwum. Rozpakuj lokalnie i udostępnij agentowi tylko folder wybranego zadania.", meta:["ZIP","116 KB"] },
 ];
 
-// ---------- render sections ----------
-const sectionsEl = document.getElementById("sections");
-const filtersEl = document.getElementById("filters");
+// ─── State ───
 let activeCat = "all";
+let pdfObjectUrl = null;
+let xlsxLoading = null;
 
+// ─── DOM refs ───
+const sectionsEl = document.getElementById("sections");
+const filtersEl  = document.getElementById("filters");
+const liveEl     = document.getElementById("live");
+const overlay    = document.getElementById("overlay");
+const mBody      = document.getElementById("m-body");
+const mCat       = document.getElementById("m-cat");
+const mName      = document.getElementById("m-name");
+const mBlurb     = document.getElementById("m-blurb");
+const mMeta      = document.getElementById("m-meta");
+const mDownload  = document.getElementById("m-download");
+const mRaw       = document.getElementById("m-raw");
+const mClose     = document.getElementById("m-close");
+
+// ─── Helpers ───
+const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+const encPath = p => p.split("/").map(encodeURIComponent).join("/");
+const fmtSize = n => n < 1024 ? `${n} B` : n < 1024*1024 ? `${Math.round(n/1024)} KB` : `${(n/1024/1024).toFixed(1).replace(".", ",")} MB`;
+const taskFiles = key => ROBIMY[key] || [];
+const taskSize  = key => taskFiles(key).reduce((a, x) => a + x.s, 0);
+const baseName  = p => p.split("/").pop();
+const pluralFiles = n => n === 1 ? "plik" : (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20)) ? "pliki" : "plików";
+const countFiles = cat => FILES.filter(x => x.cat === cat).reduce((a, x) => a + (x.kind === "task" ? taskFiles(x.task).length : x.zipOf ? 0 : 1), 0);
+
+function itemMeta(it) {
+  if (it.kind === "task") { const n = taskFiles(it.task).length; return [`${n} ${pluralFiles(n)}`, fmtSize(taskSize(it.task))]; }
+  return it.meta || [];
+}
+
+// ─── Render ───
 function buildFilters() {
   const cats = ["all", ...Object.keys(CAT)];
   filtersEl.innerHTML = "";
   cats.forEach(c => {
     const b = document.createElement("button");
-    b.className = "filter-chip";
-    b.textContent = c === "all" ? "Wszystkie" : CAT[c].label;
-    b.setAttribute("aria-pressed", c === activeCat);
-    b.onclick = () => { activeCat = c; buildFilters(); renderSections(); };
+    b.type = "button";
+    b.textContent = c === "all" ? "Wszystkie" : (CAT[c].short || CAT[c].label);
+    b.setAttribute("aria-pressed", String(c === activeCat));
+    b.dataset.cat = c;
+    b.onclick = () => { activeCat = c; buildFilters(); renderSections(); liveEl.textContent = `Filtr: ${b.textContent}`; };
     filtersEl.appendChild(b);
   });
 }
@@ -310,12 +418,15 @@ function renderSections() {
     if (activeCat !== "all" && activeCat !== catKey) return;
     const items = FILES.filter(x => x.cat === catKey);
     if (!items.length) return;
+    const n = countFiles(catKey);
     const sec = document.createElement("section");
     sec.className = "cat-section";
+    sec.dataset.cat = catKey;
     sec.innerHTML = `<div class="cat-head">
-        <h2 class="cat-title">${CAT[catKey].label}</h2>
-        <span class="cat-count">${items.length} ${items.length === 1 ? "plik" : "plików"}</span>
-      </div><div class="grid"></div>`;
+        <h2 class="cat-title">${esc(CAT[catKey].label)}</h2>
+        <span class="cat-count">${n} ${pluralFiles(n)}</span>
+        ${CAT[catKey].zip ? `<a class="edu-btn cat-action" href="${RAW + encPath(CAT[catKey].zip)}" download data-zip="${esc(CAT[catKey].zip)}">↓ Pobierz cały pakiet (ZIP)</a>` : ""}
+      </div>${CAT[catKey].desc ? `<p class="cat-desc">${esc(CAT[catKey].desc)}</p>` : ""}<div class="grid"></div>`;
     const grid = sec.querySelector(".grid");
     items.forEach(it => grid.appendChild(makeCard(it)));
     sectionsEl.appendChild(sec);
@@ -323,64 +434,81 @@ function renderSections() {
 }
 
 function makeCard(it) {
-  const card = document.createElement("div");
+  const card = document.createElement("button");
+  card.type = "button";
   card.className = "card";
+  card.dataset.file = it.f;
+  card.dataset.kind = it.kind;
   card.onclick = () => openModal(it);
+  const nameLine = it.title
+    ? `<div class="card-title">${esc(it.title)}</div><div class="card-name">${esc(baseName(it.f))}${it.kind === "task" ? "/" : ""}</div>`
+    : `<div class="card-name">${esc(baseName(it.f))}</div>`;
   card.innerHTML = `
-    <div class="card-head" style="background:${CAT[it.cat].color}">
-      <span class="card-chip">${it.kind.toUpperCase()}</span>
-      <span class="card-glyph">${it.glyph}</span>
-      <span class="card-glyph-ghost">${it.glyph}</span>
+    <div class="card-head ${CAT[it.cat].head}">
+      <span class="card-chip">${esc(it.kind === "task" ? "zadanie" : it.kind)}</span>
+      <span class="card-glyph">${esc(it.glyph)}</span>
+      <span class="card-glyph-ghost" aria-hidden="true">${esc(it.glyph)}</span>
     </div>
     <div class="card-body">
-      <div class="card-name">${it.f}</div>
-      <p class="card-blurb">${it.blurb}</p>
-      <div class="card-meta">${it.meta.map(m => `<span>${m}</span>`).join("")}</div>
+      ${nameLine}
+      <p class="card-blurb">${esc(it.blurb)}</p>
+      <div class="card-meta">${itemMeta(it).map(m => `<span>${esc(m)}</span>`).join("")}</div>
     </div>`;
   return card;
 }
 
-// ---------- modal + previews ----------
-const overlay = document.getElementById("overlay");
-const mBody = document.getElementById("m-body");
-
+// ─── Modal + previews ───
 function openModal(it) {
-  document.getElementById("m-cat").textContent = CAT[it.cat].label;
-  document.getElementById("m-name").textContent = it.f;
-  document.getElementById("m-blurb").textContent = it.blurb;
-  document.getElementById("m-meta").innerHTML = it.meta.map(m => `<span>${m}</span>`).join("");
-  document.getElementById("m-download").href = RAW + encodeURIComponent(it.f);
-  document.getElementById("m-raw").href = BLOB + encodeURIComponent(it.f);
+  const isTask = it.kind === "task";
+  mCat.textContent = CAT[it.cat].label;
+  mName.textContent = it.title || it.f;
+  mName.classList.toggle("is-display", Boolean(it.title));
+  mBlurb.textContent = it.blurb;
+  mMeta.innerHTML = itemMeta(it).map(m => `<span>${esc(m)}</span>`).join("");
+  if (isTask) {
+    mDownload.hidden = true;
+    mDownload.removeAttribute("href");
+    mRaw.href = TREE + encPath(it.f);
+    mRaw.textContent = "Otwórz folder na GitHubie";
+  } else {
+    mDownload.hidden = false;
+    mDownload.href = RAW + encPath(it.f);
+    mRaw.href = BLOB + encPath(it.f);
+    mRaw.textContent = "Otwórz na GitHubie";
+  }
   mBody.innerHTML = `<div class="loader">Wczytywanie podglądu…</div>`;
   overlay.classList.add("open");
+  overlay.dataset.file = it.f;
+  if (location.hash !== "#file=" + encodeURIComponent(it.f)) history.replaceState(null, "", "#file=" + encodeURIComponent(it.f));
   document.body.style.overflow = "hidden";
+  mClose.focus();
   renderPreview(it);
 }
 
 function closeModal() {
   overlay.classList.remove("open");
+  delete overlay.dataset.file;
+  if (location.hash) history.replaceState(null, "", location.pathname);
   document.body.style.overflow = "";
   mBody.innerHTML = "";
   revokePdf();
 }
-document.getElementById("m-close").onclick = closeModal;
-overlay.onclick = e => { if (e.target === overlay) closeModal(); };
-document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal(); });
 
 async function renderPreview(it) {
   try {
-    if (it.kind === "csv")  return previewCSV(it);
-    if (it.kind === "txt")  return previewTXT(it);
-    if (it.kind === "xlsx") return previewXLSX(it);
-    if (it.kind === "pdf")  return previewPDF(it);
+    if (it.kind === "csv")  return await previewCSV(it);
+    if (it.kind === "txt")  return await previewTXT(it);
+    if (it.kind === "xlsx") return await previewXLSX(it);
+    if (it.kind === "pdf")  return await previewPDF(it);
+    if (it.kind === "png")  return previewIMG(it);
     if (it.kind === "zip")  return previewZIP(it);
+    if (it.kind === "task") return await previewTask(it);
   } catch (err) {
-    mBody.innerHTML = `<div class="loader">Nie udało się wczytać podglądu.<br>Użyj przycisku „Pobierz plik”. (${err})</div>`;
+    mBody.innerHTML = `<div class="loader">Nie udało się wczytać podglądu.<br>Użyj przycisku „Pobierz plik”. (${esc(err)})</div>`;
   }
 }
 
 function parseCSV(text, maxRows) {
-  // minimal CSV parser handling quoted fields with commas
   const rows = []; let row = [], field = "", q = false;
   for (let i = 0; i < text.length; i++) {
     const c = text[i];
@@ -400,21 +528,25 @@ function parseCSV(text, maxRows) {
   return rows;
 }
 
-async function previewCSV(it) {
-  const res = await fetch(RAW + encodeURIComponent(it.f));
-  const text = await res.text();
-  const totalLines = text.split("\n").filter(l => l.trim()).length;
-  const rows = parseCSV(text, 26);
-  renderTable(rows, `Podgląd: ${Math.min(rows.length-1,25)} z ${totalLines-1} wierszy danych`);
+async function fetchText(path) {
+  const res = await fetch(RAW + encPath(path));
+  if (!res.ok) throw new Error(res.status);
+  return res.text();
 }
 
-let xlsxLoading = null;
+async function previewCSV(it) {
+  const text = await fetchText(it.f);
+  const totalLines = text.split("\n").filter(l => l.trim()).length;
+  const rows = parseCSV(text, TABLE_ROWS);
+  renderTable(rows, `Podgląd: ${Math.min(rows.length-1, TABLE_ROWS-1)} z ${totalLines-1} wierszy danych`);
+}
+
 function ensureXLSX() {
   if (window.XLSX) return Promise.resolve();
   if (xlsxLoading) return xlsxLoading;
   xlsxLoading = new Promise((resolve, reject) => {
     const s = document.createElement("script");
-    s.src = "https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js";
+    s.src = XLSX_CDN;
     s.onload = resolve;
     s.onerror = () => reject(new Error("nie udało się wczytać biblioteki XLSX"));
     document.head.appendChild(s);
@@ -424,21 +556,20 @@ function ensureXLSX() {
 
 async function previewXLSX(it) {
   await ensureXLSX();
-  const res = await fetch(RAW + encodeURIComponent(it.f));
+  const res = await fetch(RAW + encPath(it.f));
   const buf = await res.arrayBuffer();
   const wb = XLSX.read(buf, { type: "array" });
   const ws = wb.Sheets[wb.SheetNames[0]];
   const rows = XLSX.utils.sheet_to_json(ws, { header: 1, blankrows: false });
   const total = rows.length;
-  renderTable(rows.slice(0, 26).map(r => r.map(c => c == null ? "" : String(c))),
-    `Arkusz „${wb.SheetNames[0]}” · podgląd ${Math.min(total-1,25)} z ${total-1} wierszy`);
+  renderTable(rows.slice(0, TABLE_ROWS).map(r => r.map(c => c == null ? "" : String(c))),
+    `Arkusz „${wb.SheetNames[0]}” · podgląd ${Math.min(total-1, TABLE_ROWS-1)} z ${total-1} wierszy`);
 }
 
 function renderTable(rows, note) {
   if (!rows.length) { mBody.innerHTML = `<div class="loader">Brak danych do wyświetlenia.</div>`; return; }
   const head = rows[0], body = rows.slice(1);
-  const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
-  let html = `<div class="preview-note">${note}</div><div class="tbl-wrap"><table class="preview"><thead><tr>`;
+  let html = `<div class="preview-note">${esc(note)}</div><div class="tbl-wrap"><table class="preview"><thead><tr>`;
   head.forEach(h => html += `<th>${esc(h)}</th>`);
   html += `</tr></thead><tbody>`;
   body.forEach(r => {
@@ -450,38 +581,94 @@ function renderTable(rows, note) {
   mBody.innerHTML = html;
 }
 
-async function previewTXT(it) {
-  const res = await fetch(RAW + encodeURIComponent(it.f));
-  const text = await res.text();
-  const LIMIT = 6000;
-  const shown = text.slice(0, LIMIT);
-  const esc = s => s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
-  const note = text.length > LIMIT ? `Podgląd pierwszych ${LIMIT.toLocaleString("pl")} znaków z ${text.length.toLocaleString("pl")}` : `Pełna zawartość (${text.length.toLocaleString("pl")} znaków)`;
-  mBody.innerHTML = `<div class="preview-note">${note}</div><pre class="txt-preview">${esc(shown)}${text.length>LIMIT?"\n\n… (pobierz plik, aby zobaczyć całość)":""}</pre>`;
+function textBlock(text, label) {
+  const shown = text.slice(0, TXT_LIMIT);
+  const note = text.length > TXT_LIMIT
+    ? `${label}: podgląd pierwszych ${TXT_LIMIT.toLocaleString("pl")} znaków z ${text.length.toLocaleString("pl")}`
+    : `${label} (${text.length.toLocaleString("pl")} znaków)`;
+  return `<div class="preview-note">${esc(note)}</div><pre class="txt-preview">${esc(shown)}${text.length > TXT_LIMIT ? "\n\n… (pobierz plik, aby zobaczyć całość)" : ""}</pre>`;
 }
 
-let pdfObjectUrl = null;
+async function previewTXT(it) {
+  const text = await fetchText(it.f);
+  mBody.innerHTML = textBlock(text, "Pełna zawartość");
+}
+
 function revokePdf() { if (pdfObjectUrl) { URL.revokeObjectURL(pdfObjectUrl); pdfObjectUrl = null; } }
 
 async function previewPDF(it) {
-  const res = await fetch(RAW + encodeURIComponent(it.f));
+  const res = await fetch(RAW + encPath(it.f));
   if (!res.ok) throw new Error(res.status);
   const blob = await res.blob();
   revokePdf();
   pdfObjectUrl = URL.createObjectURL(blob.slice(0, blob.size, "application/pdf"));
-  mBody.innerHTML = `<div class="preview-note">Podgląd PDF · ${it.f}</div>
-    <div class="pdf-wrap"><iframe class="pdf-frame" src="${pdfObjectUrl}#toolbar=1" title="${it.f}"></iframe></div>`;
+  mBody.innerHTML = `<div class="preview-note">Podgląd PDF · ${esc(it.f)}</div>
+    <div class="pdf-wrap"><iframe class="pdf-frame" src="${pdfObjectUrl}#toolbar=1" title="${esc(it.f)}"></iframe></div>`;
+}
+
+function previewIMG(it) {
+  mBody.innerHTML = `<div class="preview-note">Podgląd obrazu · ${esc(baseName(it.f))}</div>
+    <div class="img-wrap"><img class="img-preview" src="${RAW + encPath(it.f)}" alt="${esc(it.blurb)}"></div>`;
 }
 
 function previewZIP(it) {
-  mBody.innerHTML = `<div class="info-panel">
+  if (it.zipOf) {
+    const n = Object.values(ROBIMY).reduce((a, v) => a + v.length, 0);
+    mBody.innerHTML = `<div class="info-panel edu-block">
+      <h4>Archiwum ZIP</h4>
+      <p>Plik <strong>${esc(it.f)}</strong> zawiera cały folder <code>robimy/</code>: ${n} ${pluralFiles(n)}, instrukcję „Zacznij tutaj”, spis plików oraz dziewięć zadań z danymi startowymi. Pobierz i rozpakuj lokalnie. Podgląd zawartości ZIP nie jest dostępny w przeglądarce.</p>
+    </div>`;
+    return;
+  }
+  mBody.innerHTML = `<div class="info-panel edu-block">
     <h4>Archiwum ZIP</h4>
-    <p>Plik <strong>${it.f}</strong> zawiera 16 zdjęć kotów (<code>pic/*.jpg</code>). Pobierz archiwum, aby rozpakować obrazy lokalnie — podgląd zawartości ZIP nie jest dostępny w przeglądarce.</p>
+    <p>Plik <strong>${esc(it.f)}</strong> zawiera 16 zdjęć kotów (<code>pic/*.jpg</code>). Pobierz archiwum, aby rozpakować obrazy lokalnie. Podgląd zawartości ZIP nie jest dostępny w przeglądarce.</p>
   </div>`;
 }
 
+async function previewTask(it) {
+  const files = taskFiles(it.task);
+  const zadanie = `robimy/${it.task}/ZADANIE.txt`;
+  let html = "";
+  try { html += textBlock(await fetchText(zadanie), "ZADANIE.txt"); }
+  catch (e) { html += `<div class="preview-note">Nie udało się wczytać ZADANIE.txt (${esc(e)})</div>`; }
+  html += `<div class="file-list"><div class="file-list-head">Pliki zadania · ${files.length} ${pluralFiles(files.length)} · ${esc(fmtSize(taskSize(it.task)))}</div>`;
+  files.forEach(x => {
+    const rel = x.p.slice(it.task.length + 1);
+    html += `<div class="file-row">
+      <span class="file-path">${esc(rel)}</span>
+      <span class="file-size">${esc(fmtSize(x.s))}</span>
+      <a class="file-dl" href="${RAW + encPath("robimy/" + x.p)}" download="${esc(baseName(x.p))}">Pobierz</a>
+    </div>`;
+  });
+  html += `</div>`;
+  mBody.innerHTML = html;
+}
+
+// ─── Listeners ───
+mClose.onclick = closeModal;
+overlay.onclick = e => { if (e.target === overlay) closeModal(); };
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") closeModal();
+  if (overlay.classList.contains("open") || e.target.matches("input, textarea")) return;
+  const idx = parseInt(e.key, 10);
+  if (!Number.isNaN(idx) && idx >= 0 && idx <= Object.keys(CAT).length) {
+    const cats = ["all", ...Object.keys(CAT)];
+    activeCat = cats[idx]; buildFilters(); renderSections();
+  }
+});
+
+// ─── Init ───
 buildFilters();
 renderSections();
+function openFromHash() {
+  const m = location.hash.match(/^#file=(.+)$/);
+  if (!m) return;
+  const it = FILES.find(x => x.f === decodeURIComponent(m[1]));
+  if (it) openModal(it);
+}
+window.addEventListener("hashchange", openFromHash);
+openFromHash();
 </script>
 </body>
 </html>
