@@ -28,14 +28,6 @@
   }
   .edu-logo { width: 64px; height: 64px; display: block; margin-right: -6px; }
   .edu-wordmark { font-family: var(--font-display); font-weight: 700; font-size: 22px; letter-spacing: -.02em; color: var(--ink); }
-  .edu-header-spacer { flex: 1; }
-  .edu-header-link {
-    font-family: var(--font-sans); font-weight: 600; font-size: 14px;
-    color: var(--ink-2); text-decoration: none;
-    padding: 8px 14px; border-radius: var(--r-pill);
-    transition: background-color .15s, color .15s;
-  }
-  .edu-header-link:hover { background: var(--paper-2); color: var(--ink); }
 
   /* ─── Layout shell ─── */
   main { max-width: 1600px; margin: 0 auto; padding: 36px clamp(16px, 2.5vw, 40px) 64px; }
@@ -45,9 +37,8 @@
   .app-title {
     font-family: var(--font-display); font-weight: 800;
     font-size: clamp(1.8rem, 3.5vw, 2.5rem); letter-spacing: -.025em;
-    line-height: 1.05; color: var(--ink); margin: 0 0 10px;
+    line-height: 1.05; color: var(--ink); margin: 0;
   }
-  .edu-lead { font-size: 1rem; line-height: 1.5; color: var(--ink-2); margin: 0; font-family: var(--font-sans); }
 
   /* ─── Filters (segmented toggle) ─── */
   .toolbar { display: flex; justify-content: center; margin: 22px 0 6px; }
@@ -220,14 +211,11 @@
 <header class="edu-header"><div class="edu-header-inner">
   <img class="edu-logo" alt="edulab" src="edulab-mark-ink.png">
   <span class="edu-wordmark">edulab</span>
-  <span class="edu-header-spacer"></span>
-  <a class="edu-header-link" href="https://github.com/workszop/data" target="_blank" rel="noopener">Repozytorium ↗</a>
 </div></header>
 
 <main>
   <div class="page-head">
     <h1 class="app-title">Dane do warsztatów</h1>
-    <p class="edu-lead">Przeglądaj, podglądaj i pobieraj materiały używane na warsztatach: tabele, teksty, dokumenty PDF, prompty AI, obrazy, materiały marketingowe oraz zestaw ćwiczeń z agentami AI. Kliknij kartę, aby zobaczyć podgląd i linki do pobrania.</p>
   </div>
 
   <div class="toolbar"><div class="edu-seg" id="filters" role="group" aria-label="Filtr kategorii"></div></div>
