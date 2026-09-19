@@ -1,0 +1,5 @@
+﻿id_anonimowe;wariant;potrzeba;poziom;czas_na_zadanie_min;data_wypelnienia;status_danych
+A-U01;wariant_A;rozpoznawanie duplikatów;początkujący;25;2026-03-07;syntetyczne
+A-U02;wariant_A;kolizje nazw;średni;35;2026-03-07;syntetyczne
+A-U03;wariant_A;rejestr kopii;początkujący;30;2026-03-08;syntetyczne
+A-U04;wariant_A;metadane wersji;średni;40;2026-03-08;syntetyczne

@@ -1,0 +1,5 @@
+﻿source_id;owner_id;name;role;email;coverage;backup;status
+P06-A-OWNER-01;OP-A-01;Ola Sowa;koordynacja wdrożenia;ola.sowa@pracownia.example;plan tygodnia;Marta Lis;aktywny
+P06-A-OWNER-02;OP-A-02;Filip Zając;analityka i dostępy;filip.zajac@pracownia.example;repozytorium próbek;Igor Bąk;aktywny
+P06-A-OWNER-03;OP-A-03;Celina Gajda;administracja;celina.gajda@pracownia.example;rejestr zakupów;Nadia Krawczyk;aktywny
+P06-A-OWNER-04;OP-A-04;nie wskazano;właściciel procedury sprzedażowej;;PRO-SPRZ-A-03;nie ustalono;brak danych

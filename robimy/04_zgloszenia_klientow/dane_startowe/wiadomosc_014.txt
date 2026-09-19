@@ -1,0 +1,12 @@
+WIADOMOŚĆ KLIENTA - DANE SYNTETYCZNE
+Id wiadomości: MSG-A-014
+Odebrano: 2026-07-07T13:34:00+02:00
+Klient: Oskar Bednarz
+Adres: oskar.bednarz@firma-a.example
+Temat: Czy plan Team obejmuje 20 osób?
+Id zamówienia: brak
+
+Treść:
+Rozważamy MeloBoard Team dla siedemnastoosobowego zespołu. Czy limit 20 użytkowników jest miesięczny czy stały, ile kosztuje plan według katalogu i czy API jest w nim od razu?
+
+Źródło: eksport_01.csv; rekord MSG-A-014

@@ -1,0 +1,12 @@
+WIADOMOŚĆ KLIENTA - DANE SYNTETYCZNE
+Id wiadomości: MSG-A-023
+Odebrano: 2026-07-08T13:13:00+02:00
+Klient: Lena Pawlak
+Adres: lena.pawlak@firma-a.example
+Temat: Usunięcie użytkownika po odejściu z firmy
+Id zamówienia: ZAM-A-104
+
+Treść:
+Osoba opuściła firmę i chcemy usunąć jej konto oraz dane sesji z Atlas Secure. Czy możecie zrobić to na podstawie tej wiadomości? Proszę też powiedzieć, co zostaje w dzienniku audytowym.
+
+Źródło: eksport_01.csv; rekord MSG-A-023

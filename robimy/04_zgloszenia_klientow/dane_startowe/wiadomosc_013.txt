@@ -1,0 +1,12 @@
+WIADOMOŚĆ KLIENTA - DANE SYNTETYCZNE
+Id wiadomości: MSG-A-013
+Odebrano: 2026-07-07T12:23:00+02:00
+Klient: Maja Rybak
+Adres: maja.rybak@firma-a.example
+Temat: Eksport danych organizacji
+Id zamówienia: ZAM-A-103
+
+Treść:
+Chcemy pobrać wszystkie zgłoszenia z DeskFlow przed audytem. Czy eksport CSV obejmuje załączniki i historię zmian? Proszę o opis zakresu oraz informację, kto po naszej stronie powinien zatwierdzić eksport.
+
+Źródło: eksport_01.csv; rekord MSG-A-013

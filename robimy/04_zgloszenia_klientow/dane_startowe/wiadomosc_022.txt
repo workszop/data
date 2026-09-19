@@ -1,0 +1,12 @@
+WIADOMOŚĆ KLIENTA - DANE SYNTETYCZNE
+Id wiadomości: MSG-A-022
+Odebrano: 2026-07-08T12:02:00+02:00
+Klient: Tomasz Bury
+Adres: tomasz.bury@firma-a.example
+Temat: Wdrożenie dla nowej organizacji
+Id zamówienia: brak
+
+Treść:
+Czy HelpSprout oferuje płatne wdrożenie dla DeskFlow i ile trwa? Katalog mówi tylko o aktywacji standardowej. Potrzebujemy opisu zakresu, ale nie chcemy jeszcze składać zamówienia.
+
+Źródło: eksport_01.csv; rekord MSG-A-022

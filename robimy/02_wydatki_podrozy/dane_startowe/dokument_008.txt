@@ -1,0 +1,15 @@
+DOKUMENT ROZLICZENIOWY - DANE SYNTETYCZNE
+Identyfikator rachunku: A-R008
+Identyfikator podróży: POD-A-2026
+Data zakupu: 2026-04-15
+Wystawca: Lunchownia Sól
+Opis: obiad dla podróżującego
+Kategoria: posiłek
+Kwota: 69,00
+Waluta: PLN
+Podróżujący: Anna Lemańska
+Cel służbowy: Prezentacja prototypu
+Zgoda wymagana: nie
+Zgoda: brak
+Źródło: dokument A-R008; przekazany w pakiecie POD-A-2026
+Uwaga: dokument i tożsamości w nim opisane są fikcyjne. Nie jest to dokument księgowy ani porada podatkowa.

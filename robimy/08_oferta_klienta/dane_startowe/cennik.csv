@@ -1,0 +1,5 @@
+﻿source_id;service_id;unit;gross_unit_price;currency;quantity_rule;discount_rule;valid_from;valid_to
+P08-A-PRICE-01;USL-A01;dzień;4800,00;PLN;ilość całkowita 1–5;RAB-A01;2026-09-01;2026-12-31
+P08-A-PRICE-02;USL-A02;sesja;3200,00;PLN;ilość całkowita 1–4;RAB-A01;2026-09-01;2026-12-31
+P08-A-PRICE-03;USL-A03;godzina;420,00;PLN;ilość całkowita 1–20;RAB-A01;2026-09-01;2026-12-31
+P08-A-PRICE-04;USL-A04;pakiet;1800,00;PLN;ilość 1;RAB-A02;2026-09-01;2026-12-31

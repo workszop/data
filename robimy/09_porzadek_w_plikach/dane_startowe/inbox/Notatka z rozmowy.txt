@@ -1,0 +1,16 @@
+DANE SYNTETYCZNE | materiał ćwiczeniowy | wszystkie osoby i projekty są fikcyjne
+---
+id_dokumentu: IB-A-029
+tytul: Notatka z rozmowy
+data_utworzenia: 2026-03-01
+data_modyfikacji: 2026-03-01
+wersja: 0.2
+status: roboczy
+pochodzenie: generator szkoleniowy, bez danych rzeczywistych
+---
+
+Projekt Latarnia dotyczy zadania: porządkowanie materiałów do fikcyjnej wystawy osiedlowej. Ten plik ma znaczenie ćwiczeniowe i nie jest dokumentem operacyjnym.
+
+Zakres pliku: ustne wskazówki zapisane przez zespół. Wariant 29 wymaga sprawdzenia treści, metadanych oraz relacji z pozostałymi plikami, a nie tylko odczytania nazwy.
+
+Ustalenie robocze: wymaga potwierdzenia i nie może zastąpić źródła. Następny krok to zapisanie decyzji w rejestrze i zachowanie kopii z nową ścieżką.

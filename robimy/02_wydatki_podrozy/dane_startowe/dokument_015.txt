@@ -1,0 +1,15 @@
+DOKUMENT ROZLICZENIOWY - DANE SYNTETYCZNE
+Identyfikator rachunku: A-R015
+Identyfikator podróży: POD-A-2026
+Data zakupu: 2026-04-15
+Wystawca: Bar Neptun
+Opis: kolacja zawierająca napój alkoholowy
+Kategoria: alkohol
+Kwota: 96,00
+Waluta: PLN
+Podróżujący: Anna Lemańska
+Cel służbowy: Kolacja po spotkaniu
+Zgoda wymagana: nie
+Zgoda: brak
+Źródło: dokument A-R015; przekazany w pakiecie POD-A-2026
+Uwaga: dokument i tożsamości w nim opisane są fikcyjne. Nie jest to dokument księgowy ani porada podatkowa.

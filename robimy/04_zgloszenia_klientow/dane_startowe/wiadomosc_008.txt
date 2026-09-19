@@ -1,0 +1,12 @@
+WIADOMOŚĆ KLIENTA - DANE SYNTETYCZNE
+Id wiadomości: MSG-A-008
+Odebrano: 2026-07-06T16:28:00+02:00
+Klient: Oskar Bednarz
+Adres: oskar.bednarz@firma-a.example
+Temat: Usługa niedostępna dla kilku oddziałów
+Id zamówienia: ZAM-A-103
+
+Treść:
+Od 09:10 pracownicy trzech organizacji nie mogą otworzyć kolejki DeskFlow ani zapisać nowych zgłoszeń. Ten sam komunikat pojawia się w trzech sieciach. Mamy zrzut czasu i trzy identyfikatory organizacji, ale nie oczekujemy diagnozy w tej wiadomości - prosimy o potwierdzenie przyjęcia incydentu.
+
+Źródło: eksport_01.csv; rekord MSG-A-008

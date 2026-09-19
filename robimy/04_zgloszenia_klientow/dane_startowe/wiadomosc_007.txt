@@ -1,0 +1,12 @@
+WIADOMOŚĆ KLIENTA - DANE SYNTETYCZNE
+Id wiadomości: MSG-A-007
+Odebrano: 2026-07-06T15:17:00+02:00
+Klient: Maja Rybak
+Adres: maja.rybak@firma-a.example
+Temat: Niejasny błąd po zmianie przeglądarki
+Id zamówienia: brak
+
+Treść:
+Od pewnego czasu coś jest nie tak z DeskFlow. Czasem lista spraw nie odświeża się po powrocie z karty, ale po ponownym wejściu działa. Nie wiem, czy zaczęło się po aktualizacji i nie potrafię odtworzyć tego na żądanie. Co powinnam opisać, żebyście mogli to zbadać?
+
+Źródło: eksport_01.csv; rekord MSG-A-007

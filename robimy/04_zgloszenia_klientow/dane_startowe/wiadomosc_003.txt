@@ -1,0 +1,12 @@
+WIADOMOŚĆ KLIENTA - DANE SYNTETYCZNE
+Id wiadomości: MSG-A-003
+Odebrano: 2026-07-06T11:33:00+02:00
+Klient: Iga Żmuda
+Adres: iga.zmuda@firma-a.example
+Temat: Dwa obciążenia za ten sam miesiąc
+Id zamówienia: ZAM-A-102
+
+Treść:
+Na historii płatności widzę dwie pozycje za MeloBoard Team z bieżącego miesiąca, obie po 129,00 PLN. Proszę sprawdzić, czy jedna jest powtórzeniem, i wyjaśnić, jak zgłosić zwrot. W załączniku mam tylko numery pozycji z panelu, bez danych bankowych.
+
+Źródło: eksport_01.csv; rekord MSG-A-003

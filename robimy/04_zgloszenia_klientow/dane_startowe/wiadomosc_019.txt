@@ -1,0 +1,12 @@
+WIADOMOŚĆ KLIENTA - DANE SYNTETYCZNE
+Id wiadomości: MSG-A-019
+Odebrano: 2026-07-08T09:29:00+02:00
+Klient: Maja Rybak
+Adres: maja.rybak@firma-a.example
+Temat: Pilny ton, brak dowodu wycieku
+Id zamówienia: brak
+
+Treść:
+PILNE!!! Ktoś chyba widział nasz ekran, bo kolega dostał dziwną wiadomość. Nie mam logów, adresu nadawcy ani informacji, którego konta to dotyczy, ale proszę od razu zablokować całą organizację i usunąć dane.
+
+Źródło: eksport_01.csv; rekord MSG-A-019

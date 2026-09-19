@@ -1,0 +1,12 @@
+WIADOMOŚĆ KLIENTA - DANE SYNTETYCZNE
+Id wiadomości: MSG-A-024
+Odebrano: 2026-07-08T14:24:00+02:00
+Klient: Kacper Wysocki
+Adres: kacper.wysocki@firma-a.example
+Temat: Opóźnione powiadomienia e-mail
+Id zamówienia: ZAM-A-106
+
+Treść:
+Powiadomienia o nowych zadaniach w MeloBoard docierają z opóźnieniem około 20 minut, ale pojawiają się wszystkie. Problem dotyczy dwóch osób od poniedziałku. Czy możecie sprawdzić kolejkę wysyłki?
+
+Źródło: eksport_01.csv; rekord MSG-A-024

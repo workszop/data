@@ -1,0 +1,9 @@
+﻿id_zamowienia;klient;produkt;plan;data_zamowienia;status;kwota;waluta;data_aktywacji;uwagi
+ZAM-A-101;Maja Rybak;Nurt AI;Start;2026-06-28;aktywne;79,00;PLN;2026-06-28;brak
+ZAM-A-102;Oskar Bednarz;MeloBoard;Team;2026-06-14;aktywne;129,00;PLN;2026-06-14;wdrożenie standardowe
+ZAM-A-103;Iga Żmuda;DeskFlow;Service;2026-06-30;aktywne;189,00;PLN;2026-06-30;brak
+ZAM-A-104;Tomasz Bury;Atlas Secure;Team;2026-05-03;anulowane;249,00;PLN;2026-05-03;anulowanie zgłoszone 2026-07-01
+ZAM-A-105;Lena Pawlak;Nurt AI;Start;2026-06-21;aktywne;79,00;PLN;2026-06-21;wdrożenie płatne
+ZAM-A-106;Kacper Wysocki;MeloBoard;Team;2026-05-20;aktywne;129,00;PLN;2026-05-20;brak
+ZAM-A-107;Maja Rybak;DeskFlow;Service;2026-07-02;płatność oczekująca;189,00;PLN;2026-07-02;brak
+ZAM-A-108;Oskar Bednarz;Nurt AI;Start;2026-04-01;aktywne;79,00;EUR;2026-04-01;brak

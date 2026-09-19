@@ -1,0 +1,46 @@
+05. kontrola jakości danych
+
+O firmie
+Pracownia Północna prowadzi sprzedaż i obsługę klientów oraz rozlicza operacje działów.
+
+Zadanie
+Sprawdź z agentem zestawienia czterech działów. Zapisz poprawne dane
+w osobnym pliku, a rekordy wymagające wyjaśnienia odłóż do kwarantanny.
+Prowadź rejestr zmian, żeby każdą decyzję można było sprawdzić w źródle
+i powiązać z zastosowaną regułą.
+
+Materiały
+dane_startowe/finanse.csv, sprzedaz.csv, operacje.csv i wsparcie.csv.
+Każdy plik ma 30 wierszy danych. Zanim agent zacznie ujednolicać dane,
+poproś go o propozycję kolumn wyniku i reguł kontroli. Sprawdź je i zatwierdź.
+
+Praca z agentem
+1. Poproś agenta o spis plików i plan sprawdzenia danych. Zatwierdź go.
+2. Sprawdź nagłówki, daty, formaty kwot, walutę oraz identyfikatory.
+   Zgłoś dodatkową kolumnę w operacje.csv jako odstępstwo od schematu.
+   Nie przenoś jej do wyniku, ale też nie odrzucaj z jej powodu poprawnego wiersza.
+3. Ujednolicaj dane według zaakceptowanych reguł. Pusta kwota oznacza
+   brak danych, a 0,00 jest poprawnym zerem.
+4. Rozróżnij identyczne powtórzenia tego samego ID od rekordów, które mają
+   to samo ID, ale różną treść. Wszystkie sprzeczne wersje odłóż do kwarantanny.
+   Nie łącz osób tylko dlatego, że mają to samo imię i nazwisko.
+5. Policz wiersze i kwoty przed kontrolą i po niej, razem oraz osobno
+   dla każdego działu. Zapisz, co stało się z każdym wierszem wejściowym.
+
+Pliki do oddania w wyniki/v01/
+- dane_czyste.csv: rekordy przyjęte zgodnie ze schematem.
+- kwarantanna.csv: rekordy problematyczne, przyczyny i identyfikatory.
+- rejestr_zmian.csv: identyfikator źródła, pole, wartość przed i po, reguła.
+- raport_wyjatkow.md: problemy schematu i przypadki wymagające decyzji.
+- podsumowanie_kontroli.csv: liczby wierszy i sumy przed kontrolą i po niej.
+- instrukcja_ponowienia.md: sposób powtórzenia procesu.
+
+Sprawdź przed oddaniem
+Sprawdź, czy wiadomo, co stało się z każdym ze 120 wierszy, także z wyłączonymi
+duplikatami. Przyjrzyj się pustej kwocie, prawidłowemu zeru i sprzecznym
+rekordom o tym samym ID. Osobno przelicz sumę jednego działu według
+uzgodnionych definicji i porównaj ją z wynikiem agenta.
+
+Zasady pracy
+Dane są fikcyjne. Nie poprawiaj źródeł, nie usuwaj rekordów bez śladu
+i nie dopisuj braków. Pracuj tylko w tym folderze, bez internetu i wysyłki.

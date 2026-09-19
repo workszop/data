@@ -1,0 +1,12 @@
+WIADOMOŚĆ KLIENTA - DANE SYNTETYCZNE
+Id wiadomości: MSG-A-015
+Odebrano: 2026-07-07T14:45:00+02:00
+Klient: Iga Żmuda
+Adres: iga.zmuda@firma-a.example
+Temat: Sugestia filtrowania po właścicielu
+Id zamówienia: ZAM-A-102
+
+Treść:
+W MeloBoard mamy kilkadziesiąt tablic i chcielibyśmy filtrować zadania po właścicielu oraz zapisywać taki widok. To nie blokuje pracy, ale skróciłoby cotygodniowy przegląd. Czy możecie przekazać sugestię do zespołu produktu?
+
+Źródło: eksport_01.csv; rekord MSG-A-015

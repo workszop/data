@@ -1,0 +1,31 @@
+﻿id_wiersza_zrodla;id_rekordu;data;dzial;osoba;kwota_pln;waluta;status;opis
+A-SPR-001;A-SPR-R001;2026-01-13;Sprzedaż;Eliza Kaczmarek;PLN 1234,50;PLN;zatwierdzona;operacja sprzedaz 01
+A-SPR-002;A-SPR-R002;2026-01-15;Sprzedaż;Filip Pawlak;167,25;PLN;rozliczona;operacja sprzedaz 02
+A-SPR-003;A-SPR-R003;2026-01-17;Sprzedaż;Grażyna Nowak;214,50;PLN;oczekuje;operacja sprzedaz 03
+A-SPR-004;A-SPR-R004;2026-01-19;Sprzedaż;Hubert Zając;261,75;PLN;zatwierdzona;operacja sprzedaz 04
+A-SPR-005;A-SPR-R005;2026-01-21;Sprzedaż;Iga Woźniak;308,00;PLN;rozliczona;operacja sprzedaz 05
+A-SPR-006;A-SPR-R006;2026-01-23;Sprzedaż;Jakub Wójcik;355,25;PLN;oczekuje;operacja sprzedaz 06
+A-SPR-007;A-SPR-R007;2026-01-25;Sprzedaż;Karolina Gajda;402,50;PLN;zatwierdzona;operacja sprzedaz 07
+A-SPR-008;A-SPR-R008;2026-01-27;Sprzedaż;Lena Piątek;449,75;PLN;rozliczona;operacja sprzedaz 08
+A-SPR-009;A-SPR-R009;2026-01-29;Sprzedaż;Marek Sikora;496.00;PLN;oczekuje;operacja sprzedaz 09
+A-SPR-010;A-SPR-R010;2026-01-31;Sprzedaż;Natalia Kubiak;543,25 zł;PLN;zatwierdzona;operacja sprzedaz 10
+A-SPR-011;A-SPR-R011;2026-02-02;Sprzedaż;Oskar Cieśla;PLN 590,50;PLN;rozliczona;operacja sprzedaz 11
+A-SPR-012;A-SPR-R012;2026-02-04;Sprzedaż;Paulina Bąk;637,75;PLN;oczekuje;operacja sprzedaz 12
+A-SPR-013;A-SPR-R012;2026-02-18;Sprzedaż;Robert Krupa;777,77;PLN;zatwierdzona;operacja po korekcie do wyjaśnienia
+A-SPR-014;A-SPR-R014;2026-02-08;Sprzedaż;Sabina Wilk;731,25;PLN;rozliczona;operacja sprzedaz 14
+A-SPR-015;A-SPR-R015;2026-02-10;Sprzedaż;Tomasz Kania;778,50;PLN;oczekuje;operacja sprzedaz 15
+A-SPR-016;A-SPR-R016;2026-02-12;Sprzedaż;Urszula Leśniak;825,75;PLN;zatwierdzona;operacja sprzedaz 16
+A-SPR-017;A-SPR-R017;2026-02-14;Sprzedaż;Alicja Król;872.00;PLN;rozliczona;operacja sprzedaz 17
+A-SPR-018;A-SPR-R018;2026-02-16;Sprzedaż;Bartosz Mazur;919,25;PLN;oczekuje;operacja sprzedaz 18
+A-SPR-019;A-SPR-R019;2026-02-18;Sprzedaż;Celina Wrona;966,50 zł;PLN;zatwierdzona;operacja sprzedaz 19
+A-SPR-020;A-SPR-R020;2026-02-20;Sprzedaż;Dawid Lis;1013,75;PLN;rozliczona;operacja sprzedaz 20
+A-SPR-021;A-SPR-R021;2026-02-22;Sprzedaż;Eliza Kaczmarek;PLN 80,00;PLN;oczekuje;operacja sprzedaz 21
+A-SPR-022;A-SPR-R022;2026-02-24;Sprzedaż;Filip Pawlak;127,25;PLN;zatwierdzona;operacja sprzedaz 22
+A-SPR-023;A-SPR-R023;2026-02-26;Sprzedaż;Grażyna Nowak;174,50;PLN;rozliczona;operacja sprzedaz 23
+A-SPR-024;A-SPR-R024;2026-02-28;Sprzedaż;Hubert Zając;221,75;PLN;oczekuje;operacja sprzedaz 24
+A-SPR-025;A-SPR-R025;2026-01-05;Sprzedaż;Iga Woźniak;1234.50;PLN;zatwierdzona;operacja sprzedaz 25
+A-SPR-026;A-SPR-R026;2026-01-07;Sprzedaż;Jakub Wójcik;315,25;PLN;rozliczona;operacja sprzedaz 26
+A-SPR-027;A-SPR-R027;2026-01-09;Sprzedaż;Karolina Gajda;362,50;PLN;oczekuje;operacja sprzedaz 27
+A-SPR-028;A-SPR-R028;2026-01-11;Sprzedaż;Lena Piątek;409,75 zł;PLN;zatwierdzona;operacja sprzedaz 28
+A-SPR-029;A-SPR-R029;2026-01-13;Sprzedaż;Marek Sikora;456,00;PLN;rozliczona;operacja sprzedaz 29
+A-SPR-030;A-SPR-R030;2026-01-15;Sprzedaż;Natalia Kubiak;503,25;PLN;oczekuje;operacja sprzedaz 30

@@ -1,0 +1,9 @@
+ŹRÓDŁO: P01-A-EMAIL-02
+Data wysłania: 2026-09-09
+Nadawca: Tomasz Wrona <tomasz.wrona@luminadom.example>
+Odbiorca: przyjecia@quantica-lab.example
+Temat: Dane i liczba osób
+
+Na pilotaż możemy zaprosić 18 osób, które co miesiąc pracują na dwóch eksportach CSV. Chcielibyśmy, aby prototyp pobierał dane z PanelPilot, naszego systemu CRM. Testowy eksport przygotujemy 2026-09-29.
+
+Nie wiem, czy PanelPilot jest obsługiwany w Państwa katalogu. Jeśli nie, proszę wskazać, czego potrzebujecie do oceny integracji.

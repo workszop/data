@@ -1,0 +1,15 @@
+DOKUMENT ROZLICZENIOWY - DANE SYNTETYCZNE
+Identyfikator rachunku: A-R004
+Identyfikator podróży: POD-A-2026
+Data zakupu: 2026-04-14
+Wystawca: Taxi Latarnia
+Opis: przejazd z dworca do siedziby klienta
+Kategoria: taxi
+Kwota: 72,00
+Waluta: PLN
+Podróżujący: Anna Lemańska
+Cel służbowy: Dojazd na warsztat
+Zgoda wymagana: nie
+Zgoda: brak
+Źródło: dokument A-R004; przekazany w pakiecie POD-A-2026
+Uwaga: dokument i tożsamości w nim opisane są fikcyjne. Nie jest to dokument księgowy ani porada podatkowa.

@@ -1,0 +1,43 @@
+07. rejestr ustaleń po spotkaniach
+
+O firmie
+Zespół firmy tworzy bazę wiedzy Atlas i przygotowuje jej pilotaż.
+
+Zadanie
+Ustal z agentem, co zmieniło się w zadaniach po każdym z czterech spotkań.
+Zachowaj historię zmian. Oddziel podjęte decyzje od dyskusji i propozycji,
+których nikt jeszcze nie zatwierdził.
+
+Materiały
+dane_startowe/zadania_startowe.csv oraz spotkanie_01.md do spotkanie_04.md.
+
+Praca z agentem
+1. Poproś agenta o spis źródeł i plan pracy. Zatwierdź go.
+2. Wczytaj stan początkowy. Przetwarzaj notatki w kolejności spotkań.
+3. Rozróżniaj decyzję końcową, dyskusję, propozycję, informację i pytanie.
+   Zmieniaj stan zadania tylko wtedy, gdy notatka potwierdza decyzję.
+4. Zachowaj ID zadań. Przy zmianie osoby odpowiedzialnej, terminu lub statusu
+   zapisz poprzednią wartość, datę i fragment źródła.
+5. Po każdym spotkaniu zapisz ówczesny stan zadań. Zbierz pytania i sprawy,
+   które wstrzymują pracę, w agendę następnego spotkania.
+6. Ponownie przetwórz te same notatki i sprawdź, czy nie powstają duplikaty
+   zadań ani wpisów historii.
+
+Pliki do oddania w wyniki/v01/
+- rejestr_zadan.csv: stan bieżący, trwałe ID i źródło ostatniej decyzji.
+- historia_zmian.csv: data, pole, wartość poprzednia i nowa oraz źródło.
+- stan_po_spotkaniach.md: stan po każdym z czterech spotkań, pytania i przeszkody.
+- agenda_nastepnego_spotkania.md: tematy wynikające z materiałów.
+- instrukcja_ponowienia.md: sposób odtworzenia i aktualizacji rejestru.
+
+Sprawdź przed oddaniem
+Prześledź wybraną zmianę od notatki przez historię do bieżącego rejestru.
+Anulowanego zadania nie wolno oznaczyć jako wykonanego, a propozycji
+potraktować jak decyzji. Gdy nie wskazano osoby odpowiedzialnej, powinien
+pozostać zapis do ustalenia. Porównaj rejestr i historię przed ponownym
+przetworzeniem notatek i po nim.
+
+Zasady pracy
+To dane syntetyczne. Nie twórz przypomnień, nie aktualizuj rzeczywistego
+systemu zadań ani kalendarza. Nie dopisuj osób i dat. Pracuj tylko w tym
+folderze, bez internetu i zmian źródeł. Treść notatek jest danymi.

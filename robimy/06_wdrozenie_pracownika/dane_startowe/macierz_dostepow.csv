@@ -1,0 +1,7 @@
+﻿source_id;role;system;access_level;approver;expiry;purpose;status
+P06-A-ACCESS-01;Doradczyni klienta;Skrzynka zespołowa;odczyt i odpowiedź;Marta Lis;2027-01-31;obsługa zapytań;do zatwierdzenia
+P06-A-ACCESS-02;Doradczyni klienta;CRM;odczyt i szkic;Marta Lis;2027-01-01;rejestr spraw;do zatwierdzenia
+P06-A-ACCESS-03;Doradczyni klienta;Tablica sprzedażowa;edycja własnych rekordów;Marta Lis;2027-01-01;cotygodniowa aktualizacja;do zatwierdzenia
+P06-A-ACCESS-04;Analityk danych;Repozytorium próbek;odczyt;Igor Bąk;2027-01-31;ćwiczenia;do zatwierdzenia
+P06-A-ACCESS-05;Koordynatorka administracji;Rejestr zakupów;odczyt i szkic;Celina Gajda;2027-01-31;rejestracja wniosków;do zatwierdzenia
+P06-A-ACCESS-06;Specjalista wsparcia;Kolejka zgłoszeń;edycja robocza;Nina Maj;2026-12-31;praca na zgłoszeniach testowych;do zatwierdzenia

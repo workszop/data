@@ -1,0 +1,31 @@
+﻿id_wiersza_zrodla;id_rekordu;data;dzial;osoba;kwota_pln;waluta;status;opis
+A-WSP-001;A-WSP-R001;2026-01-23;Wsparcie klienta;Karolina Gajda;PLN 1234,50;PLN;zatwierdzona;operacja wsparcie 01
+A-WSP-002;A-WSP-R002;2026-01-25;Wsparcie klienta;Lena Piątek;229,25;PLN;rozliczona;operacja wsparcie 02
+A-WSP-003;A-WSP-R003;2026-01-27;Wsparcie klienta;Marek Sikora;;PLN;oczekuje;operacja wsparcie 03
+A-WSP-004;A-WSP-R004;2026-01-29;Wsparcie klienta;Natalia Kubiak;0,00;PLN;zatwierdzona;operacja wsparcie 04
+A-WSP-005;A-WSP-R005;2026-01-31;Wsparcie klienta;Oskar Cieśla;370,00;PLN;rozliczona;operacja wsparcie 05
+A-WSP-006;A-WSP-R006;2026-02-02;Wsparcie klienta;Paulina Bąk;417,25;PLN;oczekuje;operacja wsparcie 06
+A-WSP-007;A-WSP-R007;2026-02-04;Wsparcie klienta;Robert Krupa;464,50;PLN;zatwierdzona;operacja wsparcie 07
+A-WSP-008;A-WSP-R008;2026-02-06;Wsparcie klienta;Sabina Wilk;511,75;PLN;rozliczona;operacja wsparcie 08
+A-WSP-009;A-WSP-R009;2026-02-08;Wsparcie klienta;Aleksandra Wrona;558.00;PLN;oczekuje;operacja wsparcie 09
+A-WSP-010;A-WSP-R010;2026-02-10;Wsparcie klienta;Aleksandra Wrona;605,25 zł;PLN;zatwierdzona;operacja wsparcie 10
+A-WSP-011;A-WSP-R011;2026-02-12;Wsparcie klienta;Alicja Król;PLN 652,50;PLN;rozliczona;operacja wsparcie 11
+A-WSP-012;A-WSP-R012;2026-02-14;Wsparcie klienta;Bartosz Mazur;699,75;PLN;oczekuje;operacja wsparcie 12
+A-WSP-013;A-WSP-R013;2026-02-16;Wsparcie klienta;Celina Wrona;1234,50;PLN;zatwierdzona;operacja wsparcie 13
+A-WSP-014;A-WSP-R014;2026-02-18;Wsparcie klienta;Dawid Lis;793,25;PLN;rozliczona;operacja wsparcie 14
+A-WSP-015;A-WSP-R015;2026-02-20;Wsparcie klienta;Eliza Kaczmarek;840,50;PLN;oczekuje;operacja wsparcie 15
+A-WSP-016;A-WSP-R016;2026-02-22;Wsparcie klienta;Filip Pawlak;887,75;PLN;zatwierdzona;operacja wsparcie 16
+A-WSP-017;A-WSP-R017;2026-02-24;Wsparcie klienta;Grażyna Nowak;934.00;PLN;rozliczona;operacja wsparcie 17
+A-WSP-018;A-WSP-R018;2026-02-26;Wsparcie klienta;Hubert Zając;981,25;PLN;oczekuje;operacja wsparcie 18
+A-WSP-019;A-WSP-R019;2026-02-28;Wsparcie klienta;Iga Woźniak;1028,50 zł;PLN;zatwierdzona;operacja wsparcie 19
+A-WSP-020;A-WSP-R020;2026-01-05;Wsparcie klienta;Jakub Wójcik;95,75;PLN;rozliczona;operacja wsparcie 20
+A-WSP-021;A-WSP-R021;2026-01-07;Wsparcie klienta;Karolina Gajda;PLN 142,00;PLN;oczekuje;operacja wsparcie 21
+A-WSP-022;A-WSP-R022;2026-01-09;Wsparcie klienta;Lena Piątek;189,25;PLN;zatwierdzona;operacja wsparcie 22
+A-WSP-023;A-WSP-R023;2026-01-11;Wsparcie klienta;Marek Sikora;236,50;PLN;rozliczona;operacja wsparcie 23
+A-WSP-024;A-WSP-R024;2026-01-13;Wsparcie klienta;Natalia Kubiak;283,75;PLN;oczekuje;operacja wsparcie 24
+A-WSP-025;A-WSP-R025;2026-01-15;Wsparcie klienta;Oskar Cieśla;1234.50;PLN;zatwierdzona;operacja wsparcie 25
+A-WSP-026;A-WSP-R026;2026-01-17;Wsparcie klienta;Paulina Bąk;377,25;PLN;rozliczona;operacja wsparcie 26
+A-WSP-027;A-WSP-R027;2026-01-19;Wsparcie klienta;Robert Krupa;424,50;PLN;oczekuje;operacja wsparcie 27
+A-WSP-028;A-WSP-R028;2026-01-21;Wsparcie klienta;Sabina Wilk;471,75 zł;PLN;zatwierdzona;operacja wsparcie 28
+A-WSP-029;A-WSP-R029;2026-01-23;Wsparcie klienta;Tomasz Kania;518,00;PLN;rozliczona;operacja wsparcie 29
+A-WSP-030;A-WSP-R030;2026-01-25;Wsparcie klienta;Urszula Leśniak;565,25;PLN;oczekuje;operacja wsparcie 30

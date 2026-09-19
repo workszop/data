@@ -1,0 +1,15 @@
+DOKUMENT ROZLICZENIOWY - DANE SYNTETYCZNE
+Identyfikator rachunku: A-R002
+Identyfikator podróży: POD-A-2026
+Data zakupu: 2026-04-13
+Wystawca: Bistro Motława
+Opis: lunch dla podróżującego
+Kategoria: posiłek
+Kwota: 58,40
+Waluta: PLN
+Podróżujący: Anna Lemańska
+Cel służbowy: Spotkanie otwierające projektu
+Zgoda wymagana: nie
+Zgoda: brak
+Źródło: dokument A-R002; przekazany w pakiecie POD-A-2026
+Uwaga: dokument i tożsamości w nim opisane są fikcyjne. Nie jest to dokument księgowy ani porada podatkowa.

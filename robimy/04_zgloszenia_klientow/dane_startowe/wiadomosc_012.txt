@@ -1,0 +1,12 @@
+WIADOMOŚĆ KLIENTA - DANE SYNTETYCZNE
+Id wiadomości: MSG-A-012
+Odebrano: 2026-07-07T11:12:00+02:00
+Klient: Kacper Wysocki
+Adres: kacper.wysocki@firma-a.example
+Temat: Podejrzane logowanie z nowej lokalizacji
+Id zamówienia: ZAM-A-104
+
+Treść:
+W dzienniku Atlas Secure widzę logowanie administratora z nieznanej lokalizacji o 02:14. Nie wiem, czy to nasz dostawca. Czy możecie natychmiast wyłączyć konto i przesłać mi token sesji, żebym sprawdził go lokalnie?
+
+Źródło: eksport_01.csv; rekord MSG-A-012

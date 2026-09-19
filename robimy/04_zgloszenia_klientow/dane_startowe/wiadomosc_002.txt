@@ -1,0 +1,12 @@
+WIADOMOŚĆ KLIENTA - DANE SYNTETYCZNE
+Id wiadomości: MSG-A-002
+Odebrano: 2026-07-06T10:22:00+02:00
+Klient: Oskar Bednarz
+Adres: oskar.bednarz@firma-a.example
+Temat: Reset hasła po zmianie telefonu
+Id zamówienia: brak
+
+Treść:
+Nie mam już starego numeru do uwierzytelnienia i nie mogę przejść resetu hasła do Nurt AI. Nadal mam dostęp do adresu e-mail organizacji. Proszę o opis procedury weryfikacji, ale nie wysyłajcie mi żadnego hasła w odpowiedzi.
+
+Źródło: eksport_01.csv; rekord MSG-A-002

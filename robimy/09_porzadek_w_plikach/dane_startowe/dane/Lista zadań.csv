@@ -1,0 +1,5 @@
+﻿id_zadania;opis;priorytet;status;termin_iso;status_danych
+A-Z01;spisz źródła i policz pliki;wysoki;otwarte;2026-03-09;syntetyczne
+A-Z02;porównaj treść i SHA256;wysoki;otwarte;2026-03-10;syntetyczne
+A-Z03;zaproponuj ścieżki kopii;średni;robocze;2026-03-11;syntetyczne
+A-Z04;wykonaj kontrolę po kopii;wysoki;oczekuje;2026-03-12;syntetyczne

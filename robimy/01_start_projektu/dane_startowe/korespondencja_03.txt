@@ -1,0 +1,9 @@
+ŹRÓDŁO: P01-A-EMAIL-03
+Data wysłania: 2026-09-09
+Nadawca: Celina Gajda <celina.gajda@luminadom.example>
+Odbiorca: przyjecia@quantica-lab.example
+Temat: Zakup i data demonstracji
+
+Po stronie zakupów mamy orientacyjny limit 18 000,00 PLN brutto. Kierownictwo chciałoby zobaczyć działający prototyp 2026-10-06, przed warsztatami. To termin wewnętrznej demonstracji, a nie formalny termin odbioru.
+
+Proszę nie traktować limitu jako zatwierdzonego zamówienia. Osoba zatwierdzająca nie została jeszcze wskazana.

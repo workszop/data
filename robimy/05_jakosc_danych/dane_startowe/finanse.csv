@@ -1,0 +1,31 @@
+﻿id_wiersza_zrodla;id_rekordu;data;dzial;osoba;kwota_pln;waluta;status;opis
+A-FIN-001;A-FIN-R001;2026-01-08;Finanse;Bartosz Mazur;PLN 1234,50;PLN;zatwierdzona;operacja finanse 01
+A-FIN-002;A-FIN-R002;2026-01-10;Finanse;Celina Wrona;136,25;PLN;rozliczona;operacja finanse 02
+A-FIN-003;A-FIN-R003;2026-01-12;Finanse;Dawid Lis;183,50;PLN;oczekuje;operacja finanse 03
+A-FIN-004;A-FIN-R004;2026-01-14;Finanse;Eliza Kaczmarek;230,75;PLN;zatwierdzona;operacja finanse 04
+A-FIN-005;A-FIN-R005;2026-01-16;Finanse;Filip Pawlak;277,00;PLN;rozliczona;operacja finanse 05
+A-FIN-006;A-FIN-R006;2026-01-18;Finanse;Grażyna Nowak;324,25;PLN;oczekuje;operacja finanse 06
+A-FIN-007;A-FIN-R007;2026-01-20;Finanse;Hubert Zając;371,50;PLN;zatwierdzona;operacja finanse 07
+A-FIN-008;A-FIN-R008;2026-01-22;Finanse;Iga Woźniak;418,75;PLN;rozliczona;operacja finanse 08
+A-FIN-009;A-FIN-R009;2026-01-24;Finanse;Jakub Wójcik;465.00;PLN;oczekuje;operacja finanse 09
+A-FIN-010;A-FIN-R010;2026-01-26;Finanse;Karolina Gajda;512,25 zł;PLN;zatwierdzona;operacja finanse 10
+A-FIN-011;A-FIN-R011;2026-01-28;Finanse;Lena Piątek;PLN 559,50;PLN;rozliczona;operacja finanse 11
+A-FIN-012;A-FIN-R012;2026-01-30;Finanse;Marek Sikora;606,75;PLN;oczekuje;operacja finanse 12
+A-FIN-013;A-FIN-R013;2026-02-01;Finanse;Natalia Kubiak;1234,50;PLN;zatwierdzona;operacja finanse 13
+A-FIN-014;A-FIN-R014;2026-02-03;Finanse;Oskar Cieśla;700,25;PLN;rozliczona;operacja finanse 14
+A-FIN-015;A-FIN-R015;2026-02-05;Finanse;Paulina Bąk;747,50;PLN;oczekuje;operacja finanse 15
+A-FIN-016;A-FIN-R016;2026-02-07;Finanse;Robert Krupa;794,75;PLN;zatwierdzona;operacja finanse 16
+A-FIN-017;A-FIN-R017;2026-02-09;Finanse;Sabina Wilk;841.00;PLN;rozliczona;operacja finanse 17
+A-FIN-018;A-FIN-R018;2026-02-11;Finanse;Tomasz Kania;888,25;PLN;oczekuje;operacja finanse 18
+A-FIN-019;A-FIN-R019;2026-02-13;Finanse;Urszula Leśniak;935,50 zł;PLN;zatwierdzona;operacja finanse 19
+A-FIN-020;A-FIN-R020;2026-02-15;Finanse;Alicja Król;982,75;PLN;rozliczona;operacja finanse 20
+A-FIN-021;A-FIN-R021;2026-02-17;Finanse;Bartosz Mazur;PLN 1029,00;PLN;oczekuje;operacja finanse 21
+A-FIN-022;A-FIN-R022;2026-02-19;Finanse;Celina Wrona;96,25;PLN;zatwierdzona;operacja finanse 22
+A-FIN-023;A-FIN-R023;2026-02-21;Finanse;Dawid Lis;143,50;PLN;rozliczona;operacja finanse 23
+A-FIN-024;A-FIN-R024;2026-02-23;Finanse;Eliza Kaczmarek;190,75;PLN;oczekuje;operacja finanse 24
+A-FIN-025;A-FIN-R025;2026-02-25;Finanse;Filip Pawlak;1234.50;PLN;zatwierdzona;operacja finanse 25
+A-FIN-026;A-FIN-R026;2026-02-27;Finanse;Grażyna Nowak;284,25;PLN;rozliczona;operacja finanse 26
+A-FIN-027;A-FIN-R027;2026-03-01;Finanse;Hubert Zając;331,50;PLN;oczekuje;operacja finanse 27
+A-FIN-028;A-FIN-R028;2026-01-06;Finanse;Iga Woźniak;378,75 zł;PLN;zatwierdzona;operacja finanse 28
+A-FIN-029;A-FIN-R029;2026-01-08;Finanse;Jakub Wójcik;425,00;PLN;rozliczona;operacja finanse 29
+A-FIN-030;A-FIN-R005;2026-01-16;Finanse;Filip Pawlak;277,00;PLN;rozliczona;operacja finanse 05

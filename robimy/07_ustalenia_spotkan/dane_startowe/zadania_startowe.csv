@@ -1,0 +1,9 @@
+﻿id_zadania;projekt;zadanie;właściciel;termin;status;priorytet;źródło;uwagi
+ZAD-A-01;Atlas Baza Wiedzy;Zebrać potrzeby użytkowników z trzech zespołów;Alicja Nowak;2026-05-06;planowane;wysoki;spotkanie_01.md, akapit 2;"stan początkowy; nie oznacza wykonania"
+ZAD-A-02;Atlas Baza Wiedzy;Przygotować prototyp wyszukiwarki;Bruno Zięba;2026-05-14;planowane;wysoki;spotkanie_01.md, akapit 3;"stan początkowy; nie oznacza wykonania"
+ZAD-A-03;Atlas Baza Wiedzy;Spisać słownik danych i źródeł;Celina Ptak;2026-05-12;planowane;średni;spotkanie_01.md, akapit 4;"stan początkowy; nie oznacza wykonania"
+ZAD-A-04;Atlas Baza Wiedzy;Wykonać przegląd bezpieczeństwa prototypu;Daniel Róg;2026-05-19;planowane;wysoki;spotkanie_01.md, akapit 5;"stan początkowy; nie oznacza wykonania"
+ZAD-A-05;Atlas Baza Wiedzy;Zaprosić grupę pilotażową;Ewa Kaleta;2026-05-22;planowane;średni;spotkanie_01.md, akapit 6;"stan początkowy; nie oznacza wykonania"
+ZAD-A-06;Atlas Baza Wiedzy;Przygotować krótką instrukcję dla testerów;Filip Wrona;2026-05-26;planowane;średni;spotkanie_01.md, akapit 7;"stan początkowy; nie oznacza wykonania"
+ZAD-A-07;Atlas Baza Wiedzy;Ustalić właściciela obsługi pytań pilotażu;do ustalenia;2026-06-02;planowane;wysoki;spotkanie_01.md, akapit 8;"stan początkowy; nie oznacza wykonania"
+ZAD-A-08;Atlas Baza Wiedzy;Podjąć decyzję o uruchomieniu pilotażu;Alicja Nowak;2026-06-08;planowane;wysoki;spotkanie_01.md, akapit 9;"stan początkowy; nie oznacza wykonania"

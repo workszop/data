@@ -1,0 +1,9 @@
+ŹRÓDŁO: P08-A-EMAIL-01
+Data wysłania: 2026-10-03
+Nadawca: Marta Lis <marta.lis@luminadom.example>
+Odbiorca: oferty@quantica-lab.example
+Temat: Zakres oferty raportowej
+
+Prosimy o ofertę na: dwa dni analizy jakości danych, dwie sesje warsztatu mapowania raportu, trzy godziny wsparcia po warsztatach i jeden raport podsumowujący. Chcemy także integracji z naszym CRM PanelPilot.
+
+Prosimy o cenę brutto i przykłady podobnych realizacji. Przy tej skali oczekujemy 15% rabatu partnerskiego. Nie załączamy osobnej zgody na rabat.

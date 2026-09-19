@@ -1,0 +1,7 @@
+ŹRÓDŁO: P01-A-EMAIL-04
+Data wysłania: 2026-09-10
+Nadawca: Eliza Kwiecień <eliza.kwiecien@luminadom.example>
+Odbiorca: przyjecia@quantica-lab.example
+Temat: Ograniczenia dotyczące danych
+
+Surowe rekordy klientów nie mogą opuszczać naszego środowiska. Możemy przekazać pliki po anonimizacji, ale nie mamy jeszcze instrukcji anonimizacji ani osoby odpowiedzialnej za jej zatwierdzenie. Proszę uwzględnić to w pytaniach przed startem.

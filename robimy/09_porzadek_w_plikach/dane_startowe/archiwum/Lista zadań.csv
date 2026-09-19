@@ -1,0 +1,4 @@
+﻿id_zadania;opis;priorytet;status;termin_iso;status_danych
+A-ZA01;przygotuj sam indeks;średni;zamknięte;2025-12-14;syntetyczne
+A-ZA02;przenieś pliki do katalogu;niski;wstrzymane;2025-12-15;syntetyczne
+A-ZA03;nie testuj rerunu;niski;pominięte;2025-12-16;syntetyczne

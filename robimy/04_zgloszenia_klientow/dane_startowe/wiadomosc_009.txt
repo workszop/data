@@ -1,0 +1,12 @@
+WIADOMOŚĆ KLIENTA - DANE SYNTETYCZNE
+Id wiadomości: MSG-A-009
+Odebrano: 2026-07-07T08:39:00+02:00
+Klient: Iga Żmuda
+Adres: iga.zmuda@firma-a.example
+Temat: Zwrot pierwszego planu po kilku dniach
+Id zamówienia: ZAM-A-101
+
+Treść:
+Aktywowałam Nurt AI kilka dni temu i chcę zrezygnować z pierwszego planu miesięcznego. Nie korzystaliśmy z płatnego wdrożenia, tylko z funkcji Start. Proszę o potwierdzenie, czy wniosek mieści się w 14 dniach; proszę nie wykonywać zwrotu bez mojej akceptacji podsumowania.
+
+Źródło: eksport_01.csv; rekord MSG-A-009

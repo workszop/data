@@ -1,0 +1,16 @@
+DANE SYNTETYCZNE | materiał ćwiczeniowy | wszystkie osoby i projekty są fikcyjne
+---
+id_dokumentu: PS-A-023
+tytul: Podsumowanie dla partnera
+data_utworzenia: 2026-02-24
+data_modyfikacji: 2026-02-26
+wersja: 1.0
+status: gotowy_projekt
+pochodzenie: generator szkoleniowy, bez danych rzeczywistych
+---
+
+Projekt Latarnia dotyczy zadania: porządkowanie materiałów do fikcyjnej wystawy osiedlowej. Ten plik ma znaczenie ćwiczeniowe i nie jest dokumentem operacyjnym.
+
+Zakres pliku: krótkie podsumowanie planu kopiowania. Wariant 23 wymaga sprawdzenia treści, metadanych oraz relacji z pozostałymi plikami, a nie tylko odczytania nazwy.
+
+Ustalenie robocze: to nadal projekt do zatwierdzenia, bez automatycznej wysyłki. Następny krok to zapisanie decyzji w rejestrze i zachowanie kopii z nową ścieżką.

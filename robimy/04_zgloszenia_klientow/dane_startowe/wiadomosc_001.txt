@@ -1,0 +1,12 @@
+WIADOMOŚĆ KLIENTA - DANE SYNTETYCZNE
+Id wiadomości: MSG-A-001
+Odebrano: 2026-07-06T09:11:00+02:00
+Klient: Maja Rybak
+Adres: maja.rybak@firma-a.example
+Temat: Zaproszenie do zespołu nie dociera
+Id zamówienia: ZAM-A-101
+
+Treść:
+Cześć, przy próbie dodania mnie do zespołu zaproszenie nie pojawia się ani w skrzynce, ani w folderze ofert. Administrator widzi mój adres, ale nie może wysłać drugiego zaproszenia. Czy możecie sprawdzić stan zaproszenia i podać bezpieczny następny krok?
+
+Źródło: eksport_01.csv; rekord MSG-A-001

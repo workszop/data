@@ -1,0 +1,5 @@
+﻿okres_id;data_od;data_do;data_stanu;stan_okresu;czy_pelny;uwaga
+T1;2026-08-17;2026-08-23;2026-08-23;pelny;TAK;Wszystkie dni tygodnia dostępne
+T2;2026-08-24;2026-08-30;2026-08-30;pelny;TAK;Wszystkie dni tygodnia dostępne
+T3;2026-08-31;2026-09-06;2026-09-06;pelny;TAK;Wszystkie dni tygodnia dostępne
+T4;2026-09-07;2026-09-13;2026-09-12;czesciowy;NIE;"Eksport do 2026-09-12; brakuje niedzieli"

@@ -1,0 +1,45 @@
+03. raport sprzedaży
+
+O firmie
+Kawa Północna sprzedaje kawę i akcesoria przez kilka kanałów sprzedaży.
+
+Zadanie
+Przygotuj z agentem raport sprzedaży za tygodnie opisane w danych. Pokaż
+wyniki tak, żeby można było sprawdzić obliczenia. Opisz jakość danych
+i nie przypisuj zmianom sprzedaży przyczyn, których nie znasz.
+
+Materiały
+dane_startowe/sprzedaz.csv, cele.csv, okresy.csv i wynik_poprzedni.csv.
+Przed obliczeniami poproś agenta o definicje wskaźników i zatwierdź je.
+
+Praca z agentem
+1. Poproś agenta o spis źródeł i plan sprawdzenia danych.
+   Zatwierdź go przed obliczeniami.
+2. Sprawdź nagłówki, daty, statusy, powtórzenia i to, czy dane obejmują
+   pełne tygodnie. Podaj liczbę wierszy przed wyłączeniem duplikatów,
+   po ich wyłączeniu oraz po odfiltrowaniu statusów.
+3. Policz przychód netto, liczbę transakcji, średnią transakcję, realizację
+   celu oraz zmianę tydzień do tygodnia zgodnie z definicjami.
+4. T4 jest niepełny: dane sięgają 2026-09-12. Oznacz wynik jako częściowy
+   i zastosuj BRAK_POROWNANIA zamiast porównania z pełnym tygodniem.
+5. Porównaj wynik z poprzednim raportem, jeśli oba obejmują ten sam zakres.
+   Opisz różnice. Wyraźnie oddziel to, co widać w danych, od przypuszczeń
+   o przyczynach zmian.
+
+Pliki do oddania w wyniki/v01/
+- wskazniki_tygodniowe.csv: okres, kompletność, przychód, liczba
+  transakcji, średnia, cel, realizacja celu i porównywalna zmiana.
+- raport_sprzedazy.md: wnioski z liczb, ograniczenia i źródła.
+- raport_kontroli.md: liczby wierszy, wykluczenia z identyfikatorami,
+  błędy i porównanie z wynik_poprzedni.csv.
+- instrukcja_ponowienia.md: reguły i sposób odtworzenia raportu.
+
+Sprawdź przed oddaniem
+Niezależnie przelicz przychód jednego pełnego tygodnia i kwotę wybranej
+transakcji. Sprawdź zaokrąglenia. Zwroty, anulowania i powtórzenia nie mogą
+zwiększać zrealizowanej sprzedaży. T4 nie może być opisany jako spadek
+względem pełnego tygodnia.
+
+Zasady pracy
+To dane syntetyczne. Pracuj tylko w tym folderze, bez internetu i działań
+zewnętrznych. Nie zmieniaj źródeł. Stosuj uzgodnione definicje wskaźników.

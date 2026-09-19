@@ -1,0 +1,162 @@
+﻿id_wiersza_zrodla;id_transakcji;data;produkt;kanal;ilosc;cena_jednostkowa_pln;rabat_proc;kwota_netto_pln;status
+ZA-1-001;TR-A-101;2026-08-18;Kubek termiczny;sklep_stacjonarny;2;87,00;0,00;174,00;zrealizowana
+ZA-1-002;TR-A-102;2026-08-20;Zestaw prezentowy;partner;3;117,25;5,00;334,16;zrealizowana
+ZA-1-003;TR-A-103;2026-08-22;Filtry papierowe 100 szt.;zamowienie_telefoniczne;4;21,00;10,00;75,60;zrealizowana
+ZA-1-004;TR-A-104;2026-08-17;Waga do kawy;sklep_online;1;107,75;15,00;91,59;zrealizowana
+ZA-1-005;TR-A-105;2026-08-19;Kubek termiczny;sklep_stacjonarny;2;87,00;0,00;174,00;zrealizowana
+ZA-1-006;TR-A-106;2026-08-21;Zestaw prezentowy;partner;3;117,25;0,00;351,75;zrealizowana
+ZA-1-007;TR-A-107;2026-08-23;Filtry papierowe 100 szt.;zamowienie_telefoniczne;4;21,00;5,00;79,80;zrealizowana
+ZA-1-008;TR-A-108;2026-08-18;Waga do kawy;sklep_online;-1;107,75;10,00;-96,98;zwrot
+ZA-1-009;TR-A-109;2026-08-20;Kubek termiczny;sklep_stacjonarny;2;87,00;15,00;147,90;zrealizowana
+ZA-1-010;TR-A-110;2026-08-22;Zestaw prezentowy;partner;3;117,25;0,00;351,75;zrealizowana
+ZA-1-011;TR-A-111;2026-08-17;Filtry papierowe 100 szt.;zamowienie_telefoniczne;4;21,00;0,00;84,00;zrealizowana
+ZA-1-012;TR-A-112;2026-08-19;Waga do kawy;sklep_online;1;107,75;5,00;102,36;zrealizowana
+ZA-1-013;TR-A-113;2026-08-21;Kubek termiczny;sklep_stacjonarny;2;87,00;10,00;156,60;zrealizowana
+ZA-1-014;TR-A-114;2026-08-23;Zestaw prezentowy;partner;3;117,25;15,00;298,99;zrealizowana
+ZA-1-015;TR-A-115;2026-08-18;Filtry papierowe 100 szt.;zamowienie_telefoniczne;4;21,00;0,00;84,00;zrealizowana
+ZA-1-016;TR-A-116;2026-08-20;Waga do kawy;sklep_online;1;107,75;0,00;107,75;zrealizowana
+ZA-1-017;TR-A-117;2026-08-22;Kubek termiczny;sklep_stacjonarny;2;87,00;5,00;165,30;zrealizowana
+ZA-1-018;TR-A-118;2026-08-17;Zestaw prezentowy;partner;3;117,25;10,00;316,58;zrealizowana
+ZA-1-019;TR-A-119;2026-08-19;Filtry papierowe 100 szt.;zamowienie_telefoniczne;4;21,00;15,00;71,40;zrealizowana
+ZA-1-020;TR-A-120;2026-08-21;Waga do kawy;sklep_online;1;107,75;0,00;107,75;zrealizowana
+ZA-1-021;TR-A-121;2026-08-23;Kubek termiczny;sklep_stacjonarny;2;87,00;0,00;174,00;zrealizowana
+ZA-1-022;TR-A-122;2026-08-18;Zestaw prezentowy;partner;3;117,25;5,00;334,16;zrealizowana
+ZA-1-023;TR-A-123;2026-08-20;Filtry papierowe 100 szt.;zamowienie_telefoniczne;4;21,00;10,00;75,60;zrealizowana
+ZA-1-024;TR-A-124;2026-08-22;Waga do kawy;sklep_online;1;107,75;15,00;91,59;zrealizowana
+ZA-1-025;TR-A-125;2026-08-17;Kubek termiczny;sklep_stacjonarny;2;87,00;0,00;174,00;zrealizowana
+ZA-1-026;TR-A-126;2026-08-19;Zestaw prezentowy;partner;3;117,25;0,00;351,75;zrealizowana
+ZA-1-027;TR-A-127;2026-08-21;Filtry papierowe 100 szt.;zamowienie_telefoniczne;4;21,00;5,00;79,80;zrealizowana
+ZA-1-028;TR-A-128;2026-08-23;Waga do kawy;sklep_online;1;107,75;10,00;96,98;zrealizowana
+ZA-1-029;TR-A-129;2026-08-18;Kubek termiczny;sklep_stacjonarny;2;87,00;15,00;147,90;zrealizowana
+ZA-1-030;TR-A-130;2026-08-20;Zestaw prezentowy;partner;3;117,25;0,00;351,75;zrealizowana
+ZA-1-031;TR-A-131;2026-08-22;Filtry papierowe 100 szt.;zamowienie_telefoniczne;4;21,00;0,00;84,00;zrealizowana
+ZA-1-032;TR-A-132;2026-08-17;Waga do kawy;sklep_online;1;107,75;5,00;102,36;zrealizowana
+ZA-1-033;TR-A-133;2026-08-19;Kubek termiczny;sklep_stacjonarny;2;87,00;10,00;156,60;zrealizowana
+ZA-1-034;TR-A-134;2026-08-21;Zestaw prezentowy;partner;3;117,25;15,00;298,99;zrealizowana
+ZA-1-035;TR-A-135;2026-08-23;Filtry papierowe 100 szt.;zamowienie_telefoniczne;4;21,00;0,00;84,00;zrealizowana
+ZA-1-036;TR-A-136;2026-08-18;Waga do kawy;sklep_online;1;107,75;0,00;107,75;zrealizowana
+ZA-1-037;TR-A-137;2026-08-20;Kubek termiczny;sklep_stacjonarny;2;87,00;5,00;165,30;zrealizowana
+ZA-1-038;TR-A-138;2026-08-22;Zestaw prezentowy;partner;3;117,25;10,00;316,58;zrealizowana
+ZA-1-039;TR-A-139;2026-08-17;Filtry papierowe 100 szt.;zamowienie_telefoniczne;4;21,00;15,00;71,40;zrealizowana
+ZA-1-040;TR-A-140;2026-08-19;Waga do kawy;sklep_online;1;107,75;0,00;107,75;zrealizowana
+ZA-2-001;TR-A-201;2026-08-26;Spieniacz do mleka;zamowienie_telefoniczne;3;53,90;5,00;153,62;zrealizowana
+ZA-2-002;TR-A-202;2026-08-28;Butelka na wodę;sklep_online;4;43,25;10,00;155,70;zrealizowana
+ZA-2-003;TR-A-203;2026-08-30;Herbata liściasta 250 g;sklep_stacjonarny;1;36,00;15,00;30,60;zrealizowana
+ZA-2-004;TR-A-204;2026-08-25;Syrop waniliowy;partner;2;27,75;0,00;55,50;zrealizowana
+ZA-2-005;TR-A-205;2026-08-27;Spieniacz do mleka;zamowienie_telefoniczne;3;53,90;0,00;161,70;zrealizowana
+ZA-2-006;TR-A-206;2026-08-29;Butelka na wodę;sklep_online;4;43,25;5,00;164,35;zrealizowana
+ZA-2-007;TR-A-207;2026-08-24;Herbata liściasta 250 g;sklep_stacjonarny;1;36,00;10,00;32,40;zrealizowana
+ZA-2-008;TR-A-208;2026-08-26;Syrop waniliowy;partner;2;27,75;15,00;47,18;zrealizowana
+ZA-2-009;TR-A-209;2026-08-28;Spieniacz do mleka;zamowienie_telefoniczne;3;53,90;0,00;161,70;zrealizowana
+ZA-2-010;TR-A-210;2026-08-30;Butelka na wodę;sklep_online;4;43,25;0,00;173,00;zrealizowana
+ZA-2-011;TR-A-211;2026-08-25;Herbata liściasta 250 g;sklep_stacjonarny;1;36,00;5,00;34,20;zrealizowana
+ZA-2-012;TR-A-212;2026-08-27;Syrop waniliowy;partner;2;27,75;10,00;49,95;zrealizowana
+ZA-2-013;TR-A-213;2026-08-29;Spieniacz do mleka;zamowienie_telefoniczne;3;53,90;15,00;137,45;zrealizowana
+ZA-2-014;TR-A-214;2026-08-24;Butelka na wodę;sklep_online;4;43,25;0,00;173,00;zrealizowana
+ZA-2-015;TR-A-215;2026-08-26;Herbata liściasta 250 g;sklep_stacjonarny;1;36,00;0,00;36,00;zrealizowana
+ZA-2-016;TR-A-216;2026-08-28;Syrop waniliowy;partner;2;27,75;5,00;52,73;zrealizowana
+ZA-2-017;TR-A-217;2026-08-30;Spieniacz do mleka;zamowienie_telefoniczne;3;53,90;10,00;145,53;zrealizowana
+ZA-2-018;TR-A-218;2026-08-25;Butelka na wodę;sklep_online;4;43,25;15,00;147,05;zrealizowana
+ZA-2-019;TR-A-219;2026-08-27;Herbata liściasta 250 g;sklep_stacjonarny;1;36,00;0,00;36,00;zrealizowana
+ZA-2-020;TR-A-220;2026-08-29;Syrop waniliowy;partner;2;27,75;0,00;55,50;zrealizowana
+ZA-2-021;TR-A-221;2026-08-24;Spieniacz do mleka;zamowienie_telefoniczne;3;53,90;5,00;153,62;zrealizowana
+ZA-2-022;TR-A-222;2026-08-26;Butelka na wodę;sklep_online;4;43,25;10,00;155,70;zrealizowana
+ZA-2-023;TR-A-223;2026-08-28;Herbata liściasta 250 g;sklep_stacjonarny;1;36,00;15,00;30,60;zrealizowana
+ZA-2-024;TR-A-224;2026-08-30;Syrop waniliowy;partner;2;27,75;0,00;55,50;zrealizowana
+ZA-2-025;TR-A-225;2026-08-25;Spieniacz do mleka;zamowienie_telefoniczne;3;53,90;0,00;161,70;zrealizowana
+ZA-2-026;TR-A-226;2026-08-27;Butelka na wodę;sklep_online;4;43,25;5,00;0,00;anulowana
+ZA-2-027;TR-A-227;2026-08-29;Herbata liściasta 250 g;sklep_stacjonarny;1;36,00;10,00;32,40;zrealizowana
+ZA-2-028;TR-A-228;2026-08-24;Syrop waniliowy;partner;2;27,75;15,00;47,18;zrealizowana
+ZA-2-029;TR-A-229;2026-08-26;Spieniacz do mleka;zamowienie_telefoniczne;3;53,90;0,00;161,70;zrealizowana
+ZA-2-030;TR-A-230;2026-08-28;Butelka na wodę;sklep_online;4;43,25;0,00;173,00;zrealizowana
+ZA-2-031;TR-A-231;2026-08-30;Herbata liściasta 250 g;sklep_stacjonarny;1;36,00;5,00;34,20;zrealizowana
+ZA-2-032;TR-A-232;2026-08-25;Syrop waniliowy;partner;2;27,75;10,00;49,95;zrealizowana
+ZA-2-033;TR-A-233;2026-08-27;Spieniacz do mleka;zamowienie_telefoniczne;3;53,90;15,00;137,45;zrealizowana
+ZA-2-034;TR-A-234;2026-08-29;Butelka na wodę;sklep_online;4;43,25;0,00;173,00;zrealizowana
+ZA-2-035;TR-A-235;2026-08-24;Herbata liściasta 250 g;sklep_stacjonarny;1;36,00;0,00;36,00;zrealizowana
+ZA-2-036;TR-A-236;2026-08-26;Syrop waniliowy;partner;2;27,75;5,00;52,73;zrealizowana
+ZA-2-037;TR-A-237;2026-08-28;Spieniacz do mleka;zamowienie_telefoniczne;3;53,90;10,00;145,53;zrealizowana
+ZA-2-038;TR-A-238;2026-08-30;Butelka na wodę;sklep_online;4;43,25;15,00;147,05;zrealizowana
+ZA-2-039;TR-A-239;2026-08-25;Herbata liściasta 250 g;sklep_stacjonarny;1;36,00;0,00;36,00;zrealizowana
+ZA-2-040;TR-A-240;2026-08-27;Syrop waniliowy;partner;2;27,75;0,00;55,50;zrealizowana
+ZA-3-001;TR-A-301;2026-09-03;Kawa ziarnista 1 kg;sklep_stacjonarny;4;74,90;10,00;269,64;zrealizowana
+ZA-3-002;TR-A-302;2026-09-05;Młynek ręczny;partner;1;150,15;15,00;127,63;zrealizowana
+ZA-3-003;TR-A-303;2026-08-31;Drip ceramiczny;zamowienie_telefoniczne;2;62,50;0,00;125,00;zrealizowana
+ZA-3-004;TR-A-304;2026-09-02;Kawa bezkofeinowa 500 g;sklep_online;3;50,65;0,00;151,95;zrealizowana
+ZA-3-005;TR-A-305;2026-09-04;Kawa ziarnista 1 kg;sklep_stacjonarny;4;74,90;5,00;284,62;zrealizowana
+ZA-3-006;TR-A-306;2026-09-06;Młynek ręczny;partner;1;150,15;10,00;135,14;zrealizowana
+ZA-3-007;TR-A-307;2026-09-01;Drip ceramiczny;zamowienie_telefoniczne;2;62,50;15,00;106,25;zrealizowana
+ZA-3-008;TR-A-308;2026-09-03;Kawa bezkofeinowa 500 g;sklep_online;3;50,65;0,00;151,95;zrealizowana
+ZA-3-009;TR-A-309;2026-09-05;Kawa ziarnista 1 kg;sklep_stacjonarny;4;74,90;0,00;299,60;zrealizowana
+ZA-3-010;TR-A-310;2026-08-31;Młynek ręczny;partner;1;150,15;5,00;142,64;zrealizowana
+ZA-3-011;TR-A-311;2026-09-02;Drip ceramiczny;zamowienie_telefoniczne;2;62,50;10,00;112,50;zrealizowana
+ZA-3-012;TR-A-312;2026-09-04;Kawa bezkofeinowa 500 g;sklep_online;3;50,65;15,00;129,16;zrealizowana
+ZA-3-013;TR-A-313;2026-09-06;Kawa ziarnista 1 kg;sklep_stacjonarny;4;74,90;0,00;299,60;zrealizowana
+ZA-3-014;TR-A-314;2026-09-01;Młynek ręczny;partner;1;150,15;0,00;150,15;zrealizowana
+ZA-3-015;TR-A-315;2026-09-03;Drip ceramiczny;zamowienie_telefoniczne;2;62,50;5,00;118,75;zrealizowana
+ZA-3-016;TR-A-316;2026-09-05;Kawa bezkofeinowa 500 g;sklep_online;3;50,65;10,00;136,76;zrealizowana
+ZA-3-017;TR-A-317;2026-08-31;Kawa ziarnista 1 kg;sklep_stacjonarny;4;74,90;15,00;254,66;zrealizowana
+ZA-3-018;TR-A-318;2026-09-02;Młynek ręczny;partner;1;150,15;0,00;150,15;zrealizowana
+ZA-3-019;TR-A-319;2026-09-04;Drip ceramiczny;zamowienie_telefoniczne;2;62,50;0,00;125,00;zrealizowana
+ZA-3-020;TR-A-320;2026-09-06;Kawa bezkofeinowa 500 g;sklep_online;3;50,65;5,00;144,35;zrealizowana
+ZA-3-021;TR-A-321;2026-09-01;Kawa ziarnista 1 kg;sklep_stacjonarny;4;74,90;10,00;269,64;zrealizowana
+ZA-3-022;TR-A-322;2026-09-03;Młynek ręczny;partner;1;150,15;15,00;127,63;zrealizowana
+ZA-3-023;TR-A-323;2026-09-05;Drip ceramiczny;zamowienie_telefoniczne;2;62,50;0,00;125,00;zrealizowana
+ZA-3-024;TR-A-324;2026-08-31;Kawa bezkofeinowa 500 g;sklep_online;3;50,65;0,00;151,95;zrealizowana
+ZA-3-025;TR-A-325;2026-09-02;Kawa ziarnista 1 kg;sklep_stacjonarny;4;74,90;5,00;284,62;zrealizowana
+ZA-3-026;TR-A-326;2026-09-04;Młynek ręczny;partner;1;150,15;10,00;135,14;zrealizowana
+ZA-3-027;TR-A-327;2026-09-06;Drip ceramiczny;zamowienie_telefoniczne;2;62,50;15,00;106,25;zrealizowana
+ZA-3-028;TR-A-328;2026-09-01;Kawa bezkofeinowa 500 g;sklep_online;3;50,65;0,00;151,95;zrealizowana
+ZA-3-029;TR-A-329;2026-09-03;Kawa ziarnista 1 kg;sklep_stacjonarny;4;74,90;0,00;299,60;zrealizowana
+ZA-3-030;TR-A-330;2026-09-05;Młynek ręczny;partner;1;150,15;5,00;142,64;zrealizowana
+ZA-3-031;TR-A-331;2026-08-31;Drip ceramiczny;zamowienie_telefoniczne;-2;62,50;10,00;-112,50;zwrot
+ZA-3-032;TR-A-332;2026-09-02;Kawa bezkofeinowa 500 g;sklep_online;3;50,65;15,00;129,16;zrealizowana
+ZA-3-033;TR-A-333;2026-09-04;Kawa ziarnista 1 kg;sklep_stacjonarny;4;74,90;0,00;299,60;zrealizowana
+ZA-3-034;TR-A-334;2026-09-06;Młynek ręczny;partner;1;150,15;0,00;150,15;zrealizowana
+ZA-3-035;TR-A-335;2026-09-01;Drip ceramiczny;zamowienie_telefoniczne;2;62,50;5,00;118,75;zrealizowana
+ZA-3-036;TR-A-336;2026-09-03;Kawa bezkofeinowa 500 g;sklep_online;3;50,65;10,00;136,76;zrealizowana
+ZA-3-037;TR-A-337;2026-09-05;Kawa ziarnista 1 kg;sklep_stacjonarny;4;74,90;15,00;254,66;zrealizowana
+ZA-3-038;TR-A-338;2026-08-31;Młynek ręczny;partner;1;150,15;0,00;150,15;zrealizowana
+ZA-3-039;TR-A-339;2026-09-02;Drip ceramiczny;zamowienie_telefoniczne;2;62,50;0,00;125,00;zrealizowana
+ZA-3-040;TR-A-340;2026-09-04;Kawa bezkofeinowa 500 g;sklep_online;3;50,65;5,00;144,35;zrealizowana
+ZA-4-001;TR-A-401;2026-09-11;Zestaw prezentowy;zamowienie_telefoniczne;1;120,00;15,00;102,00;zrealizowana
+ZA-4-002;TR-A-402;2026-09-07;Filtry papierowe 100 szt.;sklep_online;2;23,75;0,00;47,50;zrealizowana
+ZA-4-003;TR-A-403;2026-09-09;Waga do kawy;sklep_stacjonarny;3;110,50;0,00;331,50;zrealizowana
+ZA-4-004;TR-A-404;2026-09-11;Kubek termiczny;partner;4;90,75;5,00;344,85;zrealizowana
+ZA-4-005;TR-A-405;2026-09-07;Zestaw prezentowy;zamowienie_telefoniczne;1;120,00;10,00;108,00;zrealizowana
+ZA-4-006;TR-A-406;2026-09-09;Filtry papierowe 100 szt.;sklep_online;2;23,75;15,00;40,38;zrealizowana
+ZA-4-007;TR-A-407;2026-09-11;Waga do kawy;sklep_stacjonarny;3;110,50;0,00;331,50;zrealizowana
+ZA-4-008;TR-A-408;2026-09-07;Kubek termiczny;partner;4;90,75;0,00;363,00;zrealizowana
+ZA-4-009;TR-A-409;2026-09-09;Zestaw prezentowy;zamowienie_telefoniczne;1;120,00;5,00;114,00;zrealizowana
+ZA-4-010;TR-A-410;2026-09-11;Filtry papierowe 100 szt.;sklep_online;2;23,75;10,00;42,75;zrealizowana
+ZA-4-011;TR-A-411;2026-09-07;Waga do kawy;sklep_stacjonarny;3;110,50;15,00;281,78;zrealizowana
+ZA-4-012;TR-A-412;2026-09-09;Kubek termiczny;partner;4;90,75;0,00;363,00;zrealizowana
+ZA-4-013;TR-A-413;2026-09-11;Zestaw prezentowy;zamowienie_telefoniczne;1;120,00;0,00;120,00;zrealizowana
+ZA-4-014;TR-A-414;2026-09-07;Filtry papierowe 100 szt.;sklep_online;2;23,75;5,00;45,13;zrealizowana
+ZA-4-015;TR-A-415;2026-09-09;Waga do kawy;sklep_stacjonarny;3;110,50;10,00;298,35;zrealizowana
+ZA-4-016;TR-A-416;2026-09-11;Kubek termiczny;partner;4;90,75;15,00;308,55;zrealizowana
+ZA-4-017;TR-A-417;2026-09-07;Zestaw prezentowy;zamowienie_telefoniczne;1;120,00;0,00;120,00;zrealizowana
+ZA-4-018;TR-A-418;2026-09-09;Filtry papierowe 100 szt.;sklep_online;2;23,75;0,00;0,00;anulowana
+ZA-4-019;TR-A-419;2026-09-11;Waga do kawy;sklep_stacjonarny;3;110,50;5,00;314,93;zrealizowana
+ZA-4-020;TR-A-420;2026-09-07;Kubek termiczny;partner;4;90,75;10,00;326,70;zrealizowana
+ZA-4-021;TR-A-421;2026-09-09;Zestaw prezentowy;zamowienie_telefoniczne;1;120,00;15,00;102,00;zrealizowana
+ZA-4-022;TR-A-422;2026-09-11;Filtry papierowe 100 szt.;sklep_online;2;23,75;0,00;47,50;zrealizowana
+ZA-4-023;TR-A-423;2026-09-07;Waga do kawy;sklep_stacjonarny;3;110,50;0,00;331,50;zrealizowana
+ZA-4-024;TR-A-424;2026-09-09;Kubek termiczny;partner;4;90,75;5,00;344,85;zrealizowana
+ZA-4-025;TR-A-425;2026-09-11;Zestaw prezentowy;zamowienie_telefoniczne;1;120,00;10,00;108,00;zrealizowana
+ZA-4-026;TR-A-426;2026-09-07;Filtry papierowe 100 szt.;sklep_online;2;23,75;15,00;40,38;zrealizowana
+ZA-4-027;TR-A-427;2026-09-09;Waga do kawy;sklep_stacjonarny;3;110,50;0,00;331,50;zrealizowana
+ZA-4-028;TR-A-428;2026-09-11;Kubek termiczny;partner;4;90,75;0,00;363,00;zrealizowana
+ZA-4-029;TR-A-429;2026-09-07;Zestaw prezentowy;zamowienie_telefoniczne;1;120,00;5,00;114,00;zrealizowana
+ZA-4-030;TR-A-430;2026-09-09;Filtry papierowe 100 szt.;sklep_online;2;23,75;10,00;42,75;zrealizowana
+ZA-4-031;TR-A-431;2026-09-11;Waga do kawy;sklep_stacjonarny;3;110,50;15,00;281,78;zrealizowana
+ZA-4-032;TR-A-432;2026-09-07;Kubek termiczny;partner;4;90,75;0,00;363,00;zrealizowana
+ZA-4-033;TR-A-433;2026-09-09;Zestaw prezentowy;zamowienie_telefoniczne;1;120,00;0,00;120,00;zrealizowana
+ZA-4-034;TR-A-434;2026-09-11;Filtry papierowe 100 szt.;sklep_online;2;23,75;5,00;45,13;zrealizowana
+ZA-4-035;TR-A-435;2026-09-07;Waga do kawy;sklep_stacjonarny;3;110,50;10,00;298,35;zrealizowana
+ZA-4-036;TR-A-436;2026-09-09;Kubek termiczny;partner;4;90,75;15,00;308,55;zrealizowana
+ZA-4-037;TR-A-437;2026-09-11;Zestaw prezentowy;zamowienie_telefoniczne;1;120,00;0,00;120,00;zrealizowana
+ZA-4-038;TR-A-438;2026-09-07;Filtry papierowe 100 szt.;sklep_online;2;23,75;0,00;47,50;zrealizowana
+ZA-4-039;TR-A-439;2026-09-09;Waga do kawy;sklep_stacjonarny;3;110,50;5,00;314,93;zrealizowana
+ZA-4-040;TR-A-440;2026-09-11;Kubek termiczny;partner;4;90,75;10,00;326,70;zrealizowana
+ZA-2-041;TR-A-202;2026-08-28;Butelka na wodę;sklep_online;4;43,25;10,00;155,70;zrealizowana

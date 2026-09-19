@@ -1,0 +1,6 @@
+﻿source_id;date;time_from;time_to;activity;owner;target_roles;capacity;status
+P06-A-CAL-01;2026-10-05;09:00;10:00;Powitanie i cele tygodnia;Ola Sowa;wszystkie;4;dostępny
+P06-A-CAL-02;2026-10-06;10:00;11:00;Przegląd CRM i tablicy sprzedażowej;Marta Lis;Doradczyni klienta;1;dostępny
+P06-A-CAL-03;2026-10-07;14:00;15:00;Ćwiczenie na danych fikcyjnych;Filip Zając;Analityk danych;1;dostępny
+P06-A-CAL-04;2026-10-08;11:00;12:00;Przegląd rejestru administracyjnego;Celina Gajda;Koordynatorka administracji;1;dostępny
+P06-A-CAL-05;2026-10-09;15:00;16:00;Podsumowanie tygodnia;Ola Sowa;wszystkie;4;dostępny

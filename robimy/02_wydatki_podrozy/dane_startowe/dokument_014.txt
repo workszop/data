@@ -1,0 +1,15 @@
+DOKUMENT ROZLICZENIOWY - DANE SYNTETYCZNE
+Identyfikator rachunku: A-R014
+Identyfikator podróży: POD-A-2026
+Data zakupu: 2026-04-14
+Wystawca: Baltic Rooms
+Opis: nocleg, noc 2 - płatność hotelowa w EUR
+Kategoria: nocleg
+Kwota: 128,00
+Waluta: EUR
+Podróżujący: Anna Lemańska
+Cel służbowy: Udział w spotkaniach projektu
+Zgoda wymagana: nie
+Zgoda: brak
+Źródło: dokument A-R014; przekazany w pakiecie POD-A-2026
+Uwaga: dokument i tożsamości w nim opisane są fikcyjne. Nie jest to dokument księgowy ani porada podatkowa.

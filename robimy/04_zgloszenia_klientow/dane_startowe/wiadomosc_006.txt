@@ -1,0 +1,12 @@
+WIADOMOŚĆ KLIENTA - DANE SYNTETYCZNE
+Id wiadomości: MSG-A-006
+Odebrano: 2026-07-06T14:06:00+02:00
+Klient: Kacper Wysocki
+Adres: kacper.wysocki@firma-a.example
+Temat: Synchronizacja zatrzymuje się na 63 procentach
+Id zamówienia: ZAM-A-103
+
+Treść:
+Import z naszego systemu zatrzymuje się zawsze na 63% i po kilku minutach wraca do kolejki. Działa ręczny import małego pliku, ale plik z 4 000 wierszy nie kończy się od wczoraj. Mam godzinę rozpoczęcia i identyfikator zadania, lecz nie mam logów serwera.
+
+Źródło: eksport_01.csv; rekord MSG-A-006

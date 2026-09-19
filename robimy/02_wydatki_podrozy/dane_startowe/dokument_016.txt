@@ -1,0 +1,15 @@
+DOKUMENT ROZLICZENIOWY - DANE SYNTETYCZNE
+Identyfikator rachunku: A-R016
+Identyfikator podróży: POD-A-2026
+Data zakupu: 2026-04-15
+Wystawca: Kolej Północna
+Opis: bilet kolejowy na drugi odcinek przejazdu
+Kategoria: transport kolejowy
+Kwota: 52,00
+Waluta: PLN
+Podróżujący: Anna Lemańska
+Cel służbowy: Powrót po zakończeniu spotkań
+Zgoda wymagana: nie
+Zgoda: brak
+Źródło: dokument A-R016; przekazany w pakiecie POD-A-2026
+Uwaga: dokument i tożsamości w nim opisane są fikcyjne. Nie jest to dokument księgowy ani porada podatkowa.

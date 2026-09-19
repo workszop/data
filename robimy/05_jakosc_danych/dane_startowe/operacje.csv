@@ -1,0 +1,31 @@
+﻿id_wiersza_zrodla;id_rekordu;data;dzial;osoba;kwota_pln;waluta;status;opis;notatka_zewnetrzna
+A-OPE-001;A-OPE-R001;2026-01-18;Operacje;Hubert Zając;PLN 1234,50;PLN;zatwierdzona;operacja operacje 01;dodatkowa informacja
+A-OPE-002;A-OPE-R002;2026-01-20;Operacje;Iga Woźniak;198,25;PLN;rozliczona;operacja operacje 02;dodatkowa informacja
+A-OPE-003;A-OPE-R003;2026-01-22;Operacje;Jakub Wójcik;245,50;PLN;oczekuje;operacja operacje 03;dodatkowa informacja
+A-OPE-004;A-OPE-R004;2026-01-24;Operacje;Karolina Gajda;292,75;PLN;zatwierdzona;operacja operacje 04;dodatkowa informacja
+A-OPE-005;A-OPE-R005;2026-01-26;Operacje;Lena Piątek;339,00;PLN;rozliczona;operacja operacje 05;dodatkowa informacja
+A-OPE-006;A-OPE-R006;2026-01-28;Operacje;Marek Sikora;386,25;PLN;oczekuje;operacja operacje 06;dodatkowa informacja
+A-OPE-007;A-OPE-R007;2026-02-30;Operacje;Natalia Kubiak;433,50;PLN;zatwierdzona;operacja operacje 07;dodatkowa informacja
+A-OPE-008;A-OPE-R008;2026-02-01;Operacje;Oskar Cieśla;480,75;PLN;rozliczona;operacja operacje 08;dodatkowa informacja
+A-OPE-009;A-OPE-R009;2026-02-03;Operacje;Paulina Bąk;527.00;PLN;oczekuje;operacja operacje 09;dodatkowa informacja
+A-OPE-010;A-OPE-R010;2026-02-05;Operacje;Robert Krupa;574,25 zł;PLN;zatwierdzona;operacja operacje 10;dodatkowa informacja
+A-OPE-011;A-OPE-R011;2026-02-07;Operacje;Sabina Wilk;PLN 621,50;PLN;rozliczona;operacja operacje 11;dodatkowa informacja
+A-OPE-012;A-OPE-R012;2026-02-09;Operacje;Tomasz Kania;668,75;PLN;oczekuje;operacja operacje 12;dodatkowa informacja
+A-OPE-013;A-OPE-R013;2026-02-11;Operacje;Urszula Leśniak;1234,50;PLN;zatwierdzona;operacja operacje 13;dodatkowa informacja
+A-OPE-014;A-OPE-R014;2026-02-13;Operacje;Alicja Król;762,25;PLN;rozliczona;operacja operacje 14;dodatkowa informacja
+A-OPE-015;A-OPE-R015;2026-02-15;Operacje;Bartosz Mazur;809,50;PLN;oczekuje;operacja operacje 15;dodatkowa informacja
+A-OPE-016;A-OPE-R016;2026-02-17;Operacje;Celina Wrona;88,00;EUR;zatwierdzona;operacja operacje 16;dodatkowa informacja
+A-OPE-017;A-OPE-R017;2026-02-19;Operacje;Dawid Lis;903.00;PLN;rozliczona;operacja operacje 17;dodatkowa informacja
+A-OPE-018;A-OPE-R018;2026-02-21;Operacje;Eliza Kaczmarek;950,25;PLN;oczekuje;operacja operacje 18;dodatkowa informacja
+A-OPE-019;A-OPE-R019;2026-02-23;Operacje;Filip Pawlak;997,50 zł;PLN;zatwierdzona;operacja operacje 19;dodatkowa informacja
+A-OPE-020;A-OPE-R020;2026-02-25;Operacje;Grażyna Nowak;1044,75;PLN;rozliczona;operacja operacje 20;dodatkowa informacja
+A-OPE-021;A-OPE-R021;2026-02-27;Operacje;Hubert Zając;PLN 111,00;PLN;oczekuje;operacja operacje 21;dodatkowa informacja
+A-OPE-022;A-OPE-R022;2026-03-01;Operacje;Iga Woźniak;158,25;PLN;zatwierdzona;operacja operacje 22;dodatkowa informacja
+A-OPE-023;A-OPE-R023;2026-01-06;Operacje;Jakub Wójcik;205,50;PLN;rozliczona;operacja operacje 23;dodatkowa informacja
+A-OPE-024;A-OPE-R024;2026-01-08;Operacje;Karolina Gajda;252,75;PLN;oczekuje;operacja operacje 24;dodatkowa informacja
+A-OPE-025;A-OPE-R025;2026-01-10;Operacje;Lena Piątek;1234.50;PLN;zatwierdzona;operacja operacje 25;dodatkowa informacja
+A-OPE-026;A-OPE-R026;2026-01-12;Operacje;Marek Sikora;346,25;PLN;rozliczona;operacja operacje 26;dodatkowa informacja
+A-OPE-027;A-OPE-R027;2026-01-14;Operacje;Natalia Kubiak;393,50;PLN;oczekuje;operacja operacje 27;dodatkowa informacja
+A-OPE-028;A-OPE-R028;2026-01-16;Operacje;Oskar Cieśla;440,75 zł;PLN;zatwierdzona;operacja operacje 28;dodatkowa informacja
+A-OPE-029;A-OPE-R029;2026-01-18;Operacje;Paulina Bąk;487,00;PLN;rozliczona;operacja operacje 29;dodatkowa informacja
+A-OPE-030;A-OPE-R030;2026-01-20;Operacje;Robert Krupa;534,25;PLN;oczekuje;operacja operacje 30;dodatkowa informacja

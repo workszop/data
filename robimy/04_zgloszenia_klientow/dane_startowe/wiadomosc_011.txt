@@ -1,0 +1,12 @@
+WIADOMOŚĆ KLIENTA - DANE SYNTETYCZNE
+Id wiadomości: MSG-A-011
+Odebrano: 2026-07-07T10:01:00+02:00
+Klient: Lena Pawlak
+Adres: lena.pawlak@firma-a.example
+Temat: Brak uzgodnionego raportu w usłudze
+Id zamówienia: ZAM-A-104
+
+Treść:
+Zamówiliśmy Atlas Secure z dziennikiem audytowym, ale przez dwa dni raport był pusty. Teraz dane się pojawiają, lecz brakuje wpisów z dwóch dni roboczych. Proszę o przyjęcie reklamacji i informację, jakie znaczniki czasu lub zrzuty są potrzebne do weryfikacji.
+
+Źródło: eksport_01.csv; rekord MSG-A-011

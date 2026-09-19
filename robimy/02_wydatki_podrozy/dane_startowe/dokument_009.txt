@@ -1,0 +1,15 @@
+DOKUMENT ROZLICZENIOWY - DANE SYNTETYCZNE
+Identyfikator rachunku: A-R009
+Identyfikator podróży: POD-A-2026
+Data zakupu: 2026-04-15
+Wystawca: Paliwo Brzeg
+Opis: uzupełnienie paliwa w samochodzie wynajętym na przejazd terenowy
+Kategoria: paliwo
+Kwota: 210,00
+Waluta: PLN
+Podróżujący: Anna Lemańska
+Cel służbowy: Przejazd na test terenowy
+Zgoda wymagana: tak
+Zgoda: Marek Wrona; 2026-04-10
+Źródło: dokument A-R009; przekazany w pakiecie POD-A-2026
+Uwaga: dokument i tożsamości w nim opisane są fikcyjne. Nie jest to dokument księgowy ani porada podatkowa.

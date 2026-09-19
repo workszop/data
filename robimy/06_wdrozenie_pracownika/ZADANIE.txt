@@ -1,0 +1,44 @@
+06. plan wdrożenia nowej pracownicy
+
+O firmie
+Firma obsługuje zapytania klientów, analizuje dane i przygotowuje raporty.
+
+Zadanie
+Ułóż z agentem plan pierwszych pięciu dni pracy Anny Rybak, doradczyni klienta
+opisanej w profil_01.md. Anna zaczyna pracę 2026-10-05. Pozostałe profile
+pomagają poznać organizację, ale dotyczą innych osób. Nie łącz ich danych
+z profilem Anny.
+
+Materiały
+Przeczytaj pliki z dane_startowe/: profile, procedury, opiekunów, macierz
+dostępów i kalendarz.
+
+Praca z agentem
+1. Poproś agenta o spis źródeł i plan analizy. Zatwierdź go przed startem.
+2. Na podstawie profil_01.md ustal, czym Anna ma się zajmować i czego
+   nie może robić. Sprawdź metadane i wersje procedur, żeby wybrać te,
+   które obowiązują w dniu rozpoczęcia pracy.
+3. Rozpisz pięć dni. Przy każdym zadaniu podaj cel, opiekuna,
+   potrzebne uprawnienia i źródło.
+   Dopasuj spotkania do kalendarza. Nie przenoś ich samodzielnie.
+4. Sprawdź, które uprawnienia tylko przewidziano w macierzy, a które już
+   zatwierdzono. Podaj osobę zatwierdzającą i termin wygaśnięcia, jeśli jest znany.
+5. Zapisz braki, konflikty, nieaktualne dokumenty i pytania do przełożonego.
+   Własne pomysły na zadania oznacz jako propozycje.
+
+Pliki do oddania w wyniki/v01/
+- plan_pierwszego_tygodnia.md: pięć dni, zadania, opiekunowie i źródła.
+- lista_brakow.md: niepotwierdzone informacje i pytania.
+- mapa_uprawnien.md: zakresy, statusy, zatwierdzający i ograniczenia.
+- rejestr_wersji.md: wersje procedur i uzasadnienie ich wyboru.
+- instrukcja_ponowienia.md: sposób odtworzenia planu dla wskazanego profilu.
+
+Sprawdź przed oddaniem
+Sprawdź w źródłach trzy zadania z planu. Porównaj wszystkie spotkania
+z kalendarzem. Upewnij się, że plan nie daje Annie uprawnień spoza jej roli
+i że własne propozycje są odróżnione od potwierdzonych ustaleń.
+
+Zasady pracy
+To fikcyjne wdrożenie. Nie twórz kont, nie nadawaj dostępów, nie wysyłaj
+zaproszeń i nie zmieniaj kalendarza. Jeśli nie wskazano opiekuna, nie wybieraj
+go samodzielnie. Pracuj tylko w tym folderze, bez internetu i zmian źródeł.

@@ -1,0 +1,12 @@
+WIADOMOŚĆ KLIENTA - DANE SYNTETYCZNE
+Id wiadomości: MSG-A-017
+Odebrano: 2026-07-08T16:07:00+02:00
+Klient: Lena Pawlak
+Adres: lena.pawlak@firma-a.example
+Temat: Cztery godziny bez odpowiedzi na zgłoszenie
+Id zamówienia: ZAM-A-106
+
+Treść:
+Zgłoszenie z wczoraj nadal nie ma odpowiedzi, a temat dotyczy raportu w MeloBoard. To frustrujące, ale nie jest całkowitą blokadą. Proszę o sprawdzenie numeru sprawy i przekazanie jej do właściwego zespołu, bez obiecywania rekompensaty.
+
+Źródło: eksport_01.csv; rekord MSG-A-017

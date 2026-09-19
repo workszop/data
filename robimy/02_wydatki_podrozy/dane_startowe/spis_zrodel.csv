@@ -1,0 +1,19 @@
+﻿plik;id_rachunku;data;wystawca;kategoria;kwota;waluta
+dokument_001.txt;A-R001;2026-04-13;Kolej Północna;transport kolejowy;189,00;PLN
+dokument_002.txt;A-R002;2026-04-13;Bistro Motława;posiłek;58,40;PLN
+dokument_003.txt;A-R003;2026-04-13;Hotel Fala;nocleg;520,00;PLN
+dokument_004.txt;A-R004;2026-04-14;Taxi Latarnia;taxi;72,00;PLN
+dokument_005.txt;A-R005;2026-04-14;Kawiarnia Oliwa;posiłek;34,90;PLN
+dokument_006.txt;A-R006;2026-04-14;Hotel Fala;nocleg;520,00;PLN
+dokument_007.txt;A-R007;2026-04-15;Kolej Północna;transport kolejowy;46,00;PLN
+dokument_008.txt;A-R008;2026-04-15;Lunchownia Sól;posiłek;69,00;PLN
+dokument_009.txt;A-R009;2026-04-15;Paliwo Brzeg;paliwo;210,00;PLN
+dokument_010.txt;A-R010;2026-04-15;Punkt usługowy 7;materiały;58,00;
+dokument_011.txt;A-R011;2026-04-16;Hotel Fala;nocleg;1080,00;PLN
+dokument_012.txt;A-R012;2026-04-16;Kolej Północna;transport kolejowy;1280,00;PLN
+dokument_013.txt;A-R013;2026-04-14;Przystań Lunch;posiłek;17,50;EUR
+dokument_014.txt;A-R014;2026-04-14;Baltic Rooms;nocleg;128,00;EUR
+dokument_015.txt;A-R015;2026-04-15;Bar Neptun;alkohol;96,00;PLN
+dokument_016.txt;A-R016;2026-04-15;Kolej Północna;transport kolejowy;52,00;PLN
+dokument_017.txt;A-R017;2026-04-15;Kolej Północna;transport kolejowy;46,00;PLN
+dokument_018.txt;A-R017;2026-04-15;Kolej Północna;transport kolejowy;46,00;PLN

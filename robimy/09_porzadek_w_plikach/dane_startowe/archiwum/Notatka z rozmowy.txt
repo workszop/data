@@ -1,0 +1,16 @@
+DANE SYNTETYCZNE | materiał ćwiczeniowy | wszystkie osoby i projekty są fikcyjne
+---
+id_dokumentu: IB-A-030
+tytul: Notatka z rozmowy archiwalna
+data_utworzenia: 2025-11-18
+data_modyfikacji: 2025-11-19
+wersja: 0.1
+status: archiwalny
+pochodzenie: generator szkoleniowy, bez danych rzeczywistych
+---
+
+Projekt Latarnia dotyczy zadania: porządkowanie materiałów do fikcyjnej wystawy osiedlowej. Ten plik ma znaczenie ćwiczeniowe i nie jest dokumentem operacyjnym.
+
+Zakres pliku: archiwalna notatka o podobnym tytule. Wariant 30 wymaga sprawdzenia treści, metadanych oraz relacji z pozostałymi plikami, a nie tylko odczytania nazwy.
+
+Ustalenie robocze: różna treść pod tą samą nazwą wymaga zachowania obu plików. Następny krok to zapisanie decyzji w rejestrze i zachowanie kopii z nową ścieżką.

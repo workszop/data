@@ -1,0 +1,6 @@
+﻿source_id;service_id;service_name;unit;lead_time_days;capacity_note;price_gross;status
+P01-A-CAT-01;USL-ANL-01;Analiza danych wejściowych;dzień;3;do 5 dni na projekt;4800,00;zatwierdzona
+P01-A-CAT-02;USL-WKS-01;Warsztat mapowania raportu;sesja;7;jedna sesja trwa do 4 godzin;3200,00;zatwierdzona
+P01-A-CAT-03;USL-PRO-01;Prototyp jednego raportu;pakiet;10;zakres obejmuje jeden raport i jeden cykl uwag;7800,00;zatwierdzona
+P01-A-CAT-04;USL-OPS-01;Wsparcie po warsztacie;tydzień;5;maksymalnie cztery tygodnie;2100,00;zatwierdzona
+P01-A-CAT-05;USL-INT-99;Integracja z zewnętrznym CRM;pakiet;nie określono;brak opisu w katalogu;nie wyceniono;poza katalogiem

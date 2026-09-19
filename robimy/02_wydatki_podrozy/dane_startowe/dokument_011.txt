@@ -1,0 +1,15 @@
+DOKUMENT ROZLICZENIOWY - DANE SYNTETYCZNE
+Identyfikator rachunku: A-R011
+Identyfikator podróży: POD-A-2026
+Data zakupu: 2026-04-16
+Wystawca: Hotel Fala
+Opis: nocleg, noc 3
+Kategoria: nocleg
+Kwota: 1080,00
+Waluta: PLN
+Podróżujący: Anna Lemańska
+Cel służbowy: Udział w spotkaniach projektu
+Zgoda wymagana: tak
+Zgoda: brak
+Źródło: dokument A-R011; przekazany w pakiecie POD-A-2026
+Uwaga: dokument i tożsamości w nim opisane są fikcyjne. Nie jest to dokument księgowy ani porada podatkowa.

@@ -1,0 +1,12 @@
+WIADOMOŚĆ KLIENTA - DANE SYNTETYCZNE
+Id wiadomości: MSG-A-010
+Odebrano: 2026-07-07T09:50:00+02:00
+Klient: Tomasz Bury
+Adres: tomasz.bury@firma-a.example
+Temat: Anulowanie planu po szkoleniu wdrożeniowym
+Id zamówienia: ZAM-A-105
+
+Treść:
+Chcę anulować Nurt AI i odzyskać opłatę widoczną przy tym zamówieniu. Wcześniej odbyło się płatne wdrożenie, którego materiały już wykorzystaliśmy. Czy możecie zwrócić abonament i wdrożenie razem?
+
+Źródło: eksport_01.csv; rekord MSG-A-010

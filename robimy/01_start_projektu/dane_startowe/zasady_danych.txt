@@ -1,0 +1,5 @@
+ŹRÓDŁO: P01-A-DATA-01
+Wersja: 1.0
+Data przeglądu: 2026-08-28
+
+Dane do analizy mogą być przekazane dopiero po anonimizacji po stronie klienta. Pakiet startowy powinien zawierać opis kolumn, próbkę bez danych osobowych i wskazaną osobę zatwierdzającą anonimizację. W tym pakiecie nie wskazano tej osoby. Agent ma poprosić o potwierdzenie miejsca przechowywania, retencji i kryteriów usunięcia kopii.

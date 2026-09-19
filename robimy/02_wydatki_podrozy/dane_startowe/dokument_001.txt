@@ -1,0 +1,15 @@
+DOKUMENT ROZLICZENIOWY - DANE SYNTETYCZNE
+Identyfikator rachunku: A-R001
+Identyfikator podróży: POD-A-2026
+Data zakupu: 2026-04-13
+Wystawca: Kolej Północna
+Opis: bilet kolejowy Warszawa-Gdańsk, przejazd na spotkanie
+Kategoria: transport kolejowy
+Kwota: 189,00
+Waluta: PLN
+Podróżujący: Anna Lemańska
+Cel służbowy: Przejazd na spotkanie otwierające
+Zgoda wymagana: nie
+Zgoda: brak
+Źródło: dokument A-R001; przekazany w pakiecie POD-A-2026
+Uwaga: dokument i tożsamości w nim opisane są fikcyjne. Nie jest to dokument księgowy ani porada podatkowa.

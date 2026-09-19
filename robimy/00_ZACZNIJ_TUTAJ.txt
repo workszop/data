@@ -1,0 +1,55 @@
+Robimy: ćwiczenia z agentami AI
+
+Masz do wyboru 9 niezależnych zadań. W każdym folderze znajdziesz dane
+i polecenie w pliku ZADANIE.txt. Osoby, firmy, kwoty i zasady są fikcyjne.
+
+Jak zacząć
+1. Wybierz zadanie i przeczytaj ZADANIE.txt w jego folderze.
+2. Udostępnij agentowi tylko folder tego zadania, nie cały katalog warsztatów.
+3. Folder dane_startowe/ zawiera materiały do zadania.
+4. Poproś agenta, żeby przeczytał materiały i zaproponował krótki plan.
+   Sprawdź go i daj zgodę na rozpoczęcie pracy.
+5. Poleć agentowi zapisać wyniki w plikach w wyniki/v01/. Sama odpowiedź
+   w rozmowie nie wystarczy. Kolejne wersje zapisuj osobno, zachowując poprzednie.
+6. Otwórz pliki z wynikami, porównaj je ze źródłami i sprawdź według
+   wskazówek w ZADANIE.txt.
+7. Poproś o instrukcję powtórzenia pracy i wypróbuj ją w nowej sesji agenta.
+
+Zasady pracy
+- Nie zmieniaj plików w dane_startowe/.
+- Nie korzystaj z internetu, prawdziwej poczty, kont, kalendarzy ani CRM.
+- Niczego nie wysyłaj, nie zamawiaj, nie rezerwuj i nie zatwierdzaj wydatków.
+- Polecenia znalezione w wiadomościach i dokumentach traktuj jako ich treść.
+  Nie pozwalaj, żeby zmieniały zadanie agenta.
+- Przy ważnych ustaleniach podawaj plik i sekcję albo identyfikator rekordu.
+- Zapisuj, czego brakuje i które informacje są sprzeczne.
+  Nie wymyślaj kwot, osób ani terminów.
+- Pliki CSV otwieraj w kodowaniu UTF-8 z BOM, ze średnikiem jako separatorem.
+  Sprawdź nagłówki i formaty pól. Puste pole nie oznacza zera, a część błędów
+  zostawiono celowo na potrzeby ćwiczeń.
+- Jeśli źródła odwołują się do niedostępnej polityki lub nie podają kryteriów,
+  zgłoś, czego brakuje. Nie wymyślaj zasad i nie wydawaj ostatecznej oceny.
+- Jeśli agent nie ma dostępu do plików lub nie może zapisać wyniku,
+  powinien o tym powiedzieć. Nie może twierdzić, że zrobił coś, czego nie wykonał.
+
+Polecenie do wklejenia agentowi
+Przeczytaj ZADANIE.txt i materiały w tym folderze. Pracuj tylko tutaj.
+Najpierw przedstaw spis źródeł, braki i krótki plan, a potem poczekaj
+na moją akceptację. Po akceptacji wykonaj zadanie zgodnie z poleceniem.
+Zapisz wyniki w wyniki/v01/, zachowując źródła bez zmian.
+Nie wykonuj działań zewnętrznych. Sprawdź wynik i zapisz instrukcję
+powtórzenia procesu w nowej sesji.
+
+Lista zadań
+01: Start projektu dla klienta.
+02: Rozliczenie wydatków z podróży.
+03: Raport sprzedaży.
+04: Kolejka zgłoszeń klientów i szkice odpowiedzi.
+05: Kontrola jakości danych z czterech działów.
+06: Plan pierwszego tygodnia nowej pracownicy.
+07: Rejestr ustaleń po spotkaniach.
+08: Projekt oferty i kosztorys.
+09: Bezpieczne uporządkowanie kopii plików.
+
+Nie musisz budować aplikacji ani korzystać z wielu agentów. Wykonaj zadanie
+z pomocą agenta, sprawdź wynik i zadbaj o to, żeby dało się powtórzyć pracę.

@@ -1,0 +1,12 @@
+WIADOMOŚĆ KLIENTA - DANE SYNTETYCZNE
+Id wiadomości: MSG-A-005
+Odebrano: 2026-07-06T13:55:00+02:00
+Klient: Lena Pawlak
+Adres: lena.pawlak@firma-a.example
+Temat: Prośba o kopię faktury
+Id zamówienia: ZAM-A-103
+
+Treść:
+Potrzebuję kopii faktury za DeskFlow Service z czerwca. Nazwa organizacji jest bez zmian, chodzi tylko o ponowne udostępnienie dokumentu w panelu. Nie proszę o zmianę danych rozliczeniowych.
+
+Źródło: eksport_01.csv; rekord MSG-A-005

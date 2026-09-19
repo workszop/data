@@ -1,0 +1,9 @@
+ŹRÓDŁO: P01-A-EMAIL-05
+Data wysłania: 2026-09-11
+Nadawca: Marta Lis <marta.lis@luminadom.example>
+Odbiorca: przyjecia@quantica-lab.example
+Temat: Potwierdzenie spotkań
+
+Podtrzymujemy 24 uczestników oraz daty 2026-10-08 i 2026-10-09, w godzinach 09:00–13:00. Po warsztatach potrzebujemy dwóch tygodni wsparcia. Proszę też zaproponować kryteria akceptacji raportu.
+
+Właściciel danych i osoba odbierająca prototyp są jeszcze do ustalenia.

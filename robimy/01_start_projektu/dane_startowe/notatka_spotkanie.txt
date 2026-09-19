@@ -1,0 +1,17 @@
+ŹRÓDŁO: P01-A-MTG-01
+Data spotkania: 2026-09-10
+Uczestnicy: Marta Lis, Tomasz Wrona, Eliza Kwiecień, osoba przyjmująca zlecenie
+
+Potwierdzone podczas rozmowy:
+- celem jest usprawnienie miesięcznego raportowania;
+- zespół klienta chce dwa spotkania po cztery godziny;
+- do demonstracji ma powstać jeden prototyp raportu;
+- dane wejściowe mają być zanonimizowane przed udostępnieniem.
+
+Do rozstrzygnięcia:
+- liczba uczestników: 18 w P01-A-EMAIL-02 albo 24 w P01-A-EMAIL-01 i P01-A-EMAIL-05;
+- czy 2026-10-06 jest twardą datą demonstracji;
+- kryteria akceptacji raportu;
+- właściciel danych, osoba odbierająca i osoba zatwierdzająca zakup;
+- czy integracja z PanelPilot jest potrzebna, skoro katalog nie zawiera tej usługi;
+- budżet 18 000,00 PLN brutto jest tylko limitem orientacyjnym.

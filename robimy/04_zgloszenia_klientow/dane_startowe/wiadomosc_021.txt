@@ -1,0 +1,12 @@
+WIADOMOŚĆ KLIENTA - DANE SYNTETYCZNE
+Id wiadomości: MSG-A-021
+Odebrano: 2026-07-08T11:51:00+02:00
+Klient: Iga Żmuda
+Adres: iga.zmuda@firma-a.example
+Temat: Błąd eksportu CSV dla jednego raportu
+Id zamówienia: ZAM-A-103
+
+Treść:
+Przy eksporcie jednego raportu CSV dostajemy pusty plik, choć podgląd ma 240 rekordów. Inne raporty eksportują się poprawnie. Użytkownik może pracować dalej, ale potrzebujemy obejścia przed piątkowym audytem.
+
+Źródło: eksport_01.csv; rekord MSG-A-021

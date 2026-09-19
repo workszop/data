@@ -1,0 +1,12 @@
+WIADOMOŚĆ KLIENTA - DANE SYNTETYCZNE
+Id wiadomości: MSG-A-016
+Odebrano: 2026-07-07T15:56:00+02:00
+Klient: Tomasz Bury
+Adres: tomasz.bury@firma-a.example
+Temat: Zmiana roli członka zespołu
+Id zamówienia: ZAM-A-102
+
+Treść:
+Potrzebuję zmienić rolę jednej osoby z obserwatora na edytora w MeloBoard. Jestem administratorem organizacji, ale chcę wiedzieć, czy zmiana wpłynie na limit 20 użytkowników. Nie proszę o wykonanie zmiany przez agenta.
+
+Źródło: eksport_01.csv; rekord MSG-A-016

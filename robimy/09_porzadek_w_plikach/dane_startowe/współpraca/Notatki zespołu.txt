@@ -1,0 +1,16 @@
+DANE SYNTETYCZNE | materiał ćwiczeniowy | wszystkie osoby i projekty są fikcyjne
+---
+id_dokumentu: NT-A-006
+tytul: Notatki zespołu
+data_utworzenia: 2026-02-12
+data_modyfikacji: 2026-02-15
+wersja: 1.2
+status: roboczy
+pochodzenie: generator szkoleniowy, bez danych rzeczywistych
+---
+
+Projekt Latarnia dotyczy zadania: porządkowanie materiałów do fikcyjnej wystawy osiedlowej. Ten plik ma znaczenie ćwiczeniowe i nie jest dokumentem operacyjnym.
+
+Zakres pliku: ustalenia o katalogach docelowych. Wariant 6 wymaga sprawdzenia treści, metadanych oraz relacji z pozostałymi plikami, a nie tylko odczytania nazwy.
+
+Ustalenie robocze: notatki wskazują na bezpieczne kopiowanie i jawny rejestr zmian. Następny krok to zapisanie decyzji w rejestrze i zachowanie kopii z nową ścieżką.

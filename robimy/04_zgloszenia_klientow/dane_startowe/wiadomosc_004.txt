@@ -1,0 +1,12 @@
+WIADOMOŚĆ KLIENTA - DANE SYNTETYCZNE
+Id wiadomości: MSG-A-004
+Odebrano: 2026-07-06T12:44:00+02:00
+Klient: Tomasz Bury
+Adres: tomasz.bury@firma-a.example
+Temat: Nieudana próba płatności
+Id zamówienia: ZAM-A-107
+
+Treść:
+Płatność za DeskFlow nie przeszła dzisiaj rano, ale usługa nadal jest potrzebna. Panel pokazuje „oczekuje”, a bank nie pokazuje finalnego obciążenia. Czy możecie powiedzieć, czy ponowić płatność, żeby nie utworzyć drugiej transakcji?
+
+Źródło: eksport_01.csv; rekord MSG-A-004

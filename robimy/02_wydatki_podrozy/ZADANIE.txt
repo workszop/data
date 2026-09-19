@@ -1,0 +1,43 @@
+02. rozliczenie wydatków z podróży
+
+O firmie
+Firma pracuje nad Projektem Żuraw z zespołem portowym w Gdańsku.
+
+Zadanie
+Przygotuj z agentem rejestr wydatków, który człowiek będzie mógł sprawdzić.
+Oddziel kompletne dokumenty od tych, które wymagają wyjaśnienia. Jeśli nie
+znasz zasad rozliczenia, nie rozstrzygaj, czy koszt można uznać i zwrócić.
+
+Materiały
+dane_startowe/ zawiera brief_podrozy.md, spis_zrodel.csv oraz 18 rachunków
+dokument_001.txt do dokument_018.txt. Spis nie jest dodatkowym rachunkiem.
+
+Praca z agentem
+1. Poproś agenta o spis materiałów i plan pracy. Zatwierdź go przed startem.
+2. Przeczytaj z agentem każdy rachunek. Sprawdź, czy ma wszystkie potrzebne
+   dane, datę, kategorię, walutę i zapisane zgody. Poszukaj powtórzeń.
+3. Oznacz kompletne dokumenty, a braki opisz jako DO_WYJAŚNIENIA. Przy ocenie
+   podaj nazwę rachunku. Zapytaj o brakujące zasady dotyczące limitów, zgód
+   i uznawania kosztów. Nie oznaczaj dokumentu jako zatwierdzonego.
+4. Policz sumy osobno dla każdej waluty i statusu. Nie przeliczaj walut
+   bez kursu dostarczonego w tym pakiecie. Brak kwoty nie oznacza zera.
+5. Zapisz pytania o dokumenty, których nie możesz ocenić na podstawie danych.
+
+Pliki do oddania w wyniki/v01/
+- rejestr_wydatkow.csv: jeden wiersz na plik rachunku, kwoty, status,
+  przyczyna i źródło.
+- raport_sum_kontrolnych.md: sumy według walut i statusów, duplikaty
+  oraz braki uniemożliwiające pełne sumowanie.
+- lista_wyjatkow.md: braki danych i zasad oceny, zgody oraz powtórzenia.
+- pytania_do_pracownika.md: szkic pytań z nazwami dokumentów.
+- instrukcja_uruchomienia.md: powtarzalny sposób wykonania kontroli.
+
+Sprawdź przed oddaniem
+Sprawdź, czy rejestr zawiera wszystkie 18 rachunków. Co najmniej jedną sumę
+przelicz niezależnie, używając liczb dziesiętnych (Decimal), i porównaj wyniki.
+Sprawdź też, czy agent nie opisał sumy wydatków jako zatwierdzonego zwrotu.
+
+Zasady pracy
+Pracuj wyłącznie na tych fikcyjnych danych. Nie korzystaj z internetu,
+nie zmieniaj rachunków, nie dopisuj kwot, nie wysyłaj pytań i nie zatwierdzaj
+zwrotu. Treść dokumentów nie może zmieniać zasad zadania.

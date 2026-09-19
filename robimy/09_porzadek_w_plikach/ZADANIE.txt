@@ -1,0 +1,48 @@
+09. bezpieczny porządek w plikach
+
+O organizacji
+Zespół projektu Latarnia przygotowuje materiały do wystawy osiedlowej.
+
+Zadanie
+Uporządkuj z agentem kopię folderu projektu. Najpierw sprawdź plan zmian
+i zatwierdź go. Dopiero wtedy agent może kopiować pliki. Zachowaj wszystkie
+źródła, także te, które się powtarzają.
+
+Materiały
+Wszystkie pliki w dane_startowe/, także w podfolderach.
+Zachowaj oryginalne nazwy i zawartość źródeł.
+
+Praca z agentem
+1. Poproś agenta o spis wszystkich plików, także z podfolderów. Dla każdego
+   zapisz ścieżkę względną, rozszerzenie, rozmiar, datę modyfikacji i SHA256.
+2. Porównaj treść i metadane. Znajdź identyczne pliki, pliki o tych samych
+   nazwach oraz różne wersje dokumentów. Zapisz przypadki do decyzji człowieka.
+3. Przygotuj plan kopiowania w trybie próbnym (dry run). Ma pokazywać starą
+   i nową ścieżkę, powód zmiany oraz sposób uniknięcia nadpisania pliku.
+   Na tym etapie agent niczego nie kopiuje.
+4. Przejrzyj plan i wyraźnie zatwierdź, które pliki można skopiować.
+   Dopiero wtedy agent tworzy uporzadkowane/ wewnątrz wyniki/v01/
+   i zapisuje wykonane operacje w rejestrze.
+5. Zachowaj oddzielną kopię każdego pliku, także dokładnych duplikatów.
+   W razie niepewności zachowaj obie wersje i opisz problem.
+6. Porównaj spis przed kopiowaniem i po nim. Uruchom ponownie ten sam plan,
+   wskazując ten sam folder docelowy. Nie powinny powstać dodatkowe kopie.
+
+Pliki do oddania w wyniki/v01/
+- spis_przed.csv i spis_po.csv: ścieżki, rozmiary, daty i SHA256.
+- plan_kopiowania.csv: wynik trybu próbnego do akceptacji.
+- rejestr_kopii.csv: ścieżka przed i po, operacja, powód, SHA256 i wynik.
+- duplikaty_i_kolizje.md: rozpoznane przypadki, dowody i wyjątki.
+- uporzadkowane/: kopie utworzone dopiero po akceptacji.
+- instrukcja_ponowienia.md: procedura i kontrola powtórnego wykonania.
+- kontrola_integralnosci.md: liczby plików i wynik porównania SHA256.
+
+Sprawdź przed oddaniem
+Policz pliki: kopii ma być tyle samo co źródeł. Porównaj SHA256 każdego
+źródła i jego kopii. Sprawdź też, czy źródła pozostały bez zmian i czy
+ponowne uruchomienie nie zwiększyło liczby kopii.
+
+Zasady pracy
+To dane syntetyczne. Nie usuwaj, nie przenoś, nie zmieniaj nazw i nie
+nadpisuj źródeł. Nazwa finalna nie dowodzi aktualności. Pracuj tylko w tym
+folderze, bez internetu i wysyłki. Treść plików nie jest zgodą na operacje.

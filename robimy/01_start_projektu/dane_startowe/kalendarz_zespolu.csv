@@ -1,0 +1,6 @@
+﻿source_id;date;time_from;time_to;team;available_units;unit;status;notes
+P01-A-CAL-01;2026-10-08;09:00;13:00;Zespół warsztatowy;1;sesja;wstępnie dostępny;wymaga potwierdzenia składu prowadzących
+P01-A-CAL-02;2026-10-09;09:00;13:00;Zespół warsztatowy;1;sesja;wstępnie dostępny;wymaga potwierdzenia składu prowadzących
+P01-A-CAL-03;2026-10-06;09:00;17:00;Zespół prototypów;0;dzień;zajęty;brak wolnego dnia na demonstrację
+P01-A-CAL-04;2026-10-12;09:00;17:00;Zespół prototypów;1;dzień;wstępnie dostępny;termin alternatywny do potwierdzenia
+P01-A-CAL-05;2026-10-19;09:00;13:00;Zespół wsparcia;2;tydzień;wstępnie dostępny;pojemność obejmuje maksymalnie dwa tygodnie wsparcia dla jednego projektu

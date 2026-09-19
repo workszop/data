@@ -1,0 +1,12 @@
+WIADOMOŚĆ KLIENTA - DANE SYNTETYCZNE
+Id wiadomości: MSG-A-018
+Odebrano: 2026-07-08T08:18:00+02:00
+Klient: Kacper Wysocki
+Adres: kacper.wysocki@firma-a.example
+Temat: Zmiana waluty na fakturze
+Id zamówienia: ZAM-A-108
+
+Treść:
+Faktura za Nurt AI w historii jest w EUR, a nasze rozliczenia wewnętrzne prowadzimy w PLN. Czy możecie przeliczyć ją po własnym kursie i wystawić nowy dokument?
+
+Źródło: eksport_01.csv; rekord MSG-A-018

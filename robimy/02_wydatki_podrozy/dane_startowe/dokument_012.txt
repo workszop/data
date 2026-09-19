@@ -1,0 +1,15 @@
+DOKUMENT ROZLICZENIOWY - DANE SYNTETYCZNE
+Identyfikator rachunku: A-R012
+Identyfikator podróży: POD-A-2026
+Data zakupu: 2026-04-16
+Wystawca: Kolej Północna
+Opis: bilet powrotny Gdańsk-Warszawa
+Kategoria: transport kolejowy
+Kwota: 1280,00
+Waluta: PLN
+Podróżujący: Anna Lemańska
+Cel służbowy: Powrót po zakończeniu spotkań
+Zgoda wymagana: tak
+Zgoda: Marek Wrona; 2026-04-10
+Źródło: dokument A-R012; przekazany w pakiecie POD-A-2026
+Uwaga: dokument i tożsamości w nim opisane są fikcyjne. Nie jest to dokument księgowy ani porada podatkowa.

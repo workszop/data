@@ -1,0 +1,5 @@
+﻿data_iso;czynność;właściciel_fikcyjny;czas_min;status_danych
+2026-03-16;inwentaryzacja;Zespół Alfa;45;syntetyczne
+2026-03-17;analiza metadanych;Zespół Beta;60;syntetyczne
+2026-03-18;dry run;Zespół Gamma;30;syntetyczne
+2026-03-19;kontrola kopii;Zespół Alfa;35;syntetyczne

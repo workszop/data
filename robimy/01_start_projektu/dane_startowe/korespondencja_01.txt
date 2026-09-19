@@ -1,0 +1,11 @@
+ŹRÓDŁO: P01-A-EMAIL-01
+Data wysłania: 2026-09-08
+Nadawca: Marta Lis <marta.lis@luminadom.example>
+Odbiorca: przyjecia@quantica-lab.example
+Temat: Warsztat i prototyp raportu
+
+Dzień dobry,
+chcemy rozpocząć projekt usprawnienia miesięcznego raportowania. Prosimy o dwa warsztaty po cztery godziny, najlepiej 2026-10-08 i 2026-10-09, dla zespołu liczącego 24 osoby z trzech działów. Po warsztatach chcemy prototyp jednego raportu oraz dwa tygodnie wsparcia.
+
+Nie mamy jeszcze ustalonego budżetu. Czy mogą Państwo opisać proponowany zakres i listę danych potrzebnych na start? Terminy są propozycją, nie potwierdzeniem.
+Pozdrawiam, Marta

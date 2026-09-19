@@ -1,0 +1,6 @@
+﻿source_id;service_id;service_name;unit;description;status
+P08-A-CAT-01;USL-A01;Analiza jakości danych;dzień;przegląd plików testowych i karta braków;zatwierdzona
+P08-A-CAT-02;USL-A02;Warsztat mapowania procesu raportowego;sesja;jedna sesja do czterech godzin;zatwierdzona
+P08-A-CAT-03;USL-A03;Wsparcie po warsztacie;godzina;konsultacja do raportu;zatwierdzona
+P08-A-CAT-04;USL-A04;Raport podsumowujący;pakiet;raport i jeden cykl uwag;zatwierdzona
+P08-A-CAT-05;USL-A99;Integracja z PanelPilot;pakiet;brak zatwierdzonej pozycji;poza katalogiem
