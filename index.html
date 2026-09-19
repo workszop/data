@@ -3,6 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=202609190739">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=202609190739">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png?v=202609190739">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=202609190739">
+<meta name="theme-color" content="#FFD500">
 <title>edulab · dane warsztatowe</title>
 <link rel="stylesheet" href="tokens.css">
 <style>
@@ -18,8 +23,8 @@
     border-bottom: 1px solid var(--line);
   }
   .edu-header-inner {
-    max-width: 1100px; margin: 0 auto;
-    padding: 8px 30px; display: flex; align-items: center; gap: 12px;
+    max-width: 1600px; margin: 0 auto;
+    padding: 6px clamp(16px, 2.5vw, 40px); display: flex; align-items: center; gap: 12px;
   }
   .edu-logo { width: 64px; height: 64px; display: block; margin-right: -6px; }
   .edu-wordmark { font-family: var(--font-display); font-weight: 700; font-size: 22px; letter-spacing: -.02em; color: var(--ink); }
@@ -33,22 +38,22 @@
   .edu-header-link:hover { background: var(--paper-2); color: var(--ink); }
 
   /* ─── Layout shell ─── */
-  main { max-width: 1100px; margin: 0 auto; padding: 56px 30px 80px; }
+  main { max-width: 1600px; margin: 0 auto; padding: 36px clamp(16px, 2.5vw, 40px) 64px; }
 
   /* ─── Page header ─── */
-  .page-head { text-align: center; margin-bottom: 14px; }
+  .page-head { text-align: center; margin-bottom: 8px; }
   .app-title {
     font-family: var(--font-display); font-weight: 800;
-    font-size: clamp(2rem, 4.5vw, 2.85rem); letter-spacing: -.025em;
-    line-height: 1.05; color: var(--ink); margin: 0 0 16px;
+    font-size: clamp(1.8rem, 3.5vw, 2.5rem); letter-spacing: -.025em;
+    line-height: 1.05; color: var(--ink); margin: 0 0 10px;
   }
-  .edu-lead { font-size: 1.0625rem; line-height: 1.6; color: var(--ink-2); margin: 0; font-family: var(--font-sans); }
+  .edu-lead { font-size: 1rem; line-height: 1.5; color: var(--ink-2); margin: 0; font-family: var(--font-sans); }
 
   /* ─── Filters (segmented toggle) ─── */
-  .toolbar { display: flex; justify-content: center; margin: 38px 0 20px; }
+  .toolbar { display: flex; justify-content: center; margin: 22px 0 6px; }
   .edu-seg { display: inline-flex; flex-wrap: wrap; justify-content: center; gap: 2px; padding: 3px; background: var(--paper-2); border-radius: var(--r-pill); }
   .edu-seg button {
-    border: none; background: transparent; padding: 8px 14px; border-radius: var(--r-pill);
+    border: none; background: transparent; padding: 6px 12px; border-radius: var(--r-pill);
     font-family: var(--font-sans); font-weight: 600; font-size: 14px; color: var(--ink-2); cursor: pointer;
     transition: background-color .15s, color .15s;
   }
@@ -57,29 +62,30 @@
   .edu-seg button:focus-visible { outline: none; box-shadow: var(--focus-ring); }
 
   /* ─── Category sections ─── */
-  .cat-section { margin-top: 46px; }
-  .cat-head { display: flex; align-items: baseline; gap: 12px; margin: 0 0 6px; }
+  .cat-section { margin-top: 30px; }
+  .cat-head { display: flex; align-items: baseline; gap: 12px; margin: 0 0 4px; }
   .cat-title { font-family: var(--font-display); font-weight: 600; font-size: var(--h3); color: var(--ink); margin: 0; }
   .cat-count { font-family: var(--font-mono); font-size: 12px; color: var(--ink-3); }
   .cat-action { margin-left: auto; align-self: center; }
-  .cat-desc { font-family: var(--font-sans); font-size: 14.5px; line-height: 1.5; color: var(--ink-2); margin: 0 0 18px; }
+  .cat-desc { font-family: var(--font-sans); font-size: 13.5px; line-height: 1.45; color: var(--ink-2); margin: 0 0 12px; }
+  .cat-section > .grid { margin-top: 10px; }
+  .cat-desc + .grid { margin-top: 0; }
 
   /* ─── Grid of file cards ─── */
-  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-  @media (max-width: 860px) { .grid { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 560px) { .grid { grid-template-columns: 1fr; } }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(232px, 1fr)); gap: 12px; }
+  @media (max-width: 560px) { .grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; } }
 
   .card {
     background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg);
     overflow: hidden; display: flex; flex-direction: column; cursor: pointer; text-align: left;
-    padding: 0; font: inherit; color: inherit;
+    padding: 0; border-radius: var(--r-md); font: inherit; color: inherit;
     transition: box-shadow .2s cubic-bezier(.32,.72,.32,1), border-color .2s;
   }
   .card:hover { box-shadow: var(--shadow-md); border-color: var(--line-2); }
   .card:focus-visible { outline: none; box-shadow: var(--focus-ring); }
 
   .card-head {
-    height: 96px; position: relative; overflow: hidden;
+    height: 58px; position: relative; overflow: hidden;
     display: flex; align-items: center; justify-content: center;
   }
   .head-blue   { background: var(--blue);       color: var(--blue-ink); }
@@ -90,23 +96,23 @@
   .head-berry  { background: var(--play-berry); color: var(--surface); }
   .head-ink    { background: var(--ink);        color: var(--yellow); }
 
-  .card-glyph { font-family: var(--font-display); font-weight: 700; font-size: 30px; z-index: 1; letter-spacing: .02em; }
+  .card-glyph { font-family: var(--font-display); font-weight: 700; font-size: 20px; z-index: 1; letter-spacing: .02em; }
   .card-glyph-ghost {
-    position: absolute; right: -14px; bottom: -34px; font-family: var(--font-display);
-    font-weight: 800; font-size: 120px; opacity: .16; line-height: 1; user-select: none;
+    position: absolute; right: -10px; bottom: -24px; font-family: var(--font-display);
+    font-weight: 800; font-size: 78px; opacity: .16; line-height: 1; user-select: none;
   }
   .card-chip {
-    position: absolute; top: 10px; left: 10px; z-index: 2;
-    font-family: var(--font-mono); font-size: 10px; text-transform: uppercase;
+    position: absolute; top: 7px; left: 8px; z-index: 2;
+    font-family: var(--font-mono); font-size: 9.5px; text-transform: uppercase;
     letter-spacing: .08em; padding: 3px 8px; border-radius: var(--r-pill);
     background: var(--surface); color: var(--ink);
   }
 
-  .card-body { padding: 15px 17px 17px; display: flex; flex-direction: column; gap: 7px; flex: 1; }
-  .card-name { font-family: var(--font-mono); font-size: 12.5px; color: var(--ink); word-break: break-all; }
-  .card-title { font-family: var(--font-display); font-weight: 600; font-size: 17px; color: var(--ink); line-height: 1.25; }
-  .card-blurb { font-family: var(--font-sans); font-size: 13.5px; line-height: 1.45; color: var(--ink-2); margin: 0; }
-  .card-meta { margin-top: auto; padding-top: 8px; display: flex; flex-wrap: wrap; gap: 10px; font-family: var(--font-mono); font-size: 11px; color: var(--ink-3); }
+  .card-body { padding: 10px 12px 11px; display: flex; flex-direction: column; gap: 4px; flex: 1; }
+  .card-name { font-family: var(--font-mono); font-size: 11.5px; color: var(--ink); word-break: break-all; }
+  .card-title { font-family: var(--font-display); font-weight: 600; font-size: 15px; color: var(--ink); line-height: 1.25; }
+  .card-blurb { font-family: var(--font-sans); font-size: 12.5px; line-height: 1.4; color: var(--ink-2); margin: 0; }
+  .card-meta { margin-top: auto; padding-top: 5px; display: flex; flex-wrap: wrap; gap: 8px; font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-3); }
 
   /* ─── Modal ─── */
   .overlay {
@@ -193,7 +199,7 @@
 
   .loader { font-family: var(--font-mono); font-size: 12px; color: var(--ink-3); padding: 40px 26px; text-align: center; }
 
-  footer.edu-foot { max-width: 1100px; margin: 0 auto; padding: 30px; border-top: 1px solid var(--line); font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-3); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+  footer.edu-foot { max-width: 1600px; margin: 0 auto; padding: 20px clamp(16px, 2.5vw, 40px); border-top: 1px solid var(--line); font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-3); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
   footer.edu-foot a { color: var(--ink-2); text-decoration: underline; }
 
   .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
@@ -201,8 +207,7 @@
   @media (max-width: 768px) {
     .cat-head { flex-wrap: wrap; }
     .cat-action { margin-left: 0; }
-    .edu-header-inner { padding: 6px 16px; }
-    main { padding: 36px 16px 60px; }
+    main { padding-top: 24px; }
     .modal-head, .modal-actions { padding-left: 18px; padding-right: 18px; }
     .tbl-wrap, pre.txt-preview, .info-panel, .file-list { margin-left: 18px; margin-right: 18px; }
     .pdf-wrap, .img-wrap { padding-left: 18px; padding-right: 18px; }
