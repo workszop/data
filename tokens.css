@@ -25,7 +25,7 @@
   /* Ink — warm near-black text & lines */
   --ink:      #1C1917;   /* primary text               */
   --ink-2:    #57534E;   /* secondary text             */
-  --ink-3:    #948C82;   /* muted / placeholder        */
+  --ink-3:    #716961;   /* muted / placeholder        */
   --line:     #EDE7D2;   /* hairline borders           */
   --line-2:   #DDD4B6;   /* stronger borders           */
 
@@ -45,19 +45,19 @@
   /* Blue — secondary (panels, chips, correct / selected state) */
   --blue:      #1E8FC2;
   --blue-600:  #177AA8;
-  --blue-soft: #1E8FC2;
+  --blue-soft: #177AA8;
   --blue-ink:  #FFFFFF;
 
   /* Green — secondary support (chips, success) */
   --green:      #00A651;
-  --green-600:  #009444;
-  --green-soft: #00A651;
+  --green-600:  #078342;
+  --green-soft: #078342;
   --green-ink:  #FFFFFF;
 
   /* Red — danger / important / wrong (use sparingly) */
   --red:      #E5322D;
   --red-600:  #C92823;
-  --red-soft: #E5322D;
+  --red-soft: #C92823;
   --red-ink:  #FFFFFF;
 
   /* Legacy role aliases — older edulab apps use these names */
@@ -75,10 +75,10 @@
   --play-coral:  #E5322D;
 
   /* ---- Semantic ---- */
-  --success:      #00A651;  --success-soft: #00A651;  --success-ink: #FFFFFF;
+  --success:      #00A651;  --success-soft: #078342;  --success-ink: #FFFFFF;
   --warning:      #FFD500;  --warning-soft: #FFD500;  --warning-ink: #1C1917;
-  --danger:       #E5322D;  --danger-soft:  #E5322D;  --danger-ink:  #FFFFFF;
-  --info:         #1E8FC2;  --info-soft:    #1E8FC2;  --info-ink:    #FFFFFF;
+  --danger:       #E5322D;  --danger-soft:  #C92823;  --danger-ink:  #FFFFFF;
+  --info:         #1E8FC2;  --info-soft:    #177AA8;  --info-ink:    #FFFFFF;
 
   /* ---- Functional aliases ---- */
   --bg:        var(--paper);
@@ -86,7 +86,7 @@
   --fg-muted:  var(--ink-2);
   --primary:   var(--yellow);
   --on-primary:#1C1917;      /* dark text on yellow */
-  --focus-ring: 0 0 0 3px color-mix(in srgb, var(--yellow) 45%, transparent);
+  --focus-ring: 0 0 0 2px var(--paper), 0 0 0 5px var(--ink);
 
   /* ============================================================
      SPACING  (4pt base)
